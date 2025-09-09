@@ -204,3 +204,30 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Large files
+*.zip
+*.tar.gz
+*.7z
+*.dmg
+*.iso
+*.jar
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+logs/
+
+# Node modules (if you have any frontend)
+node_modules/
+
+# Media files
+*.mp4
+*.avi
+*.mov
+*.mp3
+*.wav
