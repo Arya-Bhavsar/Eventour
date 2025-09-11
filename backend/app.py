@@ -23,6 +23,7 @@ def populate_db(start_time: str = None, end_time: str = None , location:str = No
     #call APIs
 
     #populate DB
+    
     pass
 
 #Function To Get Answer to Question
