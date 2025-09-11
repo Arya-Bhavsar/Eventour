@@ -27,3 +27,37 @@ def get_chroma_collection(client: ClientAPI = Depends(get_chroma_client)) -> Col
 		    name="my_collection",
 		)
 	return _collection
+"""
+def main():
+	# Initialize ChromaDB client and collection
+	client = get_chroma_client()
+	collection = get_chroma_collection(client)
+
+	# Demo documents to upload
+	documents = [
+		"ChromaDB is an open-source embedding database.",
+		"FastAPI is a modern Python web framework.",
+		"Python-dotenv loads environment variables from .env files."
+	]
+	ids = ["doc1", "doc2", "doc3"]
+	
+
+	# Upload documents
+	print("Uploading documents...")
+	collection.add(documents=documents, ids=ids)
+	print("Documents uploaded.")
+
+	# Retrieve documents (demo: query for a keyword)
+	query = "modern Python variables files"
+	print(f"\nQuerying for: '{query}'")
+	results = collection.query(query_texts=[query], n_results=2)
+	print("Results:")
+	for doc, score in zip(results["documents"], results["distances"]):
+		print(f"Doc: {doc[0]} | Score: {score[0]}")
+		print(f"Doc: {doc[1]} | Score: {score[1]}")
+		print(len(doc))
+
+
+if __name__ == "__main__":
+	main()
+"""
