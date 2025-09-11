@@ -6,7 +6,6 @@
 # These refer to the two sections where an arrow goes from the Frontend Layer to the Backend Layer up to the next time an arrow goes Back to Front on the workflow
 # The two sections are populating the DB and answering a query. 
 # 
-# there are 3 endpoints below. The first two are two versions of the first necessary endpoint, based on different levels of complexity 
 
 
 
@@ -16,14 +15,11 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-#Function To Populate Vector Database Assuming Location is Columbus, and Dates are Next Few Days
-@app.get("/populate-db-default/")
-def populate_db():
-    pass
+
 
 #Function To Populate Vector Database
 @app.get("/populate-db/")
-def populate_db(start_time: str, end_time: str, location: str):
+def populate_db(start_time: str = None, end_time: str = None , location:str = None):
     #call APIs
 
     #populate DB
