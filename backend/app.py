@@ -10,8 +10,12 @@
 
 
 from typing import Union
-
 from fastapi import FastAPI
+from langchain_cohere import CohereEmbeddings, ChatCohere
+from langchain_chroma import Chroma
+from langchain import hub
+from langchain.chat_models import init_chat_model
+
 
 app = FastAPI()
 
@@ -29,8 +33,27 @@ def populate_db(start_time: str = None, end_time: str = None , location:str = No
 @app.get("/get-answer/{query}")
 def answer(query: str):
     #retrieve context from Chroma DB 
-
+    vectorstore = connect_to_chroma()
+    context = vectorstore.similarity_search(query)
     #call LLM with context
+    prompt = hub.pull("rlm/rag-prompt")
+    docs_content = "\n\n".join(doc.page_content for doc in context)
+
+    messages = prompt.invoke({"question": query, "context": docs_content})
+    llm = init_chat_model("command-r-plus", model_provider="cohere")
+    response = llm.invoke(messages)
 
     #output answer
-    pass
+    return {"answer": response.content}
+    
+
+#helper functions
+def connect_to_chroma():
+    #Rahul on 9/12: UPDATE the below with the correct details
+    return Chroma(
+        collection_name="my_docs",
+        embedding_function=CohereEmbeddings(),
+        host="YOUR.CHROMA.SERVER.IP",   # or DNS name
+        port=8000,                      # default is 8000
+        ssl=False                       # set True if you front it with TLS
+    )
