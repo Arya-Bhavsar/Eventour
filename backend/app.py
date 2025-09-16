@@ -15,6 +15,7 @@ from langchain_cohere import CohereEmbeddings, ChatCohere
 from langchain_chroma import Chroma
 from langchain import hub
 from langchain.chat_models import init_chat_model
+import chroma_connection
 
 
 app = FastAPI()
@@ -41,7 +42,7 @@ def answer(query: str):
     docs_content = "\n\n".join(doc.page_content for doc in context)
 
     messages = prompt.invoke({"question": query, "context": docs_content})
-    llm = init_chat_model("command-r-plus", model_provider="cohere")
+    llm = init_chat_model("command-a-03-2025", model_provider="cohere")
     response = llm.invoke(messages)
 
     #output answer
@@ -53,8 +54,6 @@ def connect_to_chroma():
     #Rahul on 9/12: UPDATE the below with the correct details
     return Chroma(
         collection_name="my_docs",
-        embedding_function=CohereEmbeddings(),
-        host="YOUR.CHROMA.SERVER.IP",   # or DNS name
-        port=8000,                      # default is 8000
-        ssl=False                       # set True if you front it with TLS
+        embedding_function=CohereEmbeddings(model="embed-english-v3.0"),
+        client = chroma_connection.get_chroma_client()
     )
