@@ -43,7 +43,7 @@ def answer(query: str):
     try:
         # Retrieve context from Chroma DB 
         vectorstore = connect_to_chroma()
-        context = vectorstore.similarity_search(query)
+        context = vectorstore.similarity_search(query, k=15)
         
         # Call LLM with context
         prompt = hub.pull("rlm/rag-prompt")
@@ -145,11 +145,22 @@ def get_data_in_chroma(tm_data, google_data):
         name = event.get('name', 'Unknown Event')
         venue = event.get('_embedded', {}).get('venues', [{}])[0].get('name', 'N/A')
         date = event.get('dates', {}).get('start', {}).get('localDate', 'N/A')
+        time = event.get('dates', {}).get('start', {}).get('localTime', 'N/A')
         genre = event.get('classifications', [{}])[0].get('genre', {}).get('name', 'N/A')
+        url = event.get('url', 'N/A')
         
         print(f"- Parsing event: {name}")
         
-        document = f"{name} is a live event of type {genre} at {venue} on {date}."
+        # Include metadata in the document text for better searchability
+        document = f"""Event: {name}
+Type: {genre}
+Venue: {venue}
+Date: {date}
+Time: {time}
+Category: live event
+Location: Columbus, OH
+URL: {url}
+Description: {name} is a live event of type {genre} at {venue} on {date} at {time}."""
         documents_to_add.append(document)
         
         metadata = {
@@ -157,7 +168,9 @@ def get_data_in_chroma(tm_data, google_data):
             "name": name,
             "venue": venue,
             "date": date,
-            "genre": genre
+            "time": time,
+            "genre": genre,
+            "url": url
         }
         metadatas_to_add.append(metadata)
         ids_to_add.append(f"event_{event.get('id', f'unknown_{len(ids_to_add)}')}") 
@@ -167,17 +180,25 @@ def get_data_in_chroma(tm_data, google_data):
     for i, place in enumerate(places):
         name = place.get('displayName', {}).get('text', 'Unknown Place')
         category = place.get('primaryTypeDisplayName', {}).get('text', 'Unknown Category')
+        maps_url = place.get('googleMapsLinks', {}).get('placeUri', '')
 
         print(f"- Parsing place: {name}")
         
-        document = f"{name} is a {category} in Columbus, a popular local attraction."
+        # Include metadata in the document text for better searchability
+        document = f"""Place: {name}
+Type: {category}
+Category: local attraction
+Location: Columbus, OH
+Maps URL: {maps_url}
+Description: {name} is a {category} in Columbus, a popular local attraction and destination."""
         documents_to_add.append(document)
         
         metadata = {
             "type": "place",
             "name": name,
             "category": category,
-            "maps_url": place.get('googleMapsLinks', {}).get('placeUri', '')
+            "location": "Columbus, OH",
+            "maps_url": maps_url
         }
         metadatas_to_add.append(metadata)
 
