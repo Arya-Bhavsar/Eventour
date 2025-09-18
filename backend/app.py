@@ -33,7 +33,7 @@ def populate_db(start_time: str = None, end_time: str = None , location:str = No
     google_places_data = get_google_places_data(location)
     
     # Populate DB
-    result = get_data_in_chroma(ticket_master_data, google_places_data)
+    result = get_data_in_chroma(ticket_master_data, google_places_data, location)
     
     return {"message": result}  # Return the result instead of pass
 
@@ -129,7 +129,7 @@ def get_ticket_master_events(start_time: str = None, end_time: str = None , loca
         print(response.text)
         return {"error": f"Status: {response.status_code}"}  # Fix: Add return statement
     
-def get_data_in_chroma(tm_data, google_data):
+def get_data_in_chroma(tm_data, google_data, location):
     vectorstore = connect_to_chroma()
     documents_to_add = []
     metadatas_to_add = []
@@ -137,6 +137,7 @@ def get_data_in_chroma(tm_data, google_data):
     
     # Parse Events
     events = tm_data.get('_embedded', {}).get('events', [])
+    print(events)
     for event in events:
         name = event.get('name', 'Unknown Event')
         venue = event.get('_embedded', {}).get('venues', [{}])[0].get('name', 'N/A')
@@ -154,7 +155,7 @@ Venue: {venue}
 Date: {date}
 Time: {time}
 Category: live event
-Location: Columbus, OH
+Location: {location}
 URL: {url}
 Description: {name} is a live event of type {genre} at {venue} on {date} at {time}."""
         documents_to_add.append(document)
@@ -173,6 +174,7 @@ Description: {name} is a live event of type {genre} at {venue} on {date} at {tim
     
     # Parse Places
     places = google_data.get('places', [])
+    print(places)
     for i, place in enumerate(places):
         name = place.get('displayName', {}).get('text', 'Unknown Place')
         category = place.get('primaryTypeDisplayName', {}).get('text', 'Unknown Category')
@@ -184,16 +186,16 @@ Description: {name} is a live event of type {genre} at {venue} on {date} at {tim
         document = f"""Place: {name}
 Type: {category}
 Category: local attraction
-Location: Columbus, OH
+Location: {location}
 Maps URL: {maps_url}
-Description: {name} is a {category} in Columbus, a popular local attraction and destination."""
+Description: {name} is a {category} in {location}, a popular local attraction and destination."""
         documents_to_add.append(document)
         
         metadata = {
             "type": "place",
             "name": name,
             "category": category,
-            "location": "Columbus, OH",
+            "location": location,
             "maps_url": maps_url
         }
         metadatas_to_add.append(metadata)
