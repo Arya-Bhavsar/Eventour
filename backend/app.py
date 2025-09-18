@@ -111,11 +111,7 @@ def get_ticket_master_events(start_time: str = None, end_time: str = None , loca
     # Fix: Parse location properly instead of hardcoding
     if location and "," in location:
         city, state = location.split(",")
-        city = city.strip()
         state = state.strip()
-    else:
-        city = "Columbus"
-        state = "OH"
     
     localStartEndDateTime = f'{start_time},{end_time}'
     params = {
