@@ -51,7 +51,7 @@ def answer(query: str):
 
         messages = prompt.invoke({"question": query, "context": docs_content})
         llm = init_chat_model(
-            "command-r-plus", 
+            "command-a-03-2025", 
             model_provider="cohere",
             api_key=os.getenv("COHERE_KEY")  # Add the API key here
         )
@@ -67,7 +67,7 @@ def connect_to_chroma():
     return Chroma(
         collection_name="my_docs",
         embedding_function=CohereEmbeddings(
-            cohere_api_key=os.getenv("COHERE_KEY"),
+            cohere_api_key=os.getenv("COHERE_API_KEY"),
             model="embed-english-v3.0"  # Add the required model parameter
         ),
         # Use your hosted ChromaDB credentials from .env
