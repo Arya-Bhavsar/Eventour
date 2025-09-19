@@ -14,6 +14,7 @@ import os
 import re
 import requests
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware  # Add this import
 from langchain_cohere import CohereEmbeddings, ChatCohere
 from langchain_chroma import Chroma
 from langchain import hub
@@ -22,6 +23,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # Allow your React app
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
+)
 
 
 
