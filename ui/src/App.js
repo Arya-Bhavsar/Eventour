@@ -7,7 +7,7 @@ import SearchBar from './components/SearchBar';
 function App() {
 
     useEffect(() => {
-    axios.post("/populate-db")
+    axios.post("http://127.0.0.1:8000/populate-db")
       .then(res => {
         console.log(`Inserted ${res.data.inserted} events`);
       })
