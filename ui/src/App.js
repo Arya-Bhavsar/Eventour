@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import DateLocationInput from './components/dateLocationInput';
+import React, { useEffect } from "react";
+import axios from "axios";
+import SearchBar from './components/SearchBar';
 
 function App() {
 
@@ -29,6 +32,7 @@ function App() {
         </a>
       </header>
       <DateLocationInput />
+      <SearchBar />
     </div>
   );
 }
