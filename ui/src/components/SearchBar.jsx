@@ -12,7 +12,7 @@ function SearchBar() {
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
       try {
-        const res = await axios.get(`http://127.0.0.1:8000/get-answer/${query}`);
+        const res = await axios.get(`http://localhost:8000/get-answer/${query}`);
         setAnswer(res.data.answer); 
       } catch (err) {
         console.error("API error:", err);
