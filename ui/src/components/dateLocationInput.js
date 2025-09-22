@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './dateLocationInput.css'
 
 export default function DateLocationInput() {
     // States for location, start date, end date
+    const navigate = useNavigate();
     const [location, setLocation] = useState('');
     const locationPattern = /^[A-Z][a-zA-Z ]*, [A-Z]{2}$/;
     const [startDate, setStartDate] = useState('');
@@ -34,6 +36,11 @@ export default function DateLocationInput() {
                     const data = await response.json();
                     console.log('API Response:', data);
                     setResult(data);
+
+                    // Navigate to SearchBar page after successful submission
+                    setTimeout(() => {
+                        navigate('/search');
+                    }, 2000);
                 } else {
                     console.error('API Error:', response.status);
                     setResult({ error: `HTTP ${response.status}` });
