@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import DateLocationInput from './components/dateLocationInput';
+import DateLocationInput from './components/DateLocationInput';
 import SearchBar from './components/SearchBar';
 
 
