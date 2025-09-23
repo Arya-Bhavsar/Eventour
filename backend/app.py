@@ -14,7 +14,10 @@ import os
 import re
 import requests
 from fastapi import FastAPI
+
 from langchain.prompts import PromptTemplate
+
+from fastapi.middleware.cors import CORSMiddleware
 from langchain_cohere import CohereEmbeddings, ChatCohere
 from langchain_chroma import Chroma
 from langchain import hub
@@ -24,6 +27,15 @@ from prompt import LIST_PROMPT
 
 load_dotenv()
 app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # Allow your React app
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
+)
 
 
 
@@ -35,7 +47,7 @@ def populate_db(start_time: str = None, end_time: str = None , location:str = No
     google_places_data = get_google_places_data(location)
     
     # Populate DB
-    result = get_data_in_chroma(ticket_master_data, google_places_data)
+    result = get_data_in_chroma(ticket_master_data, google_places_data, location)
     
     return {"message": result}  # Return the result instead of pass
 
@@ -45,7 +57,7 @@ def answer(query: str):
     try:
         # Retrieve context from Chroma DB 
         vectorstore = connect_to_chroma()
-        context = vectorstore.similarity_search(query)
+        context = vectorstore.similarity_search(query, k=15)
         
         # Call LLM with context
         prompt = PromptTemplate.from_template(LIST_PROMPT)
@@ -113,11 +125,7 @@ def get_ticket_master_events(start_time: str = None, end_time: str = None , loca
     # Fix: Parse location properly instead of hardcoding
     if location and "," in location:
         city, state = location.split(",")
-        city = city.strip()
         state = state.strip()
-    else:
-        city = "Columbus"
-        state = "OH"
     
     localStartEndDateTime = f'{start_time},{end_time}'
     params = {
@@ -135,7 +143,7 @@ def get_ticket_master_events(start_time: str = None, end_time: str = None , loca
         print(response.text)
         return {"error": f"Status: {response.status_code}"}  # Fix: Add return statement
     
-def get_data_in_chroma(tm_data, google_data):
+def get_data_in_chroma(tm_data, google_data, location):
     vectorstore = connect_to_chroma()
     documents_to_add = []
     metadatas_to_add = []
@@ -143,15 +151,27 @@ def get_data_in_chroma(tm_data, google_data):
     
     # Parse Events
     events = tm_data.get('_embedded', {}).get('events', [])
+    print(events)
     for event in events:
         name = event.get('name', 'Unknown Event')
         venue = event.get('_embedded', {}).get('venues', [{}])[0].get('name', 'N/A')
         date = event.get('dates', {}).get('start', {}).get('localDate', 'N/A')
+        time = event.get('dates', {}).get('start', {}).get('localTime', 'N/A')
         genre = event.get('classifications', [{}])[0].get('genre', {}).get('name', 'N/A')
+        url = event.get('url', 'N/A')
         
         print(f"- Parsing event: {name}")
         
-        document = f"{name} is a live event of type {genre} at {venue} on {date}."
+        # Include metadata in the document text for better searchability
+        document = f"""Event: {name}
+Type: {genre}
+Venue: {venue}
+Date: {date}
+Time: {time}
+Category: live event
+Location: {location}
+URL: {url}
+Description: {name} is a live event of type {genre} at {venue} on {date} at {time}."""
         documents_to_add.append(document)
         
         metadata = {
@@ -159,27 +179,38 @@ def get_data_in_chroma(tm_data, google_data):
             "name": name,
             "venue": venue,
             "date": date,
-            "genre": genre
+            "time": time,
+            "genre": genre,
+            "url": url
         }
         metadatas_to_add.append(metadata)
         ids_to_add.append(f"event_{event.get('id', f'unknown_{len(ids_to_add)}')}") 
     
     # Parse Places
     places = google_data.get('places', [])
+    print(places)
     for i, place in enumerate(places):
         name = place.get('displayName', {}).get('text', 'Unknown Place')
         category = place.get('primaryTypeDisplayName', {}).get('text', 'Unknown Category')
+        maps_url = place.get('googleMapsLinks', {}).get('placeUri', '')
 
         print(f"- Parsing place: {name}")
         
-        document = f"{name} is a {category} in Columbus, a popular local attraction."
+        # Include metadata in the document text for better searchability
+        document = f"""Place: {name}
+Type: {category}
+Category: local attraction
+Location: {location}
+Maps URL: {maps_url}
+Description: {name} is a {category} in {location}, a popular local attraction and destination."""
         documents_to_add.append(document)
         
         metadata = {
             "type": "place",
             "name": name,
             "category": category,
-            "maps_url": place.get('googleMapsLinks', {}).get('placeUri', '')
+            "location": location,
+            "maps_url": maps_url
         }
         metadatas_to_add.append(metadata)
 
@@ -202,7 +233,7 @@ def get_data_in_chroma(tm_data, google_data):
         return "No documents to add"
 
 # Add this endpoint to your app.py
-@app.get("/clear-db/")
+@app.post("/clear-db/")
 def clear_database():
     try:
         vectorstore = connect_to_chroma()

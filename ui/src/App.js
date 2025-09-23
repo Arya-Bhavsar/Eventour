@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import DateLocationInput from './components/DateLocationInput';
+import SearchBar from './components/SearchBar';
+
+
 
 function App() {
+  useEffect(() => {
+  const handleBeforeUnload = () => {
+    // More reliable for page unload - no CORS preflight needed
+    const data = JSON.stringify({ action: 'clear' });
+    navigator.sendBeacon('http://localhost:8000/clear-db/', data);
+  };
+
+  window.addEventListener('beforeunload', handleBeforeUnload);
+  return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+}, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<DateLocationInput />}/>
+          <Route path="/search" element={<SearchBar />}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
