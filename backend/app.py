@@ -229,7 +229,7 @@ Description: {name} is a {category} in {location}, a popular local attraction an
         return "No documents to add"
 
 # Add this endpoint to your app.py
-@app.get("/clear-db/")
+@app.post("/clear-db/")
 def clear_database():
     try:
         vectorstore = connect_to_chroma()
