@@ -19,7 +19,7 @@ function App() {
 }, []);
   return (
     <Router>
-      <div classname="App">
+      <div className="App">
         <Routes>
           <Route path="/" element={<DateLocationInput />}/>
           <Route path="/search" element={<SearchBar />}/>
