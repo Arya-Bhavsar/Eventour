@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './dateLocationInput.css'
+import './DateLocationInput.css'
 
 export default function DateLocationInput() {
     // States for location, start date, end date

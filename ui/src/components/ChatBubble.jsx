@@ -2,7 +2,7 @@ import React from "react";
 function ChatBubble(props){
     return (
         <div>
-            <p>Query: {props.query}</p>
+            <p>Prompt: {props.prompt}</p>
         </div>
     )
 }

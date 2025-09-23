@@ -6,6 +6,7 @@ import ResponseText from "./ResponseText";
 function SearchBar() {
   const [query, setQuery] = useState("");
   const [answer, setAnswer] = useState("");
+  const [prompt, setPrompt] = useState("");
 
   const handleChange = (e) => {
     setQuery(e.target.value);
@@ -14,8 +15,9 @@ function SearchBar() {
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
       try {
+        setPrompt(query);
         const res = await axios.get(`http://localhost:8000/get-answer/${query}`);
-        setAnswer(res.data.answer); 
+        setAnswer(res.data.answer);
       } catch (err) {
         console.error("API error:", err);
       }
@@ -37,7 +39,7 @@ function SearchBar() {
           width: "250px",
         }}
       />
-      <ChatBubble query={query}/>
+      <ChatBubble prompt={prompt}/>
       <ResponseText answer={answer}/>
     </div>
   );
