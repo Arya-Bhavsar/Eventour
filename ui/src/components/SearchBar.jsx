@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import ChatBubble from "./ChatBubble";
+import ResponseText from "./ResponseText";
 
 function SearchBar() {
   const [query, setQuery] = useState("");
@@ -35,9 +37,8 @@ function SearchBar() {
           width: "250px",
         }}
       />
-      <p>
-        {answer}
-      </p>
+      <ChatBubble query={query}/>
+      <ResponseText answer={answer}/>
     </div>
   );
 }
