@@ -39,6 +39,7 @@ function SearchBar() {
       />
       <ChatBubble query={query}/>
       <ResponseText answer={answer}/>
+      <p>Test</p>
     </div>
   );
 }
