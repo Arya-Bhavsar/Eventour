@@ -14,12 +14,16 @@ import os
 import re
 import requests
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware  # Add this import
+
+from langchain.prompts import PromptTemplate
+
+from fastapi.middleware.cors import CORSMiddleware
 from langchain_cohere import CohereEmbeddings, ChatCohere
 from langchain_chroma import Chroma
 from langchain import hub
 from langchain.chat_models import init_chat_model
 from dotenv import load_dotenv
+from prompt import LIST_PROMPT
 
 load_dotenv()
 app = FastAPI()
@@ -56,16 +60,16 @@ def answer(query: str):
         context = vectorstore.similarity_search(query, k=15)
         
         # Call LLM with context
-        prompt = hub.pull("rlm/rag-prompt")
+        prompt = PromptTemplate.from_template(LIST_PROMPT)
         docs_content = "\n\n".join(doc.page_content for doc in context)
 
-        messages = prompt.invoke({"question": query, "context": docs_content})
         llm = init_chat_model(
             "command-a-03-2025", 
             model_provider="cohere",
             api_key=os.getenv("COHERE_KEY")  # Add the API key here
         )
-        response = llm.invoke(messages)
+        chain = prompt | llm
+        response = chain.invoke({"user_preference": query, "event_context": docs_content})
 
         return {"answer": response.content}
     except Exception as e:
