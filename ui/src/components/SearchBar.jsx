@@ -15,8 +15,10 @@ function SearchBar() {
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
       try {
-        setPrompt(query);
-        const res = await axios.get(`http://localhost:8000/get-answer/${query}`);
+        const currentQuery = query;
+        setQuery(""); // Clears input field immediately
+        setPrompt(currentQuery);
+        const res = await axios.get(`http://localhost:8000/get-answer/${currentQuery}`);
         setAnswer(res.data.answer);
       } catch (err) {
         console.error("API error:", err);
