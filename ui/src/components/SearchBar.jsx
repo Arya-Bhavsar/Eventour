@@ -5,8 +5,7 @@ import ResponseText from "./ResponseText";
 
 function SearchBar() {
   const [query, setQuery] = useState("");
-  const [answer, setAnswer] = useState("");
-  const [prompt, setPrompt] = useState("");
+  const [messages, setMessages] = useState([]);
 
   const handleChange = (e) => {
     setQuery(e.target.value);
@@ -17,14 +16,29 @@ function SearchBar() {
       try {
         const currentQuery = query;
         setQuery(""); // Clears input field immediately
-        setPrompt(currentQuery);
+        setMessages([...messages, {prompt: currentQuery, answer: "Loading..."}]); // Adds new prompt to history with loading state
+        
         const res = await axios.get(`http://localhost:8000/get-answer/${currentQuery}`);
-        setAnswer(res.data.answer);
+        
+        // Updates the last message with the actual answer
+        setMessages((messages) => {
+          const updatedMessages = [...messages];
+          updatedMessages[updatedMessages.length - 1] = {prompt: currentQuery, answer: res.data.answer}; // Update the last message
+          return updatedMessages;
+        });
       } catch (err) {
         console.error("API error:", err);
       }
     }
   };
+
+  // Added the new query and answer to the message history
+  const messageElements = messages.map((msg, index) => (
+    <div key={index}>
+      <ChatBubble prompt={msg.prompt} />
+      <ResponseText answer={msg.answer} />
+    </div>
+  ));
 
   return (
     <div style={{ padding: "20px" }}>
@@ -44,10 +58,12 @@ function SearchBar() {
           position: "fixed",
           bottom: "30px",      
           left: "50%",         
-          transform: "translateX(-50%)", // 水平居中
+          transform: "translateX(-50%)", 
 
         }}
+    
       />
+      {messageElements}
     </div>
   );
 }
