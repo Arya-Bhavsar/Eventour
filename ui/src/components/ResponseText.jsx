@@ -4,7 +4,7 @@ import "./ResponseText.css";
 function ResponseText(props){
     return (
         <div className="response-text">
-            <div>Answer: {props.answer}</div>
+            <div>{props.answer}</div>
         </div>
     )
 }
