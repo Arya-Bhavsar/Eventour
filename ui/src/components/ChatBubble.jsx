@@ -1,8 +1,10 @@
 import React from "react";
+import "./ChatBubble.css";
+
 function ChatBubble(props){
     return (
-        <div>
-            <p>Prompt: {props.prompt}</p>
+        <div className="chat-bubble">
+            <div>Prompt: {props.prompt}</div>
         </div>
     )
 }

@@ -26,6 +26,8 @@ function SearchBar() {
 
   return (
     <div style={{ padding: "20px" }}>
+      <ChatBubble prompt={prompt}/>
+      <ResponseText answer={answer}/>
       <input
         type="text"
         value={query}
@@ -36,11 +38,14 @@ function SearchBar() {
           padding: "8px",
           borderRadius: "6px",
           border: "1px solid #ccc",
-          width: "250px",
+          width: "500px",
+          position: "fixed",
+          bottom: "30px",      
+          left: "50%",         
+          transform: "translateX(-50%)", // 水平居中
+
         }}
       />
-      <ChatBubble prompt={prompt}/>
-      <ResponseText answer={answer}/>
     </div>
   );
 }
