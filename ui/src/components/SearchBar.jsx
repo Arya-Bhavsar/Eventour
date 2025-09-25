@@ -42,8 +42,6 @@ function SearchBar() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <ChatBubble prompt={prompt}/>
-      <ResponseText answer={answer}/>
       <input
         type="text"
         value={query}
