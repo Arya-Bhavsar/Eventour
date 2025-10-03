@@ -57,7 +57,7 @@ function SearchBar() {
           bottom: "30px",      
           left: "50%",         
           transform: "translateX(-50%)", 
-
+          backgroundColor: "#f0f0f0", 
         }}
     
       />
