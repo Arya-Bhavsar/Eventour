@@ -22,8 +22,11 @@ from langchain_cohere import CohereEmbeddings, ChatCohere
 from langchain_chroma import Chroma
 from langchain import hub
 from langchain.chat_models import init_chat_model
+from langchain.output_parsers import PydanticOutputParser
+from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 from prompt import LIST_PROMPT
+from prompt import EventInfo, EventList
 
 load_dotenv()
 app = FastAPI()
@@ -60,18 +63,34 @@ def answer(query: str):
         context = vectorstore.similarity_search(query, k=15)
         
         # Call LLM with context
-        prompt = PromptTemplate.from_template(LIST_PROMPT)
+        #parser = PydanticOutputParser(pydantic_object=EventList)
+        prompt = PromptTemplate(template=LIST_PROMPT, 
+                                input_variables=["user_preference", "event_context"]
+                                )
+        
         docs_content = "\n\n".join(doc.page_content for doc in context)
 
-        llm = init_chat_model(
-            "command-a-03-2025", 
-            model_provider="cohere",
-            api_key=os.getenv("COHERE_KEY")  # Add the API key here
+        # llm = init_chat_model(
+        #     "command-a-03-2025", 
+        #     model_provider="cohere",
+        #     api_key=os.getenv("COHERE_KEY")  # Add the API key here
+        # )
+
+        llm = ChatGoogleGenerativeAI(
+            model="gemini-2.5-flash",               # good price/perf & on free tier
+            api_key=os.getenv("GOOGLE_API_KEY"),
+            temperature=0.2,
+            max_output_tokens=2048,
         )
-        chain = prompt | llm
+
+        structured_llm = llm.with_structured_output(EventList)
+
+        chain = prompt | structured_llm 
         response = chain.invoke({"user_preference": query, "event_context": docs_content})
 
-        return {"answer": response.content}
+        event_list_of_dicts = [event.model_dump() for event in response.events]
+        
+        return {"answer": event_list_of_dicts}
     except Exception as e:
         return {"error": f"Failed to get answer: {str(e)}"}
     
