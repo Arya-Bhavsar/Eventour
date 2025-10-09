@@ -1,9 +1,10 @@
 import React from "react";
 import "./ResponseText.css";
+import LoadingDots from "./LoadingDots";
 
 function ResponseText(props) {
     if (!props.answer) return null;
-    if (props.answer === "Loading...") return <div className="response-text"><div>{props.answer}</div></div>; // Display loading state
+    if (props.answer.type === LoadingDots) return <div className="response-text"><div>{props.answer}</div></div>; // Display loading state
 
     // Split the answer into events by numbered list pattern
     const items = props.answer.split(/\d+\.\s+/).filter(item => item.trim() !== '');
