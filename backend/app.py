@@ -9,6 +9,7 @@
 
 
 
+from multiprocessing import context
 from typing import Union
 import os
 import re
@@ -23,7 +24,7 @@ from langchain_chroma import Chroma
 from langchain import hub
 from langchain.chat_models import init_chat_model
 from dotenv import load_dotenv
-from prompt import LIST_PROMPT
+from prompt import LIST_PROMPT, SUMMARIZE_CONTEXT_PROMPT
 
 load_dotenv()
 app = FastAPI()
@@ -37,7 +38,29 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
-
+@app.get("/condense-context/{context}")
+def condense_context(context: str = None):
+    try:
+        llm = init_chat_model(
+            "command-a-03-2025", 
+            model_provider="cohere",
+            api_key=os.getenv("COHERE_KEY")
+        )
+        
+        # Create the prompt template
+        prompt = PromptTemplate.from_template(SUMMARIZE_CONTEXT_PROMPT)
+        
+        # Create the chain
+        chain = prompt | llm
+        
+        # Invoke with the context parameter (not concatenation)
+        response = chain.invoke({"context": context})  # Pass context as parameter
+        
+        return {"condensed_context": response.content}
+        
+    except Exception as e:
+        return {"error": f"Failed to condense context: {str(e)}"}
+    
 
 #Function To Populate Vector Database
 @app.get("/populate-db/")
