@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
+import LoadingDots from "./LoadingDots";
 
 function SearchBar() {
   const [query, setQuery] = useState("");
@@ -16,7 +17,7 @@ function SearchBar() {
       try {
         const currentQuery = query;
         setQuery(""); // Clears input field immediately
-        setMessages([...messages, {prompt: currentQuery, answer: "Loading..."}]); // Adds new prompt to history with loading state
+        setMessages([...messages, {prompt: currentQuery, answer: <LoadingDots />}]); // Adds new prompt to history with loading state
         
         const res = await axios.get(`http://localhost:8000/get-answer/${currentQuery}`);
         
