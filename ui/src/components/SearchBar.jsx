@@ -54,9 +54,8 @@ function SearchBar() {
 
   return (
     <div className="search-page">
-      <div className="chat-list">{messageElements}</div>
+      {messageElements}
 
-      {/* 底部固定的搜索条 */}
       <div className="page-footer">
         <input
           className="search-input"
