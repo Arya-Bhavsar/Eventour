@@ -3,6 +3,7 @@ import axios from "axios";
 import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
 import LoadingDots from "./LoadingDots";
+import "./SearchBar.css";
 
 var chat_history = "User: \""
 
@@ -52,29 +53,26 @@ function SearchBar() {
   ));
 
   return (
-    <div style={{ padding: "20px" }}>
-      <input
-        type="text"
-        value={query}
-        onChange={handleChange}
-        onKeyDown={handleKeyDown}
-        placeholder="Search..."
-        style={{
-          padding: "8px",
-          borderRadius: "6px",
-          border: "1px solid #ccc",
-          width: "500px",
-          position: "fixed",
-          bottom: "30px",      
-          left: "50%",         
-          transform: "translateX(-50%)", 
-          backgroundColor: "#f0f0f0", 
-        }}
-    
-      />
-      {messageElements}
+    <div className="search-page">
+      <div className="chat-list">{messageElements}</div>
+
+      {/* 底部固定的搜索条 */}
+      <div className="page-footer">
+        <input
+          className="search-input"
+          type="text"
+          value={query}
+          onChange={handleChange}
+          onKeyDown={handleKeyDown}
+          placeholder="Search..."
+        />
+      </div>
+
+      <div className="footer-guard" aria-hidden="true" />
     </div>
   );
+
+
 }
 
 export default SearchBar;
