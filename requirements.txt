@@ -6,3 +6,6 @@ langchain-core
 langchain-chroma
 langchain-cohere
 cohere
+langchain_google_genai
+typing
+pydantic
