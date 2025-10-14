@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DateLocationInput.css'
 import Datepicker from "react-tailwindcss-datepicker";
+import CityAutocomplete from "./CityAutocomplete";
 
 export default function DateLocationInput() {
     // States for location, start date, end date
@@ -13,13 +14,6 @@ export default function DateLocationInput() {
     });
     const [loading, setLoading] = useState(false);  // Add loading state
     const [result, setResult] = useState(null);     // Add result state
-
-    const usCities = [
-        "Cincinnati, OH",
-        "Cleveland, OH",
-        "Columbus, OH",
-        "Dayton, OH",
-    ];
 
     const handleDateChange = (newValue) => {
         setDateValue(newValue);
@@ -81,18 +75,12 @@ export default function DateLocationInput() {
             {/* Location Dropdown */}
             <label>
                 Location:
-                <select
+                <CityAutocomplete
                     value={location}
-                    onChange={(e) => setLocation(e.target.value)}
-                    required
-                >
-                    <option value="">Select a city</option>
-                    {usCities.map((city) => (
-                    <option key={city} value={city}>
-                        {city}
-                    </option>
-                    ))}
-                </select>
+                    onSelect={(val, meta) => {
+                    setLocation(val); // e.g. "Columbus, OH"
+                    }}
+                />
             </label>
 
             {/* Date Range Picker */}
