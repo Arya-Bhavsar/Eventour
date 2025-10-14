@@ -1,3 +1,16 @@
+from pydantic import BaseModel, Field
+from typing import List
+
+class EventInfo(BaseModel):
+    name: str = Field(description="The event's name")
+    description: str = Field(description="A description of the event in as much detail as possible")
+    link: str = Field(description="A link for the event, if applicable.")
+
+class EventList(BaseModel):
+    """A list of events and attractions."""
+    events: List[EventInfo]
+      
+
 LIST_PROMPT = """You are an expert travel concierge specializing in personalized event recommendations.
 
 **YOUR TASK:**
