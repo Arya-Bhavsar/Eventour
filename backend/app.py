@@ -87,7 +87,7 @@ def answer(query: str):
 
         chain = prompt | structured_llm 
         response = chain.invoke({"user_preference": query, "event_context": docs_content})
-
+        print(response)
         event_list_of_dicts = [event.model_dump() for event in response.events]
         
         return {"answer": event_list_of_dicts}
