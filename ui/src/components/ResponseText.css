@@ -28,3 +28,8 @@
     opacity: 1;
   }
 }
+
+.more-link {
+  color: #2563eb;
+  text-decoration: underline;
+}
