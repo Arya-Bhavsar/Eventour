@@ -112,6 +112,8 @@ def answer(query: str):
         chain = prompt | structured_llm 
         response = chain.invoke({"user_preference": query, "event_context": docs_content})
         print(response)
+        if response is None:
+            return {"answer": None}
         event_list_of_dicts = [event.model_dump() for event in response.events]
         
         return {"answer": event_list_of_dicts}
@@ -201,6 +203,7 @@ def get_data_in_chroma(tm_data, google_data, location):
         date = event.get('dates', {}).get('start', {}).get('localDate', 'N/A')
         time = event.get('dates', {}).get('start', {}).get('localTime', 'N/A')
         genre = event.get('classifications', [{}])[0].get('genre', {}).get('name', 'N/A')
+        description = event.get('description', 'N/A')
         url = event.get('url', 'N/A')
         
         print(f"- Parsing event: {name}")
@@ -214,7 +217,7 @@ Time: {time}
 Category: live event
 Location: {location}
 URL: {url}
-Description: {name} is a live event of type {genre} at {venue} on {date} at {time}."""
+Description: {description}."""
         documents_to_add.append(document)
         
         metadata = {
