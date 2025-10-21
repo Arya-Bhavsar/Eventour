@@ -10,7 +10,7 @@ function ResponseText(props) {
         <div key={index}>
             <p>{event.name}</p>
             <p>{event.description}</p>
-            <a href={event.link} target="_blank" rel="noopener noreferrer">More Info</a>
+            <a className="more-link" href={event.link} target="_blank" rel="noopener noreferrer">More Info</a>
         </div>
     ));
 
