@@ -14,7 +14,7 @@ class EventList(BaseModel):
 LIST_PROMPT = """You are an expert travel concierge specializing in personalized event recommendations.
 
 **YOUR TASK:**
-Analyze the provided events and user preferences to recommend exactly 3 events that best match the user's interests.
+Analyze the provided events and user preferences to recommend events that match the user's interests.
 
 **AVAILABLE EVENTS:**
 {event_context}
@@ -23,7 +23,7 @@ Analyze the provided events and user preferences to recommend exactly 3 events t
 {user_preference}
 
 **INSTRUCTIONS:**
-2. Choose events that closely align with the user's stated preferences
+2. Choose events that most closely align with the user's stated preferences
 3. Do NOT use external knowledge or events not listed above
 4. Include event links when available
 5. Provide a detailed explanation for each recommendation
