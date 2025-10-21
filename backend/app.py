@@ -147,7 +147,7 @@ def get_google_places_data(location: str = None):
     headers = {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": os.getenv("GOOGLE_MAPS_KEY"),  # replace with your actual key
-        "X-Goog-FieldMask": "places.displayName,places.primaryTypeDisplayName,places.googleMapsLinks"
+        "X-Goog-FieldMask": "places.displayName,places.primaryTypeDisplayName,places.googleMapsLinks,places.editorialSummary"
     }
 
     payload = {
@@ -239,6 +239,7 @@ Description: {description}."""
         name = place.get('displayName', {}).get('text', 'Unknown Place')
         category = place.get('primaryTypeDisplayName', {}).get('text', 'Unknown Category')
         maps_url = place.get('googleMapsLinks', {}).get('placeUri', '')
+        description = place.get('editorialSummary', {}).get('text', 'No Description')
 
         print(f"- Parsing place: {name}")
         
@@ -248,7 +249,7 @@ Type: {category}
 Category: local attraction
 Location: {location}
 Maps URL: {maps_url}
-Description: {name} is a {category} in {location}, a popular local attraction and destination."""
+Description: {description}"""
         documents_to_add.append(document)
         
         metadata = {
