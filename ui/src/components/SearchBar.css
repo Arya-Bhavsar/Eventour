@@ -121,7 +121,7 @@ html, body, #root {
 
 /* . Minimal print icon pinned at bottom-left. */
 .lp-print{
-  position: absolute;
+  position: fixed;
   left: 12px;
   bottom: 12px;
   width: 32px;
