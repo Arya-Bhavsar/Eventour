@@ -1,13 +1,58 @@
 html, body, #root {
   height: 100%;
+  margin: 0;
 }
 
 .search-page {
-  min-height: 100vh;
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+  color: #111;
+  overflow: hidden;
+}
+
+/* Response Text Table (on left) */
+.left-panel {
+  width: 70%;
+  background: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.left-panel table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.left-panel th,
+.left-panel td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.left-panel th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+/* User Prompts (on right) */
+.right-panel {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
   padding: 20px;
-  padding-bottom: 96px; 
+  overflow: hidden;
+}
+
+/* Scrollable message area */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 120px;
 }
 
 .page-footer {
@@ -45,4 +90,30 @@ html, body, #root {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   z-index: 990;
+}
+
+/* Scrollable styling */
+.left-panel::-webkit-scrollbar,
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.left-panel::-webkit-scrollbar-thumb,
+.chat-messages::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 4px;
+}
+
+/* Draggable divider between panels */
+.resizer {
+  width: 6px;
+  background: #ccc;
+  cursor: col-resize;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+}
+
+.resizer:hover {
+  background: #aaa;
 }

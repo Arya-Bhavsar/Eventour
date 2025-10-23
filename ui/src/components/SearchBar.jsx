@@ -48,30 +48,70 @@ function SearchBar() {
   const messageElements = messages.map((msg, index) => (
     <div key={index}>
       <ChatBubble prompt={msg.prompt} />
-      <ResponseText answer={msg.answer} />
     </div>
   ));
 
+  const table = messages.length > 0 ? messages[messages.length - 1].answer : null;
+  console.log(table)
+
+  // Resizing logic
+  React.useEffect(() => {
+    const resizer = document.querySelector(".resizer");
+    const leftPanel = document.querySelector(".left-panel");
+    const container = document.querySelector(".search-page");
+
+    let isResizing = false;
+
+    resizer.addEventListener("mousedown", (e) => {
+      isResizing = true;
+      document.body.style.cursor = "col-resize";
+    });
+
+    document.addEventListener("mousemove", (e) => {
+      if (!isResizing) return;
+      const newLeftWidth = ((e.clientX - container.offsetLeft) / container.clientWidth) * 100;
+      if (newLeftWidth > 20 && newLeftWidth < 80) { // keep it reasonable
+        leftPanel.style.width = `${newLeftWidth}%`;
+      }
+    });
+
+    document.addEventListener("mouseup", () => {
+      if (isResizing) {
+        isResizing = false;
+        document.body.style.cursor = "default";
+      }
+    });
+
+    return () => {
+      document.body.style.cursor = "default";
+    };
+  }, []);
+
   return (
     <div className="search-page">
-      {messageElements}
-
-      <div className="page-footer">
-        <input
-          className="search-input"
-          type="text"
-          value={query}
-          onChange={handleChange}
-          onKeyDown={handleKeyDown}
-          placeholder="Search..."
-        />
+      <div className="left-panel">
+        <ResponseText answer={table} />
       </div>
 
-      <div className="footer-guard" aria-hidden="true" />
+      <div className="resizer" />
+
+      <div className="right-panel">
+        <div className="chat-messages">{messageElements}</div>    
+
+        <div className="page-footer">
+          <input
+            className="search-input"
+            type="text"
+            value={query}
+            onChange={handleChange}
+            onKeyDown={handleKeyDown}
+            placeholder="Search..."
+          />
+        </div>
+        <div className="footer-guard" aria-hidden="true" />
+      </div>
     </div>
   );
-
-
 }
 
 export default SearchBar;
