@@ -91,6 +91,7 @@ function SearchBar() {
     <div className="search-page">
       <div className="left-panel">
         <ResponseText answer={table} />
+        <div className="lp-print" aria-hidden="true">🖨️</div>
       </div>
 
       <div className="resizer" />
@@ -108,7 +109,6 @@ function SearchBar() {
             placeholder="Search..."
           />
         </div>
-        <div className="footer-guard" aria-hidden="true" />
       </div>
     </div>
   );

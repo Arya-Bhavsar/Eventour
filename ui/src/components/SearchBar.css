@@ -11,15 +11,24 @@ html, body, #root {
   overflow: hidden;
 }
 
-/* Response Text Table (on left) */
+
+/* Remove typical app-level wrappers that constrain width/center content. */
+#root, .App, .page, .page-content, .container, main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 .left-panel {
-  width: 70%;
+  width: 33.33%;
+  min-width: 20%;
+  max-width: 60%;
   background: #ffffff;
   border-right: 1px solid #e0e0e0;
-  padding: 20px;
-  overflow-y: auto;
-  position: sticky;
-  top: 0;
+  padding: 16px 20px;
+  overflow: auto;     
+  position: relative;     
 }
 
 .left-panel table {
@@ -30,41 +39,45 @@ html, body, #root {
 .left-panel th,
 .left-panel td {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
 }
 
 .left-panel th {
-  background: #f0f0f0;
-  font-weight: bold;
+  background: #f7f7f7;
+  font-weight: 600;
 }
 
-/* User Prompts (on right) */
+/* Right pane: column layout; scrolling handled by .chat-messages */
 .right-panel {
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 20px;
-  overflow: hidden;
+  padding: 16px 20px 0 20px;
+  overflow: hidden;         /* Prevent overflow from the right pane */
 }
 
-/* Scrollable message area */
+/* Chat history scroll; bottom padding reserved for input bar */
 .chat-messages {
-  flex: 1;
-  overflow-y: auto;
-  padding-bottom: 120px;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding-bottom: 140px;    
 }
 
+/* Search bar only on the right: sticky inside .right-panel */
 .page-footer {
-  position: fixed;
-  bottom: 32px; 
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(65vw, 750px);
-  background: rgba(255, 255, 255, 0.95);
+  position: sticky;
+  bottom: 16px;
+  align-self: center;
+  width: min(92%, 720px);
+  background: rgba(255, 255, 255, 0.96);
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  z-index: 1000;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  z-index: 5;
+  backdrop-filter: saturate(180%) blur(4px);
 }
 
 .search-input {
@@ -72,48 +85,55 @@ html, body, #root {
   width: 100%;
   border-radius: 10px;
   border: 1px solid #d1d5db;
-  padding: 0 15px;
-  background: #f0f0f0;
+  padding: 0 14px;
+  background: #f6f7f8;
   outline: none;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
   display: block;
 }
 
-.footer-guard {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(65vw, 750px);
-  height: 32px;
-  background: #ffffff;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  z-index: 990;
+.search-input:focus {
+  border-color: #94a3b8;
+  box-shadow: 0 0 0 2px rgba(148,163,184,0.25);
 }
 
-/* Scrollable styling */
+
+/* Scrollbar styling */
 .left-panel::-webkit-scrollbar,
 .chat-messages::-webkit-scrollbar {
-  width: 8px;
+  width: 3px;
 }
-
 .left-panel::-webkit-scrollbar-thumb,
 .chat-messages::-webkit-scrollbar-thumb {
-  background: #bbb;
+  background: #c7c7c7;
   border-radius: 4px;
 }
 
 /* Draggable divider between panels */
 .resizer {
-  width: 6px;
-  background: #ccc;
+  width: 3px;
+  background: #d7d7d7;
   cursor: col-resize;
-  height: 100vh;
-  position: relative;
-  z-index: 10;
+  height: 100%;
+  flex: 0 0 auto;
 }
+.resizer:hover { background: #bdbdbd; }
 
-.resizer:hover {
-  background: #aaa;
+
+/* . Minimal print icon pinned at bottom-left. */
+.lp-print{
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #fff;
+  color: #374151;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  pointer-events: none; 
+  font-size: 18px;    
+  line-height: 1;
 }
