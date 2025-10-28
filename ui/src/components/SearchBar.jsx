@@ -34,6 +34,9 @@ function SearchBar() {
       const currentQuery = query; // Fix: use query, not chat_history
       setQuery("");
       setMessages([...messages, {prompt: currentQuery, answer: <LoadingDots />}]);
+
+      // Reset selected table to be null when a new query is made
+      setSelectedTable(null);
       
       const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
       
