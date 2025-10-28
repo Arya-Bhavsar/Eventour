@@ -1,9 +1,9 @@
 import React from "react";
 import "./ChatBubble.css";
 
-function ChatBubble(props){
+function ChatBubble(props) {
     return (
-        <div className="chat-bubble">
+        <div className="chat-bubble" onClick={props.onChatBubbleClick}>
             <div>{props.prompt}</div>
         </div>
     )

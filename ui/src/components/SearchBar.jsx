@@ -10,6 +10,7 @@ var chat_history = "User: \""
 function SearchBar() {
   const [query, setQuery] = useState("");
   const [messages, setMessages] = useState([]);
+  const [selectedTable, setSelectedTable] = useState(null);
 
   const handleChange = (e) => {
     setQuery(e.target.value);
@@ -44,15 +45,19 @@ function SearchBar() {
     }
   };
 
+  // New function to handle ChatBubble click to display events related to that prompt
+  const handleChatBubbleClick = (answer) => {
+    setSelectedTable(answer);
+  }
+
   // Added the new query and answer to the message history
   const messageElements = messages.map((msg, index) => (
     <div key={index}>
-      <ChatBubble prompt={msg.prompt} />
+      <ChatBubble prompt={msg.prompt} onChatBubbleClick={() => handleChatBubbleClick(msg.answer)} />
     </div>
   ));
 
   const table = messages.length > 0 ? messages[messages.length - 1].answer : null;
-  console.log(table)
 
   // Resizing logic
   React.useEffect(() => {
@@ -90,7 +95,7 @@ function SearchBar() {
   return (
     <div className="search-page">
       <div className="left-panel">
-        <ResponseText answer={table} />
+        <ResponseText answer={selectedTable ? selectedTable : table} />
         <div className="lp-print" aria-hidden="true">🖨️</div>
       </div>
 
