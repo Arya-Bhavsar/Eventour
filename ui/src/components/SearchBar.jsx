@@ -5,6 +5,8 @@ import ResponseText from "./ResponseText";
 import LoadingDots from "./LoadingDots";
 import "./SearchBar.css";
 import { isNaughtyString } from "../utils/validation";
+import jsPDF from "jspdf";
+import autoTable from "jspdf-autotable";
 
 var chat_history = "User: \""
 
@@ -95,13 +97,22 @@ function SearchBar() {
     };
   }, []);
 
+const handleDownload = () => {
+  const doc = new jsPDF();
+  const table = document.getElementById("my-table");
+  if (!table) return;
+
+
+  autoTable(doc, { html: table }); // pass doc explicitly
+  doc.save("table.pdf");
+};
 
 
   return (
     <div className="search-page">
       <div className="left-panel">
         <ResponseText answer={table} />
-        <div className="lp-print" aria-hidden="true">🖨️</div>
+        <button className="lp-print" aria-hidden="true" onClick={handleDownload}>⬇️</button>
       </div>
 
       <div className="resizer" />
