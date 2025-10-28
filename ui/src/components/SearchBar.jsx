@@ -4,9 +4,13 @@ import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
 import LoadingDots from "./LoadingDots";
 import "./SearchBar.css";
+<<<<<<< HEAD
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 
+=======
+import { isNaughtyString } from "../utils/validation";
+>>>>>>> 9dbd060c5be8c78b16f2476e134fc980fcd1610f
 
 var chat_history = "User: \""
 
@@ -19,7 +23,7 @@ function SearchBar() {
   };
 
   const handleKeyDown = async (e) => {
-    if (e.key === "Enter" && query.trim() !== "") {
+  if (e.key === "Enter" && query.trim() !== "") {
     
     // Add naughty string validation here
     if (isNaughtyString(query)) {
@@ -28,31 +32,31 @@ function SearchBar() {
       return; // Stop execution
     }
     
-      try {
-        chat_history += query + "\"\nAssistant: \"";
+    try {
+      chat_history += query + "\"\nAssistant: \"";
       const currentQuery = query; // Fix: use query, not chat_history
-        setQuery("");
+      setQuery("");
       setMessages([...messages, {prompt: currentQuery, answer: <LoadingDots />}]);
-        
+      
       const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
-        
-        setMessages((messages) => {
-          const updatedMessages = [...messages];
+      
+      setMessages((messages) => {
+        const updatedMessages = [...messages];
         updatedMessages[updatedMessages.length - 1] = {prompt: currentQuery, answer: res.data.answer};
-          
-          chat_history += res.data.answer + "\"\nUser: \"";
-          if (chat_history.length > 15000){
+        
+        chat_history += res.data.answer + "\"\nUser: \"";
+        if (chat_history.length > 15000){
           const response = axios.get(`http://localhost:8000/condense-context/${encodeURIComponent(chat_history)}`);
-            chat_history = response.data.condensed_context + "\"\nUser: \"";
-          }
-          
-          return updatedMessages;
-        });
-      } catch (err) {
-        console.error("API error:", err);
-      }
+          chat_history = response.data.condensed_context + "\"\nUser: \"";
+        }
+        
+        return updatedMessages;
+      });
+    } catch (err) {
+      console.error("API error:", err);
     }
-  };
+  }
+};
 
   // Added the new query and answer to the message history
   const messageElements = messages.map((msg, index) => (
