@@ -4,13 +4,7 @@ import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
 import LoadingDots from "./LoadingDots";
 import "./SearchBar.css";
-<<<<<<< HEAD
-import jsPDF from "jspdf";
-import autoTable from "jspdf-autotable";
-
-=======
 import { isNaughtyString } from "../utils/validation";
->>>>>>> 9dbd060c5be8c78b16f2476e134fc980fcd1610f
 
 var chat_history = "User: \""
 
