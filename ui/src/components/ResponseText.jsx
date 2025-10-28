@@ -7,7 +7,7 @@ function ResponseText(props) {
     if (React.isValidElement(props.answer) && props.answer.type === LoadingDots) return <div className="response-text"><div>{props.answer}</div></div>; // Display loading state
 
     const events = 
-        <table>
+        <table id="my-table">
             <thead>
                 <tr>
                     <th>Name</th>

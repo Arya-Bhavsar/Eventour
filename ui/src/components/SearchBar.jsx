@@ -4,6 +4,9 @@ import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
 import LoadingDots from "./LoadingDots";
 import "./SearchBar.css";
+import { isNaughtyString } from "../utils/validation";
+import jsPDF from "jspdf";
+import autoTable from "jspdf-autotable";
 
 var chat_history = "User: \""
 
@@ -17,33 +20,40 @@ function SearchBar() {
   };
 
   const handleKeyDown = async (e) => {
-    if (e.key === "Enter" && query.trim() !== "") {
-      try {
-        chat_history += query + "\"\nAssistant: \"";
-        const currentQuery = chat_history; // Changed: use query, not chat_history
-        setQuery("");
-        setMessages([...messages, {prompt: query, answer: <LoadingDots />}]);
-        
-        const res = await axios.get(`http://localhost:8000/get-answer/${currentQuery}`);
-        
-        setMessages((messages) => {
-          const updatedMessages = [...messages];
-          updatedMessages[updatedMessages.length - 1] = {prompt: query, answer: res.data.answer};
-          
-          // Fix the syntax error and check length
-          chat_history += res.data.answer + "\"\nUser: \"";
-          if (chat_history.length > 15000){
-            const response = axios.get(`http://localhost:8000/condense-context/${chat_history}`)
-            chat_history = response.data.condensed_context + "\"\nUser: \"";
-          }
-          
-          return updatedMessages;
-        });
-      } catch (err) {
-        console.error("API error:", err);
-      }
+  if (e.key === "Enter" && query.trim() !== "") {
+    
+    // Add naughty string validation here
+    if (isNaughtyString(query)) {
+      alert("⚠️ Invalid input detected. Please check your query.");
+      setQuery(""); // Clear the input
+      return; // Stop execution
     }
-  };
+    
+    try {
+      chat_history += query + "\"\nAssistant: \"";
+      const currentQuery = query; // Fix: use query, not chat_history
+      setQuery("");
+      setMessages([...messages, {prompt: currentQuery, answer: <LoadingDots />}]);
+      
+      const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
+      
+      setMessages((messages) => {
+        const updatedMessages = [...messages];
+        updatedMessages[updatedMessages.length - 1] = {prompt: currentQuery, answer: res.data.answer};
+        
+        chat_history += res.data.answer + "\"\nUser: \"";
+        if (chat_history.length > 15000){
+          const response = axios.get(`http://localhost:8000/condense-context/${encodeURIComponent(chat_history)}`);
+          chat_history = response.data.condensed_context + "\"\nUser: \"";
+        }
+        
+        return updatedMessages;
+      });
+    } catch (err) {
+      console.error("API error:", err);
+    }
+  }
+};
 
   // New function to handle ChatBubble click to display events related to that prompt
   const handleChatBubbleClick = (answer) => {
@@ -92,11 +102,22 @@ function SearchBar() {
     };
   }, []);
 
+const handleDownload = () => {
+  const doc = new jsPDF();
+  const table = document.getElementById("my-table");
+  if (!table) return;
+
+
+  autoTable(doc, { html: table }); // pass doc explicitly
+  doc.save("table.pdf");
+};
+
+
   return (
     <div className="search-page">
       <div className="left-panel">
         <ResponseText answer={selectedTable ? selectedTable : table} />
-        <div className="lp-print" aria-hidden="true">🖨️</div>
+        <button className="lp-print" aria-hidden="true" onClick={handleDownload}>⬇️</button>
       </div>
 
       <div className="resizer" />
