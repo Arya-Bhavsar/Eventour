@@ -112,6 +112,8 @@ def answer(query: str):
         chain = prompt | structured_llm 
         response = chain.invoke({"user_preference": query, "event_context": docs_content})
         print(response)
+        if response is None:
+            return {"answer": None}
         event_list_of_dicts = [event.model_dump() for event in response.events]
         
         return {"answer": event_list_of_dicts}
@@ -145,7 +147,7 @@ def get_google_places_data(location: str = None):
     headers = {
         "Content-Type": "application/json",
         "X-Goog-Api-Key": os.getenv("GOOGLE_MAPS_KEY"),  # replace with your actual key
-        "X-Goog-FieldMask": "places.displayName,places.primaryTypeDisplayName,places.googleMapsLinks"
+        "X-Goog-FieldMask": "places.displayName,places.primaryTypeDisplayName,places.googleMapsLinks,places.editorialSummary"
     }
 
     payload = {
@@ -201,6 +203,7 @@ def get_data_in_chroma(tm_data, google_data, location):
         date = event.get('dates', {}).get('start', {}).get('localDate', 'N/A')
         time = event.get('dates', {}).get('start', {}).get('localTime', 'N/A')
         genre = event.get('classifications', [{}])[0].get('genre', {}).get('name', 'N/A')
+        description = event.get('description', 'N/A')
         url = event.get('url', 'N/A')
         
         print(f"- Parsing event: {name}")
@@ -214,7 +217,7 @@ Time: {time}
 Category: live event
 Location: {location}
 URL: {url}
-Description: {name} is a live event of type {genre} at {venue} on {date} at {time}."""
+Description: {description}."""
         documents_to_add.append(document)
         
         metadata = {
@@ -236,6 +239,7 @@ Description: {name} is a live event of type {genre} at {venue} on {date} at {tim
         name = place.get('displayName', {}).get('text', 'Unknown Place')
         category = place.get('primaryTypeDisplayName', {}).get('text', 'Unknown Category')
         maps_url = place.get('googleMapsLinks', {}).get('placeUri', '')
+        description = place.get('editorialSummary', {}).get('text', 'No Description')
 
         print(f"- Parsing place: {name}")
         
@@ -245,7 +249,7 @@ Type: {category}
 Category: local attraction
 Location: {location}
 Maps URL: {maps_url}
-Description: {name} is a {category} in {location}, a popular local attraction and destination."""
+Description: {description}"""
         documents_to_add.append(document)
         
         metadata = {

@@ -20,22 +20,29 @@ function SearchBar() {
 
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
+    
+    // Add naughty string validation here
+    if (isNaughtyString(query)) {
+      alert("⚠️ Invalid input detected. Please check your query.");
+      setQuery(""); // Clear the input
+      return; // Stop execution
+    }
+    
       try {
         chat_history += query + "\"\nAssistant: \"";
-        const currentQuery = chat_history; // Changed: use query, not chat_history
+      const currentQuery = query; // Fix: use query, not chat_history
         setQuery("");
-        setMessages([...messages, {prompt: query, answer: <LoadingDots />}]);
+      setMessages([...messages, {prompt: currentQuery, answer: <LoadingDots />}]);
         
-        const res = await axios.get(`http://localhost:8000/get-answer/${currentQuery}`);
+      const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
         
         setMessages((messages) => {
           const updatedMessages = [...messages];
-          updatedMessages[updatedMessages.length - 1] = {prompt: query, answer: res.data.answer};
+        updatedMessages[updatedMessages.length - 1] = {prompt: currentQuery, answer: res.data.answer};
           
-          // Fix the syntax error and check length
           chat_history += res.data.answer + "\"\nUser: \"";
           if (chat_history.length > 15000){
-            const response = axios.get(`http://localhost:8000/condense-context/${chat_history}`)
+          const response = axios.get(`http://localhost:8000/condense-context/${encodeURIComponent(chat_history)}`);
             chat_history = response.data.condensed_context + "\"\nUser: \"";
           }
           
