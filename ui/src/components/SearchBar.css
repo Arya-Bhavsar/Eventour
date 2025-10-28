@@ -133,7 +133,7 @@ html, body, #root {
   place-items: center;
   border: 1px solid #e5e7eb;
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-  pointer-events: none; 
+  pointer-events: auto; 
   font-size: 18px;    
   line-height: 1;
 }

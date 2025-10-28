@@ -4,6 +4,9 @@ import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
 import LoadingDots from "./LoadingDots";
 import "./SearchBar.css";
+import jsPDF from "jspdf";
+import autoTable from "jspdf-autotable";
+
 
 var chat_history = "User: \""
 
@@ -86,6 +89,8 @@ function SearchBar() {
       document.body.style.cursor = "default";
     };
   }, []);
+
+
 
   return (
     <div className="search-page">
