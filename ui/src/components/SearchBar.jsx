@@ -3,6 +3,7 @@ import axios from "axios";
 import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
 import LoadingDots from "./LoadingDots";
+import AttendanceButton from "./AttendanceButton";
 import "./SearchBar.css";
 import { isNaughtyString } from "../utils/validation";
 import jsPDF from "jspdf";
@@ -138,6 +139,8 @@ const handleDownload = () => {
             placeholder="Search..."
           />
         </div>
+        
+        <AttendanceButton />
         <div className="tips">Click chat bouble to see the previous list</div>
       </div>
     </div>
