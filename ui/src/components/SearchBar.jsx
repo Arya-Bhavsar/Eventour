@@ -160,7 +160,7 @@ const handleDownload = () => {
         </div>
         
         <AttendanceButton />
-        <div className="tips">Click chat bouble to see the previous list</div>
+        <div className="tips">Click chat bubble to see the previous list</div>
       </div>
     </div>
   );
