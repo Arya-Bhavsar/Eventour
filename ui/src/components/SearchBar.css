@@ -21,7 +21,7 @@ html, body, #root {
 }
 
 .left-panel {
-  width: 33.33%;
+  width: 66.66%;
   min-width: 20%;
   max-width: 60%;
   background: #ffffff;
