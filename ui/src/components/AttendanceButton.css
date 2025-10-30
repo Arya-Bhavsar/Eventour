@@ -1,36 +1,36 @@
 .attendance-button-container {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  left: 52px; /* Positioned next to the download button (32px width + 8px gap + 12px margin) */
+  bottom: 12px;
   z-index: 1000;
 }
 
 .attendance-button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: none;
-  color: white;
-  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
 }
 
 .attendance-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  background: #f9fafb;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
 .attendance-button:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: #f3f4f6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .attendance-button:disabled {
@@ -41,8 +41,8 @@
 
 .attendance-tooltip {
   position: absolute;
-  bottom: 60px;
-  right: 0;
+  bottom: 40px; /* Position above the button */
+  left: 0;
   background: rgba(0, 0, 0, 0.9);
   color: white;
   padding: 12px 16px;
@@ -51,7 +51,8 @@
   font-size: 14px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   animation: fadeInUp 0.3s ease;
-  max-width: 250px;
+  min-width: 300px;
+  max-width: 350px;
   word-wrap: break-word;
   white-space: normal;
 }
@@ -63,7 +64,7 @@
 .tooltip-arrow {
   position: absolute;
   top: 100%;
-  right: 20px;
+  left: 20px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
@@ -85,19 +86,20 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .attendance-button-container {
-    bottom: 15px;
-    right: 15px;
+    left: 50px; /* Adjust for mobile */
+    bottom: 12px;
   }
   
   .attendance-button {
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
   }
   
   .attendance-tooltip {
-    bottom: 55px;
-    max-width: 200px;
+    bottom: 40px;
+    min-width: 250px;
+    max-width: 280px;
     font-size: 13px;
   }
 }

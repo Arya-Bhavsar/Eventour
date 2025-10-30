@@ -70,7 +70,7 @@ def condense_context(context: str = None):
 @app.get("/chance-of-attendance")
 def chance_of_attendance():
     # Generate random chance between 0.01% and 3.00%
-    chance = round(random.uniform(0.01, 3.0), 2)
+    chance = round(random.uniform(0.01, 20.0), 5)
     return {"chance_percentage": chance}
     
 
