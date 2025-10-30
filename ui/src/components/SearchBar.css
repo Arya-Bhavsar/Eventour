@@ -137,3 +137,8 @@ html, body, #root {
   font-size: 18px;    
   line-height: 1;
 }
+
+
+.tips{
+  color: grey;
+}

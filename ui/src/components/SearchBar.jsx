@@ -138,6 +138,7 @@ const handleDownload = () => {
             placeholder="Search..."
           />
         </div>
+        <div className="tips">Click chat bouble to see the previous list</div>
       </div>
     </div>
   );
