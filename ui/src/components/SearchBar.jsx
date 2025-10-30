@@ -73,6 +73,14 @@ function SearchBar() {
 
   const table = messages.length > 0 ? messages[messages.length - 1].answer : null;
 
+  const STATIC_SRC = "/data/download.png";   
+  const GIF_SRC    = "/data/download.gif";
+
+  const [iconSrc, setIconSrc] = useState(STATIC_SRC);
+
+  const startGif = () => setIconSrc(`${GIF_SRC}#t=${Date.now()}`);
+  const stopGif  = () => setIconSrc(STATIC_SRC);
+
   // Resizing logic
   React.useEffect(() => {
     const resizer = document.querySelector(".resizer");
@@ -121,7 +129,18 @@ const handleDownload = () => {
     <div className="search-page">
       <div className="left-panel">
         <ResponseText answer={selectedTable ? selectedTable : table} />
-        <button className="lp-print" aria-hidden="true" onClick={handleDownload}>⬇️</button>
+        <button
+          className="lp-print"
+          type="button"
+          onClick={handleDownload}
+          aria-label="Download"
+          onMouseEnter={startGif}
+          onMouseLeave={stopGif}
+          onFocus={startGif} 
+          onBlur={stopGif}
+        >
+          <img src={iconSrc} alt="" className="download-icon" />
+        </button>
       </div>
 
       <div className="resizer" />
