@@ -4,6 +4,7 @@ import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
 import LoadingDots from "./LoadingDots";
 import AttendanceButton from "./AttendanceButton";
+import UpdateDateLocation from "./UpdateDateLocation";
 import "./SearchBar.css";
 import { isNaughtyString } from "../utils/validation";
 import jsPDF from "jspdf";
@@ -146,6 +147,7 @@ const handleDownload = () => {
       <div className="resizer" />
 
       <div className="right-panel">
+        <UpdateDateLocation />
         <div className="chat-messages">{messageElements}</div>    
 
         <div className="page-footer">
