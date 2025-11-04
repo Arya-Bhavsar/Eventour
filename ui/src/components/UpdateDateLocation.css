@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.updatesearch-container {
+  @apply w-full px-4 pt-4 flex justify-end;   
+}
+
+.updatesearch-form {
+  @apply w-full                      
+         sm:w-auto                  
+         max-w-full md:max-w-screen-md 
+         flex flex-wrap items-center gap-3
+         p-3 rounded-xl border-2 border-gray-300 bg-white shadow-lg;
+  overflow: visible;                 
+  font-size: 0.9rem;             
+}
+
+.updatesearch-form label {
+  @apply flex items-center gap-2 text-gray-700 font-medium whitespace-nowrap shrink-0;
+}
+
+.updatesearch-form label > *:last-child {
+  flex: 1 1 12rem;   
+  min-width: 12rem;
+}
+
+.updatesearch-form :where(input, select, .date-picker-input) {
+  @apply w-full h-10 px-3 py-2 rounded-lg border border-gray-300
+         focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+.updatesearch-form select {
+  min-width: 10rem; /* ~160px */
+}
+
+@media (min-width: 768px) {
+  .date-picker-input { min-width: 14rem; }
+}
+
+.updatesearch-form button[type="submit"] {
+  @apply bg-blue-500 text-white font-semibold
+         px-4 py-2 rounded-lg shadow-md
+         hover:bg-blue-600 transition duration-200
+         whitespace-nowrap flex-none;
+}
+.updatesearch-form button[type="submit"]:disabled { @apply bg-gray-400 cursor-not-allowed; }
+
+
+.react-datepicker,
+.react-datepicker-popper,
+.rdtp-picker,
+.rmdp-container,
+.rdp {
+  z-index: 60 !important;
+}

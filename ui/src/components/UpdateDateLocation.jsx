@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Datepicker from "react-tailwindcss-datepicker";
 import CityAutocomplete from "./CityAutocomplete";
+import './UpdateDateLocation.css'
 
 export default function UpdateDateLocation() {
     const [location, setLocation] = useState('');
@@ -54,8 +55,8 @@ export default function UpdateDateLocation() {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="updatesearch-container">
+            <form className="updatesearch-form" onSubmit={handleSubmit}>
                 {/* Location Dropdown */}
                 <label>
                     Location:
