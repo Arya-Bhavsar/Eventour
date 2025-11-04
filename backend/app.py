@@ -29,7 +29,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 from prompt import LIST_PROMPT
 from prompt import EventInfo, EventList
-from prompt import LIST_PROMPT, SUMMARIZE_CONTEXT_PROMPT
+from prompt import LIST_PROMPT, SUMMARIZE_CONTEXT_PROMPT, COMPARE_PROMPT
 
 load_dotenv()
 app = FastAPI()
@@ -85,6 +85,31 @@ def populate_db(start_time: str = None, end_time: str = None , location:str = No
     result = get_data_in_chroma(ticket_master_data, google_places_data, location)
     
     return {"message": result}  # Return the result instead of pass
+
+#compare differences
+@app.get("/compare-differences/")
+def summarize_difference(table_1: str = None, table_2: str = None):
+    try:
+        prompt = PromptTemplate(template=COMPARE_PROMPT, 
+                                input_variables=["json_1", "json_2"]
+                                )
+        llm = ChatGoogleGenerativeAI(
+            model="gemini-2.5-flash",               # good price/perf & on free tier
+            api_key=os.getenv("GOOGLE_API_KEY"),
+            temperature=0.2,
+            max_output_tokens=2048,
+        )
+
+        chain = prompt | llm
+
+        response = chain.invoke({"json_1": table_1, "json_2": table_2})
+
+        return response.content
+         
+
+    except Exception as e:
+        return {"error": f"Failed to get answer: {str(e)}"}
+
 
 #Function To Get Answer to Question
 @app.get("/get-answer/{query}")

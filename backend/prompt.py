@@ -46,3 +46,11 @@ summarizing the given chat context history.
 History: 
 
 """
+
+
+COMPARE_PROMPT = """You are a travel agent that compares two lists of attractions for a living. Below are two json packets with potential travel events. Summarize the differences between the two.
+First: {json_1}
+Second: {json_2}
+
+Limit your response to less than 50 words. Describe the second packet as the 'newer version' and the first packet as the 'older version'.
+"""
