@@ -48,7 +48,6 @@ export default function DateLocationInput() {
             if (response.ok) {
                 const data = await response.json();
                 console.log('API Response:', data);
-                alert("Date and location updated successfully!");
                 setResult(data);
 
                 // Navigate to SearchBar page after successful submission

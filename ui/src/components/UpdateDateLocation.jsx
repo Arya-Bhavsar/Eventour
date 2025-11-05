@@ -41,6 +41,7 @@ export default function UpdateDateLocation() {
                 const data = await response.json();
                 console.log('API Response:', data);
                 setResult(data);
+                alert("Date and location updated successfully!");
             } else {
                 console.error('API Error:', response.status);
                 setResult({ error: `HTTP ${response.status}` });
@@ -80,7 +81,7 @@ export default function UpdateDateLocation() {
 
                 />
                 </label>
-                
+
                 {/* Submit Button */}
                 <button
                     type="submit"

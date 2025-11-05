@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ChatBubble from "./ChatBubble";
 import ResponseText from "./ResponseText";
@@ -14,6 +14,7 @@ var chat_history = "User: \""
 
 function SearchBar() {
   const [query, setQuery] = useState("");
+  const [summary, setSummary] = useState("");
   const [messages, setMessages] = useState([]);
   const [selectedTable, setSelectedTable] = useState(null);
 
@@ -21,44 +22,69 @@ function SearchBar() {
     setQuery(e.target.value);
   };
 
-  const handleKeyDown = async (e) => {
-  if (e.key === "Enter" && query.trim() !== "") {
-    
-    // Add naughty string validation here
-    if (isNaughtyString(query)) {
-      alert("⚠️ Invalid input detected. Please check your query.");
-      setQuery(""); // Clear the input
-      return; // Stop execution
-    }
-    
-    try {
-      chat_history += query + "\"\nAssistant: \"";
-      const currentQuery = query; // Fix: use query, not chat_history
-      setQuery("");
-      setMessages([...messages, {prompt: currentQuery, answer: <LoadingDots />}]);
-
-      // Reset selected table to be null when a new query is made
-      setSelectedTable(null);
-      
-      const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
-      
-      setMessages((messages) => {
-        const updatedMessages = [...messages];
-        updatedMessages[updatedMessages.length - 1] = {prompt: currentQuery, answer: res.data.answer};
-        
-        chat_history += res.data.answer + "\"\nUser: \"";
-        if (chat_history.length > 15000){
-          const response = axios.get(`http://localhost:8000/condense-context/${encodeURIComponent(chat_history)}`);
-          chat_history = response.data.condensed_context + "\"\nUser: \"";
-        }
-        
-        return updatedMessages;
-      });
-    } catch (err) {
-      console.error("API error:", err);
-    }
+  // Get the summary of changes made to the new table of events
+  useEffect(() => {
+    if (messages.length > 1 && !React.isValidElement(messages[messages.length - 1].answer)) {
+    const table1 = messages[messages.length - 2].answer;
+    const table2 = messages[messages.length - 1].answer;
+    // Compare the two tables and get summary
+    const fetchSummary = async () => {
+      try {
+        const summaryResponse = await axios.get(`http://localhost:8000/compare-differences/?table_1=${encodeURIComponent(JSON.stringify(table1))}&table_2=${encodeURIComponent(JSON.stringify(table2))}`);
+        setSummary(summaryResponse.data);
+        console.log("Summary Response:", summaryResponse.data);
+      } catch (errSummary) {
+        console.error('Summary API error:', errSummary);
+      }
+    };
+    fetchSummary();
   }
-};
+  }, [messages]);
+
+  const handleKeyDown = async (e) => {
+    if (e.key === "Enter" && query.trim() !== "") {
+      
+      // Add naughty string validation here
+      if (isNaughtyString(query)) {
+        alert("⚠️ Invalid input detected. Please check your query.");
+        setQuery(""); // Clear the input
+        return; // Stop execution
+      }
+      
+      try {
+        chat_history += query + "\"\nAssistant: \"";
+        const currentQuery = query; // Fix: use query, not chat_history
+        setQuery("");
+        setMessages([...messages, { prompt: currentQuery, answer: <LoadingDots /> }]);
+
+        // Reset selected table to be null when a new query is made
+        setSelectedTable(null);
+
+        const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
+
+        // Update the last message to have the actual response as the answer (functional updater)
+        let updatedMessages = [];
+        setMessages((prev) => {
+          updatedMessages = [...prev];
+          updatedMessages[updatedMessages.length - 1] = { prompt: currentQuery, answer: res.data.answer };
+          return updatedMessages;
+        });
+
+        // Update chat history with the new answer (condense if too long )
+        chat_history += res.data.answer + "\"\nUser: \"";
+        if (chat_history.length > 15000) {
+          try {
+            const response = await axios.get(`http://localhost:8000/condense-context/${encodeURIComponent(chat_history)}`);
+            chat_history = response.data.condensed_context + "\"\nUser: \"";
+          } catch (errCondense) {
+            console.error('Condense-context API error:', errCondense);
+          }
+        }
+      } catch (err) {
+        console.error("API error:", err);
+      }
+    }
+  };
 
   // New function to handle ChatBubble click to display events related to that prompt
   const handleChatBubbleClick = (answer) => {
@@ -115,20 +141,21 @@ function SearchBar() {
     };
   }, []);
 
-const handleDownload = () => {
-  const doc = new jsPDF();
-  const table = document.getElementById("my-table");
-  if (!table) return;
+  const handleDownload = () => {
+    const doc = new jsPDF();
+    const table = document.getElementById("my-table");
+    if (!table) return;
 
 
-  autoTable(doc, { html: table }); // pass doc explicitly
-  doc.save("table.pdf");
-};
+    autoTable(doc, { html: table }); // pass doc explicitly
+    doc.save("table.pdf");
+  };
 
 
   return (
     <div className="search-page">
       <div className="left-panel">
+        <div>{!React.isValidElement(messages[messages.length - 1].answer) && <p>{summary}</p>}</div>
         <ResponseText answer={selectedTable ? selectedTable : table} />
         <button
           className="lp-print"
