@@ -16,6 +16,7 @@ function SearchBar() {
   const [query, setQuery] = useState("");
   const [summary, setSummary] = useState("");
   const [messages, setMessages] = useState([]);
+  const [isDisabled, setIsDisabled] = useState(false); // to disable input when fetching response
   const [selectedTable, setSelectedTable] = useState(null);
 
   const handleChange = (e) => {
@@ -43,6 +44,10 @@ function SearchBar() {
 
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
+
+      // Disable input while fetching response
+      setIsDisabled(true);
+      setTimeout(() => setIsDisabled(false), 60000); // re-enable after 60 seconds to avoid permanent disable
       
       // Add naughty string validation here
       if (isNaughtyString(query)) {
@@ -83,6 +88,8 @@ function SearchBar() {
       } catch (err) {
         console.error("API error:", err);
       }
+
+      setIsDisabled(false); // Re-enable input after response is received
     }
   };
 
@@ -155,7 +162,7 @@ function SearchBar() {
   return (
     <div className="search-page">
       <div className="left-panel">
-        <div>{!React.isValidElement(messages[messages.length - 1].answer) && <p>{summary}</p>}</div>
+        <div>{messages.length > 1 && !React.isValidElement(messages[messages.length - 1].answer) && <p>{summary}</p>}</div>
         <ResponseText answer={selectedTable ? selectedTable : table} />
         <button
           className="lp-print"
@@ -182,6 +189,7 @@ function SearchBar() {
             className="search-input"
             type="text"
             value={query}
+            disabled={isDisabled}
             onChange={handleChange}
             onKeyDown={handleKeyDown}
             placeholder="Search..."
@@ -189,7 +197,7 @@ function SearchBar() {
         </div>
         
         <AttendanceButton />
-        <div className="tips">Click chat bubble to see the previous list</div>
+        <div className="tips">Click on chat bubbles to see the previous list</div>
       </div>
     </div>
   );
