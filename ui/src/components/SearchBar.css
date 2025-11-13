@@ -142,3 +142,35 @@ html, body, #root {
 .tips{
   color: grey;
 }
+/* Current context display */
+.current-context {
+  width: calc(100% - 32px);
+  padding: 10px 16px;
+  margin: 0 16px 12px 16px;
+  background: #f0f4ff;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.context-label {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.context-value {
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.context-separator {
+  color: #9ca3af;
+  margin: 0 4px;
+  font-weight: 300;
+}

@@ -18,9 +18,28 @@ function SearchBar() {
   const [messages, setMessages] = useState([]);
   const [isDisabled, setIsDisabled] = useState(false); // to disable input when fetching response
   const [selectedTable, setSelectedTable] = useState(null);
+  const [currentCity, setCurrentCity] = useState(null);
+  const [currentDateRange, setCurrentDateRange] = useState(null);
 
   const handleChange = (e) => {
     setQuery(e.target.value);
+  };
+
+  // Format date range for display
+  const formatDateRange = (dateRange) => {
+    if (!dateRange || !dateRange.startDate || !dateRange.endDate) return "None";
+    
+    const start = new Date(dateRange.startDate);
+    const end = new Date(dateRange.endDate);
+    
+    const formatDate = (date) => {
+      const month = date.toLocaleString('en-US', { month: 'short' });
+      const day = date.getDate();
+      const year = date.getFullYear();
+      return `${month} ${day}, ${year}`;
+    };
+    
+    return `${formatDate(start)} - ${formatDate(end)}`;
   };
 
   // Get the summary of changes made to the new table of events
@@ -44,6 +63,12 @@ function SearchBar() {
 
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
+
+      // Check if city and date range are set
+      if (!currentCity || !currentDateRange) {
+        alert("⚠️ Please set both location and date range before searching.");
+        return;
+      }
 
       // Disable input while fetching response
       setIsDisabled(true);
@@ -181,7 +206,19 @@ function SearchBar() {
       <div className="resizer" />
 
       <div className="right-panel">
-        <UpdateDateLocation />
+        <UpdateDateLocation 
+          onUpdate={(city, dateRange) => {
+            setCurrentCity(city);
+            setCurrentDateRange(dateRange);
+          }}
+        />
+        <div className="current-context">
+          <span className="context-label">Location:</span>
+          <span className="context-value">{currentCity || "None"}</span>
+          <span className="context-separator">•</span>
+          <span className="context-label">Date Range:</span>
+          <span className="context-value">{formatDateRange(currentDateRange)}</span>
+        </div>
         <div className="chat-messages">{messageElements}</div>    
 
         <div className="page-footer">

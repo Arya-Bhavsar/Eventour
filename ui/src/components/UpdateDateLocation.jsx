@@ -3,7 +3,7 @@ import Datepicker from "react-tailwindcss-datepicker";
 import CityAutocomplete from "./CityAutocomplete";
 import './UpdateDateLocation.css'
 
-export default function UpdateDateLocation() {
+export default function UpdateDateLocation({ onUpdate }) {
     const [location, setLocation] = useState('');
     const [dateValue, setDateValue] = useState({
         startDate: null,
@@ -42,7 +42,11 @@ export default function UpdateDateLocation() {
                 const data = await response.json();
                 console.log('API Response:', data);
                 setResult(data);
-                alert("Date and location updated successfully!");
+                
+                // Call the onUpdate callback to notify parent
+                if (onUpdate) {
+                    onUpdate(location, dateValue);
+                }
             } else {
                 console.error('API Error:', response.status);
                 setResult({ error: `HTTP ${response.status}` });
