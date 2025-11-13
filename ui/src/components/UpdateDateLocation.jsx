@@ -11,6 +11,7 @@ export default function UpdateDateLocation({ onUpdate }) {
     });
     const [loading, setLoading] = useState(false);  // Add loading state
     const [result, setResult] = useState(null);     // Add result state
+    const [errorMessage, setErrorMessage] = useState("");
 
     const handleDateChange = (newValue) => {
         setDateValue(newValue);
@@ -20,7 +21,8 @@ export default function UpdateDateLocation({ onUpdate }) {
         submission.preventDefault();
         
         if (!location || !dateValue.startDate || !dateValue.endDate) {
-            alert("Please select location and date range");
+            setErrorMessage("⚠️ Please select location and date range");
+            setTimeout(() => setErrorMessage(""), 4000);
             return;
         }
 
@@ -62,6 +64,9 @@ export default function UpdateDateLocation({ onUpdate }) {
     return (
         <div className="updatesearch-container">
             <form className="updatesearch-form" onSubmit={handleSubmit}>
+                {errorMessage && (
+                    <div className="update-error-message">{errorMessage}</div>
+                )}
                 {/* Location Dropdown */}
                 <label>
                     Location:

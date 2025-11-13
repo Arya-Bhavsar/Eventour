@@ -20,6 +20,7 @@ function SearchBar() {
   const [selectedTable, setSelectedTable] = useState(null);
   const [currentCity, setCurrentCity] = useState(null);
   const [currentDateRange, setCurrentDateRange] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     setQuery(e.target.value);
@@ -66,7 +67,8 @@ function SearchBar() {
 
       // Check if city and date range are set
       if (!currentCity || !currentDateRange) {
-        alert("⚠️ Please set both location and date range before searching.");
+        setErrorMessage("⚠️ Please set both location and date range before searching.");
+        setTimeout(() => setErrorMessage(""), 4000);
         return;
       }
 
@@ -76,7 +78,8 @@ function SearchBar() {
       
       // Add naughty string validation here
       if (isNaughtyString(query)) {
-        alert("⚠️ Invalid input detected. Please check your query.");
+        setErrorMessage("⚠️ Invalid input detected. Please check your query.");
+        setTimeout(() => setErrorMessage(""), 4000);
         setQuery(""); // Clear the input
         return; // Stop execution
       }
@@ -222,6 +225,9 @@ function SearchBar() {
         <div className="chat-messages">{messageElements}</div>    
 
         <div className="page-footer">
+          {errorMessage && (
+            <div className="error-message">{errorMessage}</div>
+          )}
           <input
             className="search-input"
             type="text"
