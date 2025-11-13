@@ -26,7 +26,7 @@ function SearchBar() {
     setQuery(e.target.value);
   };
 
-  // Format date range for display
+  // Format date range for the display
   const formatDateRange = (dateRange) => {
     if (!dateRange || !dateRange.startDate || !dateRange.endDate) return "None";
     
