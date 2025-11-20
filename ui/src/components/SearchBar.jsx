@@ -10,11 +10,12 @@ import { isNaughtyString } from "../utils/validation";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 
-var chat_history = "User: \""
+var chat_history = 'User: "';
 
 function SearchBar() {
   const [query, setQuery] = useState("");
-  const [summary, setSummary] = useState("");
+  const [summaries, setSummaries] = useState([""]);
+  const [selectedSumamry, setSelectedSummary] = useState("");
   const [messages, setMessages] = useState([]);
   const [isDisabled, setIsDisabled] = useState(false); // to disable input when fetching response
   const [selectedTable, setSelectedTable] = useState(null);
@@ -25,64 +26,82 @@ function SearchBar() {
 
   // Get the summary of changes made to the new table of events
   useEffect(() => {
-    if (messages.length > 1 && !React.isValidElement(messages[messages.length - 1].answer)) {
-    const table1 = messages[messages.length - 2].answer;
-    const table2 = messages[messages.length - 1].answer;
-    // Compare the two tables and get summary
-    const fetchSummary = async () => {
-      try {
-        const summaryResponse = await axios.get(`http://localhost:8000/compare-differences/?table_1=${encodeURIComponent(JSON.stringify(table1))}&table_2=${encodeURIComponent(JSON.stringify(table2))}`);
-        setSummary(summaryResponse.data);
-        console.log("Summary Response:", summaryResponse.data);
-      } catch (errSummary) {
-        console.error('Summary API error:', errSummary);
-      }
-    };
-    fetchSummary();
-  }
+    if (
+      messages.length > 1 &&
+      !React.isValidElement(messages[messages.length - 1].answer)
+    ) {
+      const table1 = messages[messages.length - 2].answer;
+      const table2 = messages[messages.length - 1].answer;
+      // Compare the two tables and get summary
+      const fetchSummary = async () => {
+        try {
+          const summaryResponse = await axios.get(
+            `http://localhost:8000/compare-differences/?table_1=${encodeURIComponent(
+              JSON.stringify(table1)
+            )}&table_2=${encodeURIComponent(JSON.stringify(table2))}`
+          );
+          setSummaries((summaries) => [...summaries, summaryResponse.data]);
+          console.log("Summary Response:", summaryResponse.data);
+        } catch (errSummary) {
+          console.error("Summary API error:", errSummary);
+        }
+      };
+      fetchSummary();
+    }
   }, [messages]);
 
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
-
       // Disable input while fetching response
       setIsDisabled(true);
       setTimeout(() => setIsDisabled(false), 60000); // re-enable after 60 seconds to avoid permanent disable
-      
+
       // Add naughty string validation here
       if (isNaughtyString(query)) {
         alert("⚠️ Invalid input detected. Please check your query.");
         setQuery(""); // Clear the input
         return; // Stop execution
       }
-      
+
       try {
-        chat_history += query + "\"\nAssistant: \"";
+        chat_history += query + '"\nAssistant: "';
         const currentQuery = query; // Fix: use query, not chat_history
         setQuery("");
-        setMessages([...messages, { prompt: currentQuery, answer: <LoadingDots /> }]);
+        setMessages([
+          ...messages,
+          { prompt: currentQuery, answer: <LoadingDots /> },
+        ]);
 
         // Reset selected table to be null when a new query is made
         setSelectedTable(null);
 
-        const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
+        const res = await axios.get(
+          `http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`
+        );
 
         // Update the last message to have the actual response as the answer (functional updater)
         let updatedMessages = [];
         setMessages((prev) => {
           updatedMessages = [...prev];
-          updatedMessages[updatedMessages.length - 1] = { prompt: currentQuery, answer: res.data.answer };
+          updatedMessages[updatedMessages.length - 1] = {
+            prompt: currentQuery,
+            answer: res.data.answer,
+          };
           return updatedMessages;
         });
 
         // Update chat history with the new answer (condense if too long )
-        chat_history += res.data.answer + "\"\nUser: \"";
+        chat_history += res.data.answer + '"\nUser: "';
         if (chat_history.length > 15000) {
           try {
-            const response = await axios.get(`http://localhost:8000/condense-context/${encodeURIComponent(chat_history)}`);
-            chat_history = response.data.condensed_context + "\"\nUser: \"";
+            const response = await axios.get(
+              `http://localhost:8000/condense-context/${encodeURIComponent(
+                chat_history
+              )}`
+            );
+            chat_history = response.data.condensed_context + '"\nUser: "';
           } catch (errCondense) {
-            console.error('Condense-context API error:', errCondense);
+            console.error("Condense-context API error:", errCondense);
           }
         }
       } catch (err) {
@@ -94,26 +113,34 @@ function SearchBar() {
   };
 
   // New function to handle ChatBubble click to display events related to that prompt
-  const handleChatBubbleClick = (answer) => {
-    setSelectedTable(answer);
-  }
+  const handleChatBubbleClick = (table, summary) => {
+    setSelectedTable(table);
+    setSelectedSummary(summary);
+  };
 
   // Added the new query and answer to the message history
   const messageElements = messages.map((msg, index) => (
     <div key={index}>
-      <ChatBubble prompt={msg.prompt} onChatBubbleClick={() => handleChatBubbleClick(msg.answer)} />
+      <ChatBubble
+        prompt={msg.prompt}
+        onChatBubbleClick={() => {
+          const summary = index === 0 ? null : summaries[index];
+          handleChatBubbleClick(msg.answer, summary);
+        }}
+      />
     </div>
   ));
 
-  const table = messages.length > 0 ? messages[messages.length - 1].answer : null;
+  const table =
+    messages.length > 0 ? messages[messages.length - 1].answer : null;
 
-  const STATIC_SRC = "/data/download.png";   
-  const GIF_SRC    = "/data/download.gif";
+  const STATIC_SRC = "/data/download.png";
+  const GIF_SRC = "/data/download.gif";
 
   const [iconSrc, setIconSrc] = useState(STATIC_SRC);
 
   const startGif = () => setIconSrc(`${GIF_SRC}#t=${Date.now()}`);
-  const stopGif  = () => setIconSrc(STATIC_SRC);
+  const stopGif = () => setIconSrc(STATIC_SRC);
 
   // Resizing logic
   React.useEffect(() => {
@@ -130,8 +157,10 @@ function SearchBar() {
 
     document.addEventListener("mousemove", (e) => {
       if (!isResizing) return;
-      const newLeftWidth = ((e.clientX - container.offsetLeft) / container.clientWidth) * 100;
-      if (newLeftWidth > 20 && newLeftWidth < 80) { // keep it reasonable
+      const newLeftWidth =
+        ((e.clientX - container.offsetLeft) / container.clientWidth) * 100;
+      if (newLeftWidth > 20 && newLeftWidth < 80) {
+        // keep it reasonable
         leftPanel.style.width = `${newLeftWidth}%`;
       }
     });
@@ -153,16 +182,22 @@ function SearchBar() {
     const table = document.getElementById("my-table");
     if (!table) return;
 
-
     autoTable(doc, { html: table }); // pass doc explicitly
     doc.save("table.pdf");
   };
 
-
   return (
     <div className="search-page">
       <div className="left-panel">
-        <div>{messages.length > 1 && !React.isValidElement(messages[messages.length - 1].answer) && <p>{summary}</p>}</div>
+        <div>
+          {selectedSumamry ? (
+            <p>{selectedSumamry}</p>
+          ) : selectedSumamry === null ? (
+            <p></p>
+          ) : (
+            <p>{summaries[summaries.length - 1]}</p>
+          )}
+        </div>
         <ResponseText answer={selectedTable ? selectedTable : table} />
         <button
           className="lp-print"
@@ -171,7 +206,7 @@ function SearchBar() {
           aria-label="Download"
           onMouseEnter={startGif}
           onMouseLeave={stopGif}
-          onFocus={startGif} 
+          onFocus={startGif}
           onBlur={stopGif}
         >
           <img src={iconSrc} alt="" className="download-icon" />
@@ -182,7 +217,7 @@ function SearchBar() {
 
       <div className="right-panel">
         <UpdateDateLocation />
-        <div className="chat-messages">{messageElements}</div>    
+        <div className="chat-messages">{messageElements}</div>
 
         <div className="page-footer">
           <input
@@ -195,9 +230,11 @@ function SearchBar() {
             placeholder="Search..."
           />
         </div>
-        
+
         <AttendanceButton />
-        <div className="tips">Click on chat bubbles to see the previous list</div>
+        <div className="tips">
+          Click on chat bubbles to see the previous list
+        </div>
       </div>
     </div>
   );
