@@ -14,51 +14,64 @@ var chat_history = 'User: "';
 
 function SearchBar() {
   const [query, setQuery] = useState("");
-  const [summaries, setSummaries] = useState([""]);
-  const [selectedSumamry, setSelectedSummary] = useState("");
   const [messages, setMessages] = useState([]);
   const [isDisabled, setIsDisabled] = useState(false); // to disable input when fetching response
   const [selectedTable, setSelectedTable] = useState(null);
+  const [selectedSummary, setSelectedSummary] = useState("");
+  const [currentCity, setCurrentCity] = useState(null);
+  const [currentDateRange, setCurrentDateRange] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     setQuery(e.target.value);
   };
 
-  // Get the summary of changes made to the new table of events
-  useEffect(() => {
-    if (
-      messages.length > 1 &&
-      !React.isValidElement(messages[messages.length - 1].answer)
-    ) {
-      const table1 = messages[messages.length - 2].answer;
-      const table2 = messages[messages.length - 1].answer;
-      // Compare the two tables and get summary
-      const fetchSummary = async () => {
-        try {
-          const summaryResponse = await axios.get(
-            `http://localhost:8000/compare-differences/?table_1=${encodeURIComponent(
-              JSON.stringify(table1)
-            )}&table_2=${encodeURIComponent(JSON.stringify(table2))}`
-          );
-          setSummaries((summaries) => [...summaries, summaryResponse.data]);
-          console.log("Summary Response:", summaryResponse.data);
-        } catch (errSummary) {
-          console.error("Summary API error:", errSummary);
-        }
-      };
-      fetchSummary();
+  // Format date range for the display
+  const formatDateRange = (dateRange) => {
+    if (!dateRange || !dateRange.startDate || !dateRange.endDate) return "None";
+    
+    const start = new Date(dateRange.startDate);
+    const end = new Date(dateRange.endDate);
+    
+    const formatDate = (date) => {
+      const month = date.toLocaleString('en-US', { month: 'short' });
+      const day = date.getDate();
+      const year = date.getFullYear();
+      return `${month} ${day}, ${year}`;
+    };
+    
+    return `${formatDate(start)} - ${formatDate(end)}`;
+  };
+
+  // Helper function to generate summary for a table
+  const generateSummary = async (userQuery, currentTable, chatContext = "") => {
+    try {
+      // Generate a natural language summary of the response to the user's query with chat history context
+      const summaryResponse = await axios.get(`http://localhost:8000/generate-summary/?user_query=${encodeURIComponent(userQuery)}&events=${encodeURIComponent(JSON.stringify(currentTable))}&chat_history=${encodeURIComponent(chatContext)}`);
+      return summaryResponse.data;
+    } catch (err) {
+      console.error('Summary API error:', err);
+      return "Summary unavailable";
     }
-  }, [messages]);
+  };
 
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
+
+      // Check if city and date range are set
+      if (!currentCity || !currentDateRange) {
+        setErrorMessage("⚠️ Please set both location and date range before searching.");
+        setTimeout(() => setErrorMessage(""), 4000);
+        return;
+      }
       // Disable input while fetching response
       setIsDisabled(true);
       setTimeout(() => setIsDisabled(false), 60000); // re-enable after 60 seconds to avoid permanent disable
 
       // Add naughty string validation here
       if (isNaughtyString(query)) {
-        alert("⚠️ Invalid input detected. Please check your query.");
+        setErrorMessage("⚠️ Invalid input detected. Please check your query.");
+        setTimeout(() => setErrorMessage(""), 4000);
         setQuery(""); // Clear the input
         return; // Stop execution
       }
@@ -75,20 +88,28 @@ function SearchBar() {
         // Reset selected table to be null when a new query is made
         setSelectedTable(null);
 
-        const res = await axios.get(
-          `http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`
-        );
+        const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
+
+        // Generate summary for this response with chat history context
+        const currentSummary = await generateSummary(currentQuery, res.data.answer, chat_history);
 
         // Update the last message to have the actual response as the answer (functional updater)
         let updatedMessages = [];
         setMessages((prev) => {
           updatedMessages = [...prev];
           updatedMessages[updatedMessages.length - 1] = {
-            prompt: currentQuery,
+            
+            prompt: currentQuery, 
+           
             answer: res.data.answer,
+            summary: currentSummary 
+         ,
           };
           return updatedMessages;
         });
+
+        // Update selected summary to show the latest one
+        setSelectedSummary(currentSummary);
 
         // Update chat history with the new answer (condense if too long )
         chat_history += res.data.answer + '"\nUser: "';
@@ -113,21 +134,16 @@ function SearchBar() {
   };
 
   // New function to handle ChatBubble click to display events related to that prompt
-  const handleChatBubbleClick = (table, summary) => {
+  const handleChatBubbleClick = (table, summary, summary) => {
     setSelectedTable(table);
     setSelectedSummary(summary);
+    setSelectedSummary(summary || "");
   };
 
   // Added the new query and answer to the message history
   const messageElements = messages.map((msg, index) => (
     <div key={index}>
-      <ChatBubble
-        prompt={msg.prompt}
-        onChatBubbleClick={() => {
-          const summary = index === 0 ? null : summaries[index];
-          handleChatBubbleClick(msg.answer, summary);
-        }}
-      />
+      <ChatBubble prompt={msg.prompt} onChatBubbleClick={() => handleChatBubbleClick(msg.answer, msg.summary)} />
     </div>
   ));
 
@@ -189,15 +205,7 @@ function SearchBar() {
   return (
     <div className="search-page">
       <div className="left-panel">
-        <div>
-          {selectedSumamry ? (
-            <p>{selectedSumamry}</p>
-          ) : selectedSumamry === null ? (
-            <p></p>
-          ) : (
-            <p>{summaries[summaries.length - 1]}</p>
-          )}
-        </div>
+        <div>{selectedSummary && <p className="summary-text">{selectedSummary}</p>}</div>
         <ResponseText answer={selectedTable ? selectedTable : table} />
         <button
           className="lp-print"
@@ -216,10 +224,25 @@ function SearchBar() {
       <div className="resizer" />
 
       <div className="right-panel">
-        <UpdateDateLocation />
-        <div className="chat-messages">{messageElements}</div>
+        <UpdateDateLocation 
+          onUpdate={(city, dateRange) => {
+            setCurrentCity(city);
+            setCurrentDateRange(dateRange);
+          }}
+        />
+        <div className="current-context">
+          <span className="context-label">Location:</span>
+          <span className="context-value">{currentCity || "None"}</span>
+          <span className="context-separator">•</span>
+          <span className="context-label">Date Range:</span>
+          <span className="context-value">{formatDateRange(currentDateRange)}</span>
+        </div>
+        <div className="chat-messages">{messageElements}</div>    
 
         <div className="page-footer">
+          {errorMessage && (
+            <div className="error-message">{errorMessage}</div>
+          )}
           <input
             className="search-input"
             type="text"

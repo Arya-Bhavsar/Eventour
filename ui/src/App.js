@@ -21,8 +21,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<DateLocationInput />}/>
-          <Route path="/search" element={<SearchBar />}/>
+          <Route path="/" element={<SearchBar />}/>
         </Routes>
       </div>
     </Router>
