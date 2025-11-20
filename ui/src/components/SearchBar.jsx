@@ -134,9 +134,8 @@ function SearchBar() {
   };
 
   // New function to handle ChatBubble click to display events related to that prompt
-  const handleChatBubbleClick = (table, summary, summary) => {
+  const handleChatBubbleClick = (table, summary) => {
     setSelectedTable(table);
-    setSelectedSummary(summary);
     setSelectedSummary(summary || "");
   };
 
