@@ -14,10 +14,10 @@ var chat_history = "User: \""
 
 function SearchBar() {
   const [query, setQuery] = useState("");
-  const [summary, setSummary] = useState("");
   const [messages, setMessages] = useState([]);
   const [isDisabled, setIsDisabled] = useState(false); // to disable input when fetching response
   const [selectedTable, setSelectedTable] = useState(null);
+  const [selectedSummary, setSelectedSummary] = useState("");
   const [currentCity, setCurrentCity] = useState(null);
   const [currentDateRange, setCurrentDateRange] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
@@ -43,24 +43,17 @@ function SearchBar() {
     return `${formatDate(start)} - ${formatDate(end)}`;
   };
 
-  // Get the summary of changes made to the new table of events
-  useEffect(() => {
-    if (messages.length > 1 && !React.isValidElement(messages[messages.length - 1].answer)) {
-    const table1 = messages[messages.length - 2].answer;
-    const table2 = messages[messages.length - 1].answer;
-    // Compare the two tables and get summary
-    const fetchSummary = async () => {
-      try {
-        const summaryResponse = await axios.get(`http://localhost:8000/compare-differences/?table_1=${encodeURIComponent(JSON.stringify(table1))}&table_2=${encodeURIComponent(JSON.stringify(table2))}`);
-        setSummary(summaryResponse.data);
-        console.log("Summary Response:", summaryResponse.data);
-      } catch (errSummary) {
-        console.error('Summary API error:', errSummary);
-      }
-    };
-    fetchSummary();
-  }
-  }, [messages]);
+  // Helper function to generate summary for a table
+  const generateSummary = async (userQuery, currentTable, chatContext = "") => {
+    try {
+      // Generate a natural language summary of the response to the user's query with chat history context
+      const summaryResponse = await axios.get(`http://localhost:8000/generate-summary/?user_query=${encodeURIComponent(userQuery)}&events=${encodeURIComponent(JSON.stringify(currentTable))}&chat_history=${encodeURIComponent(chatContext)}`);
+      return summaryResponse.data;
+    } catch (err) {
+      console.error('Summary API error:', err);
+      return "Summary unavailable";
+    }
+  };
 
   const handleKeyDown = async (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
@@ -95,13 +88,23 @@ function SearchBar() {
 
         const res = await axios.get(`http://localhost:8000/get-answer/${encodeURIComponent(currentQuery)}`);
 
+        // Generate summary for this response with chat history context
+        const currentSummary = await generateSummary(currentQuery, res.data.answer, chat_history);
+
         // Update the last message to have the actual response as the answer (functional updater)
         let updatedMessages = [];
         setMessages((prev) => {
           updatedMessages = [...prev];
-          updatedMessages[updatedMessages.length - 1] = { prompt: currentQuery, answer: res.data.answer };
+          updatedMessages[updatedMessages.length - 1] = { 
+            prompt: currentQuery, 
+            answer: res.data.answer,
+            summary: currentSummary 
+          };
           return updatedMessages;
         });
+
+        // Update selected summary to show the latest one
+        setSelectedSummary(currentSummary);
 
         // Update chat history with the new answer (condense if too long )
         chat_history += res.data.answer + "\"\nUser: \"";
@@ -122,14 +125,15 @@ function SearchBar() {
   };
 
   // New function to handle ChatBubble click to display events related to that prompt
-  const handleChatBubbleClick = (answer) => {
+  const handleChatBubbleClick = (answer, summary) => {
     setSelectedTable(answer);
+    setSelectedSummary(summary || "");
   }
 
   // Added the new query and answer to the message history
   const messageElements = messages.map((msg, index) => (
     <div key={index}>
-      <ChatBubble prompt={msg.prompt} onChatBubbleClick={() => handleChatBubbleClick(msg.answer)} />
+      <ChatBubble prompt={msg.prompt} onChatBubbleClick={() => handleChatBubbleClick(msg.answer, msg.summary)} />
     </div>
   ));
 
@@ -190,7 +194,7 @@ function SearchBar() {
   return (
     <div className="search-page">
       <div className="left-panel">
-        <div>{messages.length > 1 && !React.isValidElement(messages[messages.length - 1].answer) && <p>{summary}</p>}</div>
+        <div>{selectedSummary && <p className="summary-text">{selectedSummary}</p>}</div>
         <ResponseText answer={selectedTable ? selectedTable : table} />
         <button
           className="lp-print"
