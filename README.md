@@ -1,2 +1,2 @@
-# eventure
+# Eventour
 CSE 5914 Capstone Project
