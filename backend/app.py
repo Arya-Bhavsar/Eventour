@@ -18,18 +18,16 @@ import random
 from datetime import datetime
 from fastapi import FastAPI
 
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 from fastapi.middleware.cors import CORSMiddleware
-from langchain_cohere import CohereEmbeddings, ChatCohere
+from langchain_cohere import CohereEmbeddings
 from langchain_chroma import Chroma
-from langchain import hub
 from langchain.chat_models import init_chat_model
-from langchain.output_parsers import PydanticOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 from prompt import LIST_PROMPT
-from prompt import EventInfo, EventList
+from prompt import EventList
 from prompt import LIST_PROMPT, SUMMARIZE_CONTEXT_PROMPT, RESPONSE_SUMMARY_PROMPT
 
 load_dotenv()
