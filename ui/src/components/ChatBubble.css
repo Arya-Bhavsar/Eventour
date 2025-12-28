@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-bubble {
+  @apply flex justify-end; 
+}
+.chat-bubble > div {
+  @apply inline-block bg-blue-500 text-white
+         px-4 py-2 rounded-2xl rounded-br-sm text-sm break-words
+         max-w-[70%] my-2 mr-12 text-left;
+}

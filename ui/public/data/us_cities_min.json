@@ -1,0 +1,7846 @@
+[
+  {
+    "city": "Alexander City",
+    "state_code": "AL"
+  },
+  {
+    "city": "Andalusia",
+    "state_code": "AL"
+  },
+  {
+    "city": "Anniston",
+    "state_code": "AL"
+  },
+  {
+    "city": "Athens",
+    "state_code": "AL"
+  },
+  {
+    "city": "Atmore",
+    "state_code": "AL"
+  },
+  {
+    "city": "Auburn",
+    "state_code": "AL"
+  },
+  {
+    "city": "Bessemer",
+    "state_code": "AL"
+  },
+  {
+    "city": "Birmingham",
+    "state_code": "AL"
+  },
+  {
+    "city": "Chickasaw",
+    "state_code": "AL"
+  },
+  {
+    "city": "Clanton",
+    "state_code": "AL"
+  },
+  {
+    "city": "Cullman",
+    "state_code": "AL"
+  },
+  {
+    "city": "Decatur",
+    "state_code": "AL"
+  },
+  {
+    "city": "Demopolis",
+    "state_code": "AL"
+  },
+  {
+    "city": "Dothan",
+    "state_code": "AL"
+  },
+  {
+    "city": "Enterprise",
+    "state_code": "AL"
+  },
+  {
+    "city": "Eufaula",
+    "state_code": "AL"
+  },
+  {
+    "city": "Florence",
+    "state_code": "AL"
+  },
+  {
+    "city": "Fort Payne",
+    "state_code": "AL"
+  },
+  {
+    "city": "Gadsden",
+    "state_code": "AL"
+  },
+  {
+    "city": "Greenville",
+    "state_code": "AL"
+  },
+  {
+    "city": "Guntersville",
+    "state_code": "AL"
+  },
+  {
+    "city": "Huntsville",
+    "state_code": "AL"
+  },
+  {
+    "city": "Jasper",
+    "state_code": "AL"
+  },
+  {
+    "city": "Marion",
+    "state_code": "AL"
+  },
+  {
+    "city": "Mobile",
+    "state_code": "AL"
+  },
+  {
+    "city": "Montgomery",
+    "state_code": "AL"
+  },
+  {
+    "city": "Opelika",
+    "state_code": "AL"
+  },
+  {
+    "city": "Ozark",
+    "state_code": "AL"
+  },
+  {
+    "city": "Phenix City",
+    "state_code": "AL"
+  },
+  {
+    "city": "Prichard",
+    "state_code": "AL"
+  },
+  {
+    "city": "Scottsboro",
+    "state_code": "AL"
+  },
+  {
+    "city": "Selma",
+    "state_code": "AL"
+  },
+  {
+    "city": "Sheffield",
+    "state_code": "AL"
+  },
+  {
+    "city": "Sylacauga",
+    "state_code": "AL"
+  },
+  {
+    "city": "Talladega",
+    "state_code": "AL"
+  },
+  {
+    "city": "Troy",
+    "state_code": "AL"
+  },
+  {
+    "city": "Tuscaloosa",
+    "state_code": "AL"
+  },
+  {
+    "city": "Tuscumbia",
+    "state_code": "AL"
+  },
+  {
+    "city": "Tuskegee",
+    "state_code": "AL"
+  },
+  {
+    "city": "Anchorage",
+    "state_code": "AK"
+  },
+  {
+    "city": "Cordova",
+    "state_code": "AK"
+  },
+  {
+    "city": "Fairbanks",
+    "state_code": "AK"
+  },
+  {
+    "city": "Haines",
+    "state_code": "AK"
+  },
+  {
+    "city": "Homer",
+    "state_code": "AK"
+  },
+  {
+    "city": "Juneau",
+    "state_code": "AK"
+  },
+  {
+    "city": "Ketchikan",
+    "state_code": "AK"
+  },
+  {
+    "city": "Kodiak",
+    "state_code": "AK"
+  },
+  {
+    "city": "Kotzebue",
+    "state_code": "AK"
+  },
+  {
+    "city": "Nome",
+    "state_code": "AK"
+  },
+  {
+    "city": "Palmer",
+    "state_code": "AK"
+  },
+  {
+    "city": "Seward",
+    "state_code": "AK"
+  },
+  {
+    "city": "Sitka",
+    "state_code": "AK"
+  },
+  {
+    "city": "Skagway",
+    "state_code": "AK"
+  },
+  {
+    "city": "Valdez",
+    "state_code": "AK"
+  },
+  {
+    "city": "Ajo",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Avondale",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Bisbee",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Casa Grande",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Chandler",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Clifton",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Douglas",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Flagstaff",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Florence",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Gila Bend",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Glendale",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Globe",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Kingman",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Lake Havasu City",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Mesa",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Nogales",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Oraibi",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Phoenix",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Prescott",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Scottsdale",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Sierra Vista",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Tempe",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Tombstone",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Tucson",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Walpi",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Window Rock",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Winslow",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Yuma",
+    "state_code": "AZ"
+  },
+  {
+    "city": "Arkadelphia",
+    "state_code": "AR"
+  },
+  {
+    "city": "Arkansas Post",
+    "state_code": "AR"
+  },
+  {
+    "city": "Batesville",
+    "state_code": "AR"
+  },
+  {
+    "city": "Benton",
+    "state_code": "AR"
+  },
+  {
+    "city": "Blytheville",
+    "state_code": "AR"
+  },
+  {
+    "city": "Camden",
+    "state_code": "AR"
+  },
+  {
+    "city": "Conway",
+    "state_code": "AR"
+  },
+  {
+    "city": "Crossett",
+    "state_code": "AR"
+  },
+  {
+    "city": "El Dorado",
+    "state_code": "AR"
+  },
+  {
+    "city": "Fayetteville",
+    "state_code": "AR"
+  },
+  {
+    "city": "Forrest City",
+    "state_code": "AR"
+  },
+  {
+    "city": "Fort Smith",
+    "state_code": "AR"
+  },
+  {
+    "city": "Harrison",
+    "state_code": "AR"
+  },
+  {
+    "city": "Helena",
+    "state_code": "AR"
+  },
+  {
+    "city": "Hope",
+    "state_code": "AR"
+  },
+  {
+    "city": "Hot Springs",
+    "state_code": "AR"
+  },
+  {
+    "city": "Jacksonville",
+    "state_code": "AR"
+  },
+  {
+    "city": "Jonesboro",
+    "state_code": "AR"
+  },
+  {
+    "city": "Little Rock",
+    "state_code": "AR"
+  },
+  {
+    "city": "Magnolia",
+    "state_code": "AR"
+  },
+  {
+    "city": "Morrilton",
+    "state_code": "AR"
+  },
+  {
+    "city": "Newport",
+    "state_code": "AR"
+  },
+  {
+    "city": "North Little Rock",
+    "state_code": "AR"
+  },
+  {
+    "city": "Osceola",
+    "state_code": "AR"
+  },
+  {
+    "city": "Pine Bluff",
+    "state_code": "AR"
+  },
+  {
+    "city": "Rogers",
+    "state_code": "AR"
+  },
+  {
+    "city": "Searcy",
+    "state_code": "AR"
+  },
+  {
+    "city": "Stuttgart",
+    "state_code": "AR"
+  },
+  {
+    "city": "Van Buren",
+    "state_code": "AR"
+  },
+  {
+    "city": "West Memphis",
+    "state_code": "AR"
+  },
+  {
+    "city": "Alameda",
+    "state_code": "CA"
+  },
+  {
+    "city": "Alhambra",
+    "state_code": "CA"
+  },
+  {
+    "city": "Anaheim",
+    "state_code": "CA"
+  },
+  {
+    "city": "Antioch",
+    "state_code": "CA"
+  },
+  {
+    "city": "Arcadia",
+    "state_code": "CA"
+  },
+  {
+    "city": "Bakersfield",
+    "state_code": "CA"
+  },
+  {
+    "city": "Barstow",
+    "state_code": "CA"
+  },
+  {
+    "city": "Belmont",
+    "state_code": "CA"
+  },
+  {
+    "city": "Berkeley",
+    "state_code": "CA"
+  },
+  {
+    "city": "Beverly Hills",
+    "state_code": "CA"
+  },
+  {
+    "city": "Brea",
+    "state_code": "CA"
+  },
+  {
+    "city": "Buena Park",
+    "state_code": "CA"
+  },
+  {
+    "city": "Burbank",
+    "state_code": "CA"
+  },
+  {
+    "city": "Calexico",
+    "state_code": "CA"
+  },
+  {
+    "city": "Calistoga",
+    "state_code": "CA"
+  },
+  {
+    "city": "Carlsbad",
+    "state_code": "CA"
+  },
+  {
+    "city": "Carmel",
+    "state_code": "CA"
+  },
+  {
+    "city": "Chico",
+    "state_code": "CA"
+  },
+  {
+    "city": "Chula Vista",
+    "state_code": "CA"
+  },
+  {
+    "city": "Claremont",
+    "state_code": "CA"
+  },
+  {
+    "city": "Compton",
+    "state_code": "CA"
+  },
+  {
+    "city": "Concord",
+    "state_code": "CA"
+  },
+  {
+    "city": "Corona",
+    "state_code": "CA"
+  },
+  {
+    "city": "Coronado",
+    "state_code": "CA"
+  },
+  {
+    "city": "Costa Mesa",
+    "state_code": "CA"
+  },
+  {
+    "city": "Culver City",
+    "state_code": "CA"
+  },
+  {
+    "city": "Daly City",
+    "state_code": "CA"
+  },
+  {
+    "city": "Davis",
+    "state_code": "CA"
+  },
+  {
+    "city": "Downey",
+    "state_code": "CA"
+  },
+  {
+    "city": "El Centro",
+    "state_code": "CA"
+  },
+  {
+    "city": "El Cerrito",
+    "state_code": "CA"
+  },
+  {
+    "city": "El Monte",
+    "state_code": "CA"
+  },
+  {
+    "city": "Escondido",
+    "state_code": "CA"
+  },
+  {
+    "city": "Eureka",
+    "state_code": "CA"
+  },
+  {
+    "city": "Fairfield",
+    "state_code": "CA"
+  },
+  {
+    "city": "Fontana",
+    "state_code": "CA"
+  },
+  {
+    "city": "Fremont",
+    "state_code": "CA"
+  },
+  {
+    "city": "Fresno",
+    "state_code": "CA"
+  },
+  {
+    "city": "Fullerton",
+    "state_code": "CA"
+  },
+  {
+    "city": "Garden Grove",
+    "state_code": "CA"
+  },
+  {
+    "city": "Glendale",
+    "state_code": "CA"
+  },
+  {
+    "city": "Hayward",
+    "state_code": "CA"
+  },
+  {
+    "city": "Hollywood",
+    "state_code": "CA"
+  },
+  {
+    "city": "Huntington Beach",
+    "state_code": "CA"
+  },
+  {
+    "city": "Indio",
+    "state_code": "CA"
+  },
+  {
+    "city": "Inglewood",
+    "state_code": "CA"
+  },
+  {
+    "city": "Irvine",
+    "state_code": "CA"
+  },
+  {
+    "city": "La Habra",
+    "state_code": "CA"
+  },
+  {
+    "city": "Laguna Beach",
+    "state_code": "CA"
+  },
+  {
+    "city": "Lancaster",
+    "state_code": "CA"
+  },
+  {
+    "city": "Livermore",
+    "state_code": "CA"
+  },
+  {
+    "city": "Lodi",
+    "state_code": "CA"
+  },
+  {
+    "city": "Lompoc",
+    "state_code": "CA"
+  },
+  {
+    "city": "Long Beach",
+    "state_code": "CA"
+  },
+  {
+    "city": "Los Angeles",
+    "state_code": "CA"
+  },
+  {
+    "city": "Malibu",
+    "state_code": "CA"
+  },
+  {
+    "city": "Martinez",
+    "state_code": "CA"
+  },
+  {
+    "city": "Marysville",
+    "state_code": "CA"
+  },
+  {
+    "city": "Menlo Park",
+    "state_code": "CA"
+  },
+  {
+    "city": "Merced",
+    "state_code": "CA"
+  },
+  {
+    "city": "Modesto",
+    "state_code": "CA"
+  },
+  {
+    "city": "Monterey",
+    "state_code": "CA"
+  },
+  {
+    "city": "Mountain View",
+    "state_code": "CA"
+  },
+  {
+    "city": "Napa",
+    "state_code": "CA"
+  },
+  {
+    "city": "Needles",
+    "state_code": "CA"
+  },
+  {
+    "city": "Newport Beach",
+    "state_code": "CA"
+  },
+  {
+    "city": "Norwalk",
+    "state_code": "CA"
+  },
+  {
+    "city": "Novato",
+    "state_code": "CA"
+  },
+  {
+    "city": "Oakland",
+    "state_code": "CA"
+  },
+  {
+    "city": "Oceanside",
+    "state_code": "CA"
+  },
+  {
+    "city": "Ojai",
+    "state_code": "CA"
+  },
+  {
+    "city": "Ontario",
+    "state_code": "CA"
+  },
+  {
+    "city": "Orange",
+    "state_code": "CA"
+  },
+  {
+    "city": "Oroville",
+    "state_code": "CA"
+  },
+  {
+    "city": "Oxnard",
+    "state_code": "CA"
+  },
+  {
+    "city": "Pacific Grove",
+    "state_code": "CA"
+  },
+  {
+    "city": "Palm Springs",
+    "state_code": "CA"
+  },
+  {
+    "city": "Palmdale",
+    "state_code": "CA"
+  },
+  {
+    "city": "Palo Alto",
+    "state_code": "CA"
+  },
+  {
+    "city": "Pasadena",
+    "state_code": "CA"
+  },
+  {
+    "city": "Petaluma",
+    "state_code": "CA"
+  },
+  {
+    "city": "Pomona",
+    "state_code": "CA"
+  },
+  {
+    "city": "Port Hueneme",
+    "state_code": "CA"
+  },
+  {
+    "city": "Rancho Cucamonga",
+    "state_code": "CA"
+  },
+  {
+    "city": "Red Bluff",
+    "state_code": "CA"
+  },
+  {
+    "city": "Redding",
+    "state_code": "CA"
+  },
+  {
+    "city": "Redlands",
+    "state_code": "CA"
+  },
+  {
+    "city": "Redondo Beach",
+    "state_code": "CA"
+  },
+  {
+    "city": "Redwood City",
+    "state_code": "CA"
+  },
+  {
+    "city": "Richmond",
+    "state_code": "CA"
+  },
+  {
+    "city": "Riverside",
+    "state_code": "CA"
+  },
+  {
+    "city": "Roseville",
+    "state_code": "CA"
+  },
+  {
+    "city": "Sacramento",
+    "state_code": "CA"
+  },
+  {
+    "city": "Salinas",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Bernardino",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Clemente",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Diego",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Fernando",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Francisco",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Gabriel",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Jose",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Juan Capistrano",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Leandro",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Luis Obispo",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Marino",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Mateo",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Pedro",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Rafael",
+    "state_code": "CA"
+  },
+  {
+    "city": "San Simeon",
+    "state_code": "CA"
+  },
+  {
+    "city": "Santa Ana",
+    "state_code": "CA"
+  },
+  {
+    "city": "Santa Barbara",
+    "state_code": "CA"
+  },
+  {
+    "city": "Santa Clara",
+    "state_code": "CA"
+  },
+  {
+    "city": "Santa Clarita",
+    "state_code": "CA"
+  },
+  {
+    "city": "Santa Cruz",
+    "state_code": "CA"
+  },
+  {
+    "city": "Santa Monica",
+    "state_code": "CA"
+  },
+  {
+    "city": "Santa Rosa",
+    "state_code": "CA"
+  },
+  {
+    "city": "Sausalito",
+    "state_code": "CA"
+  },
+  {
+    "city": "Simi Valley",
+    "state_code": "CA"
+  },
+  {
+    "city": "Sonoma",
+    "state_code": "CA"
+  },
+  {
+    "city": "South San Francisco",
+    "state_code": "CA"
+  },
+  {
+    "city": "Stockton",
+    "state_code": "CA"
+  },
+  {
+    "city": "Sunnyvale",
+    "state_code": "CA"
+  },
+  {
+    "city": "Susanville",
+    "state_code": "CA"
+  },
+  {
+    "city": "Thousand Oaks",
+    "state_code": "CA"
+  },
+  {
+    "city": "Torrance",
+    "state_code": "CA"
+  },
+  {
+    "city": "Turlock",
+    "state_code": "CA"
+  },
+  {
+    "city": "Ukiah",
+    "state_code": "CA"
+  },
+  {
+    "city": "Vallejo",
+    "state_code": "CA"
+  },
+  {
+    "city": "Ventura",
+    "state_code": "CA"
+  },
+  {
+    "city": "Victorville",
+    "state_code": "CA"
+  },
+  {
+    "city": "Visalia",
+    "state_code": "CA"
+  },
+  {
+    "city": "Walnut Creek",
+    "state_code": "CA"
+  },
+  {
+    "city": "Watts",
+    "state_code": "CA"
+  },
+  {
+    "city": "West Covina",
+    "state_code": "CA"
+  },
+  {
+    "city": "Whittier",
+    "state_code": "CA"
+  },
+  {
+    "city": "Woodland",
+    "state_code": "CA"
+  },
+  {
+    "city": "Yorba Linda",
+    "state_code": "CA"
+  },
+  {
+    "city": "Yuba City",
+    "state_code": "CA"
+  },
+  {
+    "city": "Alamosa",
+    "state_code": "CO"
+  },
+  {
+    "city": "Aspen",
+    "state_code": "CO"
+  },
+  {
+    "city": "Aurora",
+    "state_code": "CO"
+  },
+  {
+    "city": "Boulder",
+    "state_code": "CO"
+  },
+  {
+    "city": "Breckenridge",
+    "state_code": "CO"
+  },
+  {
+    "city": "Brighton",
+    "state_code": "CO"
+  },
+  {
+    "city": "Canon City",
+    "state_code": "CO"
+  },
+  {
+    "city": "Central City",
+    "state_code": "CO"
+  },
+  {
+    "city": "Climax",
+    "state_code": "CO"
+  },
+  {
+    "city": "Colorado Springs",
+    "state_code": "CO"
+  },
+  {
+    "city": "Cortez",
+    "state_code": "CO"
+  },
+  {
+    "city": "Cripple Creek",
+    "state_code": "CO"
+  },
+  {
+    "city": "Denver",
+    "state_code": "CO"
+  },
+  {
+    "city": "Durango",
+    "state_code": "CO"
+  },
+  {
+    "city": "Englewood",
+    "state_code": "CO"
+  },
+  {
+    "city": "Estes Park",
+    "state_code": "CO"
+  },
+  {
+    "city": "Fort Collins",
+    "state_code": "CO"
+  },
+  {
+    "city": "Fort Morgan",
+    "state_code": "CO"
+  },
+  {
+    "city": "Georgetown",
+    "state_code": "CO"
+  },
+  {
+    "city": "Glenwood Springs",
+    "state_code": "CO"
+  },
+  {
+    "city": "Golden",
+    "state_code": "CO"
+  },
+  {
+    "city": "Grand Junction",
+    "state_code": "CO"
+  },
+  {
+    "city": "Greeley",
+    "state_code": "CO"
+  },
+  {
+    "city": "Gunnison",
+    "state_code": "CO"
+  },
+  {
+    "city": "La Junta",
+    "state_code": "CO"
+  },
+  {
+    "city": "Leadville",
+    "state_code": "CO"
+  },
+  {
+    "city": "Littleton",
+    "state_code": "CO"
+  },
+  {
+    "city": "Longmont",
+    "state_code": "CO"
+  },
+  {
+    "city": "Loveland",
+    "state_code": "CO"
+  },
+  {
+    "city": "Montrose",
+    "state_code": "CO"
+  },
+  {
+    "city": "Ouray",
+    "state_code": "CO"
+  },
+  {
+    "city": "Pagosa Springs",
+    "state_code": "CO"
+  },
+  {
+    "city": "Pueblo",
+    "state_code": "CO"
+  },
+  {
+    "city": "Silverton",
+    "state_code": "CO"
+  },
+  {
+    "city": "Steamboat Springs",
+    "state_code": "CO"
+  },
+  {
+    "city": "Sterling",
+    "state_code": "CO"
+  },
+  {
+    "city": "Telluride",
+    "state_code": "CO"
+  },
+  {
+    "city": "Trinidad",
+    "state_code": "CO"
+  },
+  {
+    "city": "Vail",
+    "state_code": "CO"
+  },
+  {
+    "city": "Walsenburg",
+    "state_code": "CO"
+  },
+  {
+    "city": "Westminster",
+    "state_code": "CO"
+  },
+  {
+    "city": "Ansonia",
+    "state_code": "CT"
+  },
+  {
+    "city": "Berlin",
+    "state_code": "CT"
+  },
+  {
+    "city": "Bloomfield",
+    "state_code": "CT"
+  },
+  {
+    "city": "Branford",
+    "state_code": "CT"
+  },
+  {
+    "city": "Bridgeport",
+    "state_code": "CT"
+  },
+  {
+    "city": "Bristol",
+    "state_code": "CT"
+  },
+  {
+    "city": "Coventry",
+    "state_code": "CT"
+  },
+  {
+    "city": "Danbury",
+    "state_code": "CT"
+  },
+  {
+    "city": "Darien",
+    "state_code": "CT"
+  },
+  {
+    "city": "Derby",
+    "state_code": "CT"
+  },
+  {
+    "city": "East Hartford",
+    "state_code": "CT"
+  },
+  {
+    "city": "East Haven",
+    "state_code": "CT"
+  },
+  {
+    "city": "Enfield",
+    "state_code": "CT"
+  },
+  {
+    "city": "Fairfield",
+    "state_code": "CT"
+  },
+  {
+    "city": "Farmington",
+    "state_code": "CT"
+  },
+  {
+    "city": "Greenwich",
+    "state_code": "CT"
+  },
+  {
+    "city": "Groton",
+    "state_code": "CT"
+  },
+  {
+    "city": "Guilford",
+    "state_code": "CT"
+  },
+  {
+    "city": "Hamden",
+    "state_code": "CT"
+  },
+  {
+    "city": "Hartford",
+    "state_code": "CT"
+  },
+  {
+    "city": "Lebanon",
+    "state_code": "CT"
+  },
+  {
+    "city": "Litchfield",
+    "state_code": "CT"
+  },
+  {
+    "city": "Manchester",
+    "state_code": "CT"
+  },
+  {
+    "city": "Mansfield",
+    "state_code": "CT"
+  },
+  {
+    "city": "Meriden",
+    "state_code": "CT"
+  },
+  {
+    "city": "Middletown",
+    "state_code": "CT"
+  },
+  {
+    "city": "Milford",
+    "state_code": "CT"
+  },
+  {
+    "city": "Mystic",
+    "state_code": "CT"
+  },
+  {
+    "city": "Naugatuck",
+    "state_code": "CT"
+  },
+  {
+    "city": "New Britain",
+    "state_code": "CT"
+  },
+  {
+    "city": "New Haven",
+    "state_code": "CT"
+  },
+  {
+    "city": "New London",
+    "state_code": "CT"
+  },
+  {
+    "city": "North Haven",
+    "state_code": "CT"
+  },
+  {
+    "city": "Norwalk",
+    "state_code": "CT"
+  },
+  {
+    "city": "Norwich",
+    "state_code": "CT"
+  },
+  {
+    "city": "Old Saybrook",
+    "state_code": "CT"
+  },
+  {
+    "city": "Orange",
+    "state_code": "CT"
+  },
+  {
+    "city": "Seymour",
+    "state_code": "CT"
+  },
+  {
+    "city": "Shelton",
+    "state_code": "CT"
+  },
+  {
+    "city": "Simsbury",
+    "state_code": "CT"
+  },
+  {
+    "city": "Southington",
+    "state_code": "CT"
+  },
+  {
+    "city": "Stamford",
+    "state_code": "CT"
+  },
+  {
+    "city": "Stonington",
+    "state_code": "CT"
+  },
+  {
+    "city": "Stratford",
+    "state_code": "CT"
+  },
+  {
+    "city": "Torrington",
+    "state_code": "CT"
+  },
+  {
+    "city": "Wallingford",
+    "state_code": "CT"
+  },
+  {
+    "city": "Waterbury",
+    "state_code": "CT"
+  },
+  {
+    "city": "Waterford",
+    "state_code": "CT"
+  },
+  {
+    "city": "Watertown",
+    "state_code": "CT"
+  },
+  {
+    "city": "West Hartford",
+    "state_code": "CT"
+  },
+  {
+    "city": "West Haven",
+    "state_code": "CT"
+  },
+  {
+    "city": "Westport",
+    "state_code": "CT"
+  },
+  {
+    "city": "Wethersfield",
+    "state_code": "CT"
+  },
+  {
+    "city": "Willimantic",
+    "state_code": "CT"
+  },
+  {
+    "city": "Windham",
+    "state_code": "CT"
+  },
+  {
+    "city": "Windsor",
+    "state_code": "CT"
+  },
+  {
+    "city": "Windsor Locks",
+    "state_code": "CT"
+  },
+  {
+    "city": "Winsted",
+    "state_code": "CT"
+  },
+  {
+    "city": "Dover",
+    "state_code": "DE"
+  },
+  {
+    "city": "Lewes",
+    "state_code": "DE"
+  },
+  {
+    "city": "Milford",
+    "state_code": "DE"
+  },
+  {
+    "city": "New Castle",
+    "state_code": "DE"
+  },
+  {
+    "city": "Newark",
+    "state_code": "DE"
+  },
+  {
+    "city": "Smyrna",
+    "state_code": "DE"
+  },
+  {
+    "city": "Wilmington",
+    "state_code": "DE"
+  },
+  {
+    "city": "Apalachicola",
+    "state_code": "FL"
+  },
+  {
+    "city": "Bartow",
+    "state_code": "FL"
+  },
+  {
+    "city": "Belle Glade",
+    "state_code": "FL"
+  },
+  {
+    "city": "Boca Raton",
+    "state_code": "FL"
+  },
+  {
+    "city": "Bradenton",
+    "state_code": "FL"
+  },
+  {
+    "city": "Cape Coral",
+    "state_code": "FL"
+  },
+  {
+    "city": "Clearwater",
+    "state_code": "FL"
+  },
+  {
+    "city": "Cocoa Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Cocoa-Rockledge",
+    "state_code": "FL"
+  },
+  {
+    "city": "Coral Gables",
+    "state_code": "FL"
+  },
+  {
+    "city": "Daytona Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "De Land",
+    "state_code": "FL"
+  },
+  {
+    "city": "Deerfield Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Delray Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Fernandina Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Fort Lauderdale",
+    "state_code": "FL"
+  },
+  {
+    "city": "Fort Myers",
+    "state_code": "FL"
+  },
+  {
+    "city": "Fort Pierce",
+    "state_code": "FL"
+  },
+  {
+    "city": "Fort Walton Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Gainesville",
+    "state_code": "FL"
+  },
+  {
+    "city": "Hallandale Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Hialeah",
+    "state_code": "FL"
+  },
+  {
+    "city": "Hollywood",
+    "state_code": "FL"
+  },
+  {
+    "city": "Homestead",
+    "state_code": "FL"
+  },
+  {
+    "city": "Jacksonville",
+    "state_code": "FL"
+  },
+  {
+    "city": "Key West",
+    "state_code": "FL"
+  },
+  {
+    "city": "Lake City",
+    "state_code": "FL"
+  },
+  {
+    "city": "Lake Wales",
+    "state_code": "FL"
+  },
+  {
+    "city": "Lakeland",
+    "state_code": "FL"
+  },
+  {
+    "city": "Largo",
+    "state_code": "FL"
+  },
+  {
+    "city": "Melbourne",
+    "state_code": "FL"
+  },
+  {
+    "city": "Miami",
+    "state_code": "FL"
+  },
+  {
+    "city": "Miami Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Naples",
+    "state_code": "FL"
+  },
+  {
+    "city": "New Smyrna Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Ocala",
+    "state_code": "FL"
+  },
+  {
+    "city": "Orlando",
+    "state_code": "FL"
+  },
+  {
+    "city": "Ormond Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Palatka",
+    "state_code": "FL"
+  },
+  {
+    "city": "Palm Bay",
+    "state_code": "FL"
+  },
+  {
+    "city": "Palm Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Panama City",
+    "state_code": "FL"
+  },
+  {
+    "city": "Pensacola",
+    "state_code": "FL"
+  },
+  {
+    "city": "Pompano Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "Saint Augustine",
+    "state_code": "FL"
+  },
+  {
+    "city": "Saint Petersburg",
+    "state_code": "FL"
+  },
+  {
+    "city": "Sanford",
+    "state_code": "FL"
+  },
+  {
+    "city": "Sarasota",
+    "state_code": "FL"
+  },
+  {
+    "city": "Sebring",
+    "state_code": "FL"
+  },
+  {
+    "city": "Tallahassee",
+    "state_code": "FL"
+  },
+  {
+    "city": "Tampa",
+    "state_code": "FL"
+  },
+  {
+    "city": "Tarpon Springs",
+    "state_code": "FL"
+  },
+  {
+    "city": "Titusville",
+    "state_code": "FL"
+  },
+  {
+    "city": "Venice",
+    "state_code": "FL"
+  },
+  {
+    "city": "West Palm Beach",
+    "state_code": "FL"
+  },
+  {
+    "city": "White Springs",
+    "state_code": "FL"
+  },
+  {
+    "city": "Winter Haven",
+    "state_code": "FL"
+  },
+  {
+    "city": "Winter Park",
+    "state_code": "FL"
+  },
+  {
+    "city": "Albany",
+    "state_code": "GA"
+  },
+  {
+    "city": "Americus",
+    "state_code": "GA"
+  },
+  {
+    "city": "Andersonville",
+    "state_code": "GA"
+  },
+  {
+    "city": "Athens",
+    "state_code": "GA"
+  },
+  {
+    "city": "Atlanta",
+    "state_code": "GA"
+  },
+  {
+    "city": "Augusta",
+    "state_code": "GA"
+  },
+  {
+    "city": "Bainbridge",
+    "state_code": "GA"
+  },
+  {
+    "city": "Blairsville",
+    "state_code": "GA"
+  },
+  {
+    "city": "Brunswick",
+    "state_code": "GA"
+  },
+  {
+    "city": "Calhoun",
+    "state_code": "GA"
+  },
+  {
+    "city": "Carrollton",
+    "state_code": "GA"
+  },
+  {
+    "city": "Columbus",
+    "state_code": "GA"
+  },
+  {
+    "city": "Dahlonega",
+    "state_code": "GA"
+  },
+  {
+    "city": "Dalton",
+    "state_code": "GA"
+  },
+  {
+    "city": "Darien",
+    "state_code": "GA"
+  },
+  {
+    "city": "Decatur",
+    "state_code": "GA"
+  },
+  {
+    "city": "Douglas",
+    "state_code": "GA"
+  },
+  {
+    "city": "East Point",
+    "state_code": "GA"
+  },
+  {
+    "city": "Fitzgerald",
+    "state_code": "GA"
+  },
+  {
+    "city": "Fort Valley",
+    "state_code": "GA"
+  },
+  {
+    "city": "Gainesville",
+    "state_code": "GA"
+  },
+  {
+    "city": "La Grange",
+    "state_code": "GA"
+  },
+  {
+    "city": "Macon",
+    "state_code": "GA"
+  },
+  {
+    "city": "Marietta",
+    "state_code": "GA"
+  },
+  {
+    "city": "Milledgeville",
+    "state_code": "GA"
+  },
+  {
+    "city": "Plains",
+    "state_code": "GA"
+  },
+  {
+    "city": "Rome",
+    "state_code": "GA"
+  },
+  {
+    "city": "Savannah",
+    "state_code": "GA"
+  },
+  {
+    "city": "Toccoa",
+    "state_code": "GA"
+  },
+  {
+    "city": "Valdosta",
+    "state_code": "GA"
+  },
+  {
+    "city": "Warm Springs",
+    "state_code": "GA"
+  },
+  {
+    "city": "Warner Robins",
+    "state_code": "GA"
+  },
+  {
+    "city": "Washington",
+    "state_code": "GA"
+  },
+  {
+    "city": "Waycross",
+    "state_code": "GA"
+  },
+  {
+    "city": "Hanalei",
+    "state_code": "HI"
+  },
+  {
+    "city": "Hilo",
+    "state_code": "HI"
+  },
+  {
+    "city": "Honaunau",
+    "state_code": "HI"
+  },
+  {
+    "city": "Honolulu",
+    "state_code": "HI"
+  },
+  {
+    "city": "Kahului",
+    "state_code": "HI"
+  },
+  {
+    "city": "Kaneohe",
+    "state_code": "HI"
+  },
+  {
+    "city": "Kapaa",
+    "state_code": "HI"
+  },
+  {
+    "city": "Kawaihae",
+    "state_code": "HI"
+  },
+  {
+    "city": "Lahaina",
+    "state_code": "HI"
+  },
+  {
+    "city": "Laie",
+    "state_code": "HI"
+  },
+  {
+    "city": "Wahiawa",
+    "state_code": "HI"
+  },
+  {
+    "city": "Wailuku",
+    "state_code": "HI"
+  },
+  {
+    "city": "Waimea",
+    "state_code": "HI"
+  },
+  {
+    "city": "Blackfoot",
+    "state_code": "ID"
+  },
+  {
+    "city": "Boise",
+    "state_code": "ID"
+  },
+  {
+    "city": "Bonners Ferry",
+    "state_code": "ID"
+  },
+  {
+    "city": "Caldwell",
+    "state_code": "ID"
+  },
+  {
+    "city": "Coeur d’Alene",
+    "state_code": "ID"
+  },
+  {
+    "city": "Idaho City",
+    "state_code": "ID"
+  },
+  {
+    "city": "Idaho Falls",
+    "state_code": "ID"
+  },
+  {
+    "city": "Kellogg",
+    "state_code": "ID"
+  },
+  {
+    "city": "Lewiston",
+    "state_code": "ID"
+  },
+  {
+    "city": "Moscow",
+    "state_code": "ID"
+  },
+  {
+    "city": "Nampa",
+    "state_code": "ID"
+  },
+  {
+    "city": "Pocatello",
+    "state_code": "ID"
+  },
+  {
+    "city": "Priest River",
+    "state_code": "ID"
+  },
+  {
+    "city": "Rexburg",
+    "state_code": "ID"
+  },
+  {
+    "city": "Sun Valley",
+    "state_code": "ID"
+  },
+  {
+    "city": "Twin Falls",
+    "state_code": "ID"
+  },
+  {
+    "city": "Alton",
+    "state_code": "IL"
+  },
+  {
+    "city": "Arlington Heights",
+    "state_code": "IL"
+  },
+  {
+    "city": "Arthur",
+    "state_code": "IL"
+  },
+  {
+    "city": "Aurora",
+    "state_code": "IL"
+  },
+  {
+    "city": "Belleville",
+    "state_code": "IL"
+  },
+  {
+    "city": "Belvidere",
+    "state_code": "IL"
+  },
+  {
+    "city": "Bloomington",
+    "state_code": "IL"
+  },
+  {
+    "city": "Brookfield",
+    "state_code": "IL"
+  },
+  {
+    "city": "Cahokia",
+    "state_code": "IL"
+  },
+  {
+    "city": "Cairo",
+    "state_code": "IL"
+  },
+  {
+    "city": "Calumet City",
+    "state_code": "IL"
+  },
+  {
+    "city": "Canton",
+    "state_code": "IL"
+  },
+  {
+    "city": "Carbondale",
+    "state_code": "IL"
+  },
+  {
+    "city": "Carlinville",
+    "state_code": "IL"
+  },
+  {
+    "city": "Carthage",
+    "state_code": "IL"
+  },
+  {
+    "city": "Centralia",
+    "state_code": "IL"
+  },
+  {
+    "city": "Champaign",
+    "state_code": "IL"
+  },
+  {
+    "city": "Charleston",
+    "state_code": "IL"
+  },
+  {
+    "city": "Chester",
+    "state_code": "IL"
+  },
+  {
+    "city": "Chicago",
+    "state_code": "IL"
+  },
+  {
+    "city": "Chicago Heights",
+    "state_code": "IL"
+  },
+  {
+    "city": "Cicero",
+    "state_code": "IL"
+  },
+  {
+    "city": "Collinsville",
+    "state_code": "IL"
+  },
+  {
+    "city": "Danville",
+    "state_code": "IL"
+  },
+  {
+    "city": "Decatur",
+    "state_code": "IL"
+  },
+  {
+    "city": "DeKalb",
+    "state_code": "IL"
+  },
+  {
+    "city": "Des Plaines",
+    "state_code": "IL"
+  },
+  {
+    "city": "Dixon",
+    "state_code": "IL"
+  },
+  {
+    "city": "East Moline",
+    "state_code": "IL"
+  },
+  {
+    "city": "East Saint Louis",
+    "state_code": "IL"
+  },
+  {
+    "city": "Effingham",
+    "state_code": "IL"
+  },
+  {
+    "city": "Elgin",
+    "state_code": "IL"
+  },
+  {
+    "city": "Elmhurst",
+    "state_code": "IL"
+  },
+  {
+    "city": "Evanston",
+    "state_code": "IL"
+  },
+  {
+    "city": "Freeport",
+    "state_code": "IL"
+  },
+  {
+    "city": "Galena",
+    "state_code": "IL"
+  },
+  {
+    "city": "Galesburg",
+    "state_code": "IL"
+  },
+  {
+    "city": "Glen Ellyn",
+    "state_code": "IL"
+  },
+  {
+    "city": "Glenview",
+    "state_code": "IL"
+  },
+  {
+    "city": "Granite City",
+    "state_code": "IL"
+  },
+  {
+    "city": "Harrisburg",
+    "state_code": "IL"
+  },
+  {
+    "city": "Herrin",
+    "state_code": "IL"
+  },
+  {
+    "city": "Highland Park",
+    "state_code": "IL"
+  },
+  {
+    "city": "Jacksonville",
+    "state_code": "IL"
+  },
+  {
+    "city": "Joliet",
+    "state_code": "IL"
+  },
+  {
+    "city": "Kankakee",
+    "state_code": "IL"
+  },
+  {
+    "city": "Kaskaskia",
+    "state_code": "IL"
+  },
+  {
+    "city": "Kewanee",
+    "state_code": "IL"
+  },
+  {
+    "city": "La Salle",
+    "state_code": "IL"
+  },
+  {
+    "city": "Lake Forest",
+    "state_code": "IL"
+  },
+  {
+    "city": "Libertyville",
+    "state_code": "IL"
+  },
+  {
+    "city": "Lincoln",
+    "state_code": "IL"
+  },
+  {
+    "city": "Lisle",
+    "state_code": "IL"
+  },
+  {
+    "city": "Lombard",
+    "state_code": "IL"
+  },
+  {
+    "city": "Macomb",
+    "state_code": "IL"
+  },
+  {
+    "city": "Mattoon",
+    "state_code": "IL"
+  },
+  {
+    "city": "Moline",
+    "state_code": "IL"
+  },
+  {
+    "city": "Monmouth",
+    "state_code": "IL"
+  },
+  {
+    "city": "Mount Vernon",
+    "state_code": "IL"
+  },
+  {
+    "city": "Mundelein",
+    "state_code": "IL"
+  },
+  {
+    "city": "Naperville",
+    "state_code": "IL"
+  },
+  {
+    "city": "Nauvoo",
+    "state_code": "IL"
+  },
+  {
+    "city": "Normal",
+    "state_code": "IL"
+  },
+  {
+    "city": "North Chicago",
+    "state_code": "IL"
+  },
+  {
+    "city": "Oak Park",
+    "state_code": "IL"
+  },
+  {
+    "city": "Oregon",
+    "state_code": "IL"
+  },
+  {
+    "city": "Ottawa",
+    "state_code": "IL"
+  },
+  {
+    "city": "Palatine",
+    "state_code": "IL"
+  },
+  {
+    "city": "Park Forest",
+    "state_code": "IL"
+  },
+  {
+    "city": "Park Ridge",
+    "state_code": "IL"
+  },
+  {
+    "city": "Pekin",
+    "state_code": "IL"
+  },
+  {
+    "city": "Peoria",
+    "state_code": "IL"
+  },
+  {
+    "city": "Petersburg",
+    "state_code": "IL"
+  },
+  {
+    "city": "Pontiac",
+    "state_code": "IL"
+  },
+  {
+    "city": "Quincy",
+    "state_code": "IL"
+  },
+  {
+    "city": "Rantoul",
+    "state_code": "IL"
+  },
+  {
+    "city": "River Forest",
+    "state_code": "IL"
+  },
+  {
+    "city": "Rock Island",
+    "state_code": "IL"
+  },
+  {
+    "city": "Rockford",
+    "state_code": "IL"
+  },
+  {
+    "city": "Salem",
+    "state_code": "IL"
+  },
+  {
+    "city": "Shawneetown",
+    "state_code": "IL"
+  },
+  {
+    "city": "Skokie",
+    "state_code": "IL"
+  },
+  {
+    "city": "South Holland",
+    "state_code": "IL"
+  },
+  {
+    "city": "Springfield",
+    "state_code": "IL"
+  },
+  {
+    "city": "Streator",
+    "state_code": "IL"
+  },
+  {
+    "city": "Summit",
+    "state_code": "IL"
+  },
+  {
+    "city": "Urbana",
+    "state_code": "IL"
+  },
+  {
+    "city": "Vandalia",
+    "state_code": "IL"
+  },
+  {
+    "city": "Virden",
+    "state_code": "IL"
+  },
+  {
+    "city": "Waukegan",
+    "state_code": "IL"
+  },
+  {
+    "city": "Wheaton",
+    "state_code": "IL"
+  },
+  {
+    "city": "Wilmette",
+    "state_code": "IL"
+  },
+  {
+    "city": "Winnetka",
+    "state_code": "IL"
+  },
+  {
+    "city": "Wood River",
+    "state_code": "IL"
+  },
+  {
+    "city": "Zion",
+    "state_code": "IL"
+  },
+  {
+    "city": "Anderson",
+    "state_code": "IN"
+  },
+  {
+    "city": "Bedford",
+    "state_code": "IN"
+  },
+  {
+    "city": "Bloomington",
+    "state_code": "IN"
+  },
+  {
+    "city": "Columbus",
+    "state_code": "IN"
+  },
+  {
+    "city": "Connersville",
+    "state_code": "IN"
+  },
+  {
+    "city": "Corydon",
+    "state_code": "IN"
+  },
+  {
+    "city": "Crawfordsville",
+    "state_code": "IN"
+  },
+  {
+    "city": "East Chicago",
+    "state_code": "IN"
+  },
+  {
+    "city": "Elkhart",
+    "state_code": "IN"
+  },
+  {
+    "city": "Elwood",
+    "state_code": "IN"
+  },
+  {
+    "city": "Evansville",
+    "state_code": "IN"
+  },
+  {
+    "city": "Fort Wayne",
+    "state_code": "IN"
+  },
+  {
+    "city": "French Lick",
+    "state_code": "IN"
+  },
+  {
+    "city": "Gary",
+    "state_code": "IN"
+  },
+  {
+    "city": "Geneva",
+    "state_code": "IN"
+  },
+  {
+    "city": "Goshen",
+    "state_code": "IN"
+  },
+  {
+    "city": "Greenfield",
+    "state_code": "IN"
+  },
+  {
+    "city": "Hammond",
+    "state_code": "IN"
+  },
+  {
+    "city": "Hobart",
+    "state_code": "IN"
+  },
+  {
+    "city": "Huntington",
+    "state_code": "IN"
+  },
+  {
+    "city": "Indianapolis",
+    "state_code": "IN"
+  },
+  {
+    "city": "Jeffersonville",
+    "state_code": "IN"
+  },
+  {
+    "city": "Kokomo",
+    "state_code": "IN"
+  },
+  {
+    "city": "Lafayette",
+    "state_code": "IN"
+  },
+  {
+    "city": "Madison",
+    "state_code": "IN"
+  },
+  {
+    "city": "Marion",
+    "state_code": "IN"
+  },
+  {
+    "city": "Michigan City",
+    "state_code": "IN"
+  },
+  {
+    "city": "Mishawaka",
+    "state_code": "IN"
+  },
+  {
+    "city": "Muncie",
+    "state_code": "IN"
+  },
+  {
+    "city": "Nappanee",
+    "state_code": "IN"
+  },
+  {
+    "city": "Nashville",
+    "state_code": "IN"
+  },
+  {
+    "city": "New Albany",
+    "state_code": "IN"
+  },
+  {
+    "city": "New Castle",
+    "state_code": "IN"
+  },
+  {
+    "city": "New Harmony",
+    "state_code": "IN"
+  },
+  {
+    "city": "Peru",
+    "state_code": "IN"
+  },
+  {
+    "city": "Plymouth",
+    "state_code": "IN"
+  },
+  {
+    "city": "Richmond",
+    "state_code": "IN"
+  },
+  {
+    "city": "Santa Claus",
+    "state_code": "IN"
+  },
+  {
+    "city": "Shelbyville",
+    "state_code": "IN"
+  },
+  {
+    "city": "South Bend",
+    "state_code": "IN"
+  },
+  {
+    "city": "Terre Haute",
+    "state_code": "IN"
+  },
+  {
+    "city": "Valparaiso",
+    "state_code": "IN"
+  },
+  {
+    "city": "Vincennes",
+    "state_code": "IN"
+  },
+  {
+    "city": "Wabash",
+    "state_code": "IN"
+  },
+  {
+    "city": "West Lafayette",
+    "state_code": "IN"
+  },
+  {
+    "city": "Amana Colonies",
+    "state_code": "IA"
+  },
+  {
+    "city": "Ames",
+    "state_code": "IA"
+  },
+  {
+    "city": "Boone",
+    "state_code": "IA"
+  },
+  {
+    "city": "Burlington",
+    "state_code": "IA"
+  },
+  {
+    "city": "Cedar Falls",
+    "state_code": "IA"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state_code": "IA"
+  },
+  {
+    "city": "Charles City",
+    "state_code": "IA"
+  },
+  {
+    "city": "Cherokee",
+    "state_code": "IA"
+  },
+  {
+    "city": "Clinton",
+    "state_code": "IA"
+  },
+  {
+    "city": "Council Bluffs",
+    "state_code": "IA"
+  },
+  {
+    "city": "Davenport",
+    "state_code": "IA"
+  },
+  {
+    "city": "Des Moines",
+    "state_code": "IA"
+  },
+  {
+    "city": "Dubuque",
+    "state_code": "IA"
+  },
+  {
+    "city": "Estherville",
+    "state_code": "IA"
+  },
+  {
+    "city": "Fairfield",
+    "state_code": "IA"
+  },
+  {
+    "city": "Fort Dodge",
+    "state_code": "IA"
+  },
+  {
+    "city": "Grinnell",
+    "state_code": "IA"
+  },
+  {
+    "city": "Indianola",
+    "state_code": "IA"
+  },
+  {
+    "city": "Iowa City",
+    "state_code": "IA"
+  },
+  {
+    "city": "Keokuk",
+    "state_code": "IA"
+  },
+  {
+    "city": "Mason City",
+    "state_code": "IA"
+  },
+  {
+    "city": "Mount Pleasant",
+    "state_code": "IA"
+  },
+  {
+    "city": "Muscatine",
+    "state_code": "IA"
+  },
+  {
+    "city": "Newton",
+    "state_code": "IA"
+  },
+  {
+    "city": "Oskaloosa",
+    "state_code": "IA"
+  },
+  {
+    "city": "Ottumwa",
+    "state_code": "IA"
+  },
+  {
+    "city": "Sioux City",
+    "state_code": "IA"
+  },
+  {
+    "city": "Waterloo",
+    "state_code": "IA"
+  },
+  {
+    "city": "Webster City",
+    "state_code": "IA"
+  },
+  {
+    "city": "West Des Moines",
+    "state_code": "IA"
+  },
+  {
+    "city": "Abilene",
+    "state_code": "KS"
+  },
+  {
+    "city": "Arkansas City",
+    "state_code": "KS"
+  },
+  {
+    "city": "Atchison",
+    "state_code": "KS"
+  },
+  {
+    "city": "Chanute",
+    "state_code": "KS"
+  },
+  {
+    "city": "Coffeyville",
+    "state_code": "KS"
+  },
+  {
+    "city": "Council Grove",
+    "state_code": "KS"
+  },
+  {
+    "city": "Dodge City",
+    "state_code": "KS"
+  },
+  {
+    "city": "Emporia",
+    "state_code": "KS"
+  },
+  {
+    "city": "Fort Scott",
+    "state_code": "KS"
+  },
+  {
+    "city": "Garden City",
+    "state_code": "KS"
+  },
+  {
+    "city": "Great Bend",
+    "state_code": "KS"
+  },
+  {
+    "city": "Hays",
+    "state_code": "KS"
+  },
+  {
+    "city": "Hutchinson",
+    "state_code": "KS"
+  },
+  {
+    "city": "Independence",
+    "state_code": "KS"
+  },
+  {
+    "city": "Junction City",
+    "state_code": "KS"
+  },
+  {
+    "city": "Kansas City",
+    "state_code": "KS"
+  },
+  {
+    "city": "Lawrence",
+    "state_code": "KS"
+  },
+  {
+    "city": "Leavenworth",
+    "state_code": "KS"
+  },
+  {
+    "city": "Liberal",
+    "state_code": "KS"
+  },
+  {
+    "city": "Manhattan",
+    "state_code": "KS"
+  },
+  {
+    "city": "McPherson",
+    "state_code": "KS"
+  },
+  {
+    "city": "Medicine Lodge",
+    "state_code": "KS"
+  },
+  {
+    "city": "Newton",
+    "state_code": "KS"
+  },
+  {
+    "city": "Olathe",
+    "state_code": "KS"
+  },
+  {
+    "city": "Osawatomie",
+    "state_code": "KS"
+  },
+  {
+    "city": "Ottawa",
+    "state_code": "KS"
+  },
+  {
+    "city": "Overland Park",
+    "state_code": "KS"
+  },
+  {
+    "city": "Pittsburg",
+    "state_code": "KS"
+  },
+  {
+    "city": "Salina",
+    "state_code": "KS"
+  },
+  {
+    "city": "Shawnee",
+    "state_code": "KS"
+  },
+  {
+    "city": "Smith Center",
+    "state_code": "KS"
+  },
+  {
+    "city": "Topeka",
+    "state_code": "KS"
+  },
+  {
+    "city": "Wichita",
+    "state_code": "KS"
+  },
+  {
+    "city": "Ashland",
+    "state_code": "KY"
+  },
+  {
+    "city": "Barbourville",
+    "state_code": "KY"
+  },
+  {
+    "city": "Bardstown",
+    "state_code": "KY"
+  },
+  {
+    "city": "Berea",
+    "state_code": "KY"
+  },
+  {
+    "city": "Boonesborough",
+    "state_code": "KY"
+  },
+  {
+    "city": "Bowling Green",
+    "state_code": "KY"
+  },
+  {
+    "city": "Campbellsville",
+    "state_code": "KY"
+  },
+  {
+    "city": "Covington",
+    "state_code": "KY"
+  },
+  {
+    "city": "Danville",
+    "state_code": "KY"
+  },
+  {
+    "city": "Elizabethtown",
+    "state_code": "KY"
+  },
+  {
+    "city": "Frankfort",
+    "state_code": "KY"
+  },
+  {
+    "city": "Harlan",
+    "state_code": "KY"
+  },
+  {
+    "city": "Harrodsburg",
+    "state_code": "KY"
+  },
+  {
+    "city": "Hazard",
+    "state_code": "KY"
+  },
+  {
+    "city": "Henderson",
+    "state_code": "KY"
+  },
+  {
+    "city": "Hodgenville",
+    "state_code": "KY"
+  },
+  {
+    "city": "Hopkinsville",
+    "state_code": "KY"
+  },
+  {
+    "city": "Lexington",
+    "state_code": "KY"
+  },
+  {
+    "city": "Louisville",
+    "state_code": "KY"
+  },
+  {
+    "city": "Mayfield",
+    "state_code": "KY"
+  },
+  {
+    "city": "Maysville",
+    "state_code": "KY"
+  },
+  {
+    "city": "Middlesboro",
+    "state_code": "KY"
+  },
+  {
+    "city": "Newport",
+    "state_code": "KY"
+  },
+  {
+    "city": "Owensboro",
+    "state_code": "KY"
+  },
+  {
+    "city": "Paducah",
+    "state_code": "KY"
+  },
+  {
+    "city": "Paris",
+    "state_code": "KY"
+  },
+  {
+    "city": "Richmond",
+    "state_code": "KY"
+  },
+  {
+    "city": "Abbeville",
+    "state_code": "LA"
+  },
+  {
+    "city": "Alexandria",
+    "state_code": "LA"
+  },
+  {
+    "city": "Bastrop",
+    "state_code": "LA"
+  },
+  {
+    "city": "Baton Rouge",
+    "state_code": "LA"
+  },
+  {
+    "city": "Bogalusa",
+    "state_code": "LA"
+  },
+  {
+    "city": "Bossier City",
+    "state_code": "LA"
+  },
+  {
+    "city": "Gretna",
+    "state_code": "LA"
+  },
+  {
+    "city": "Houma",
+    "state_code": "LA"
+  },
+  {
+    "city": "Lafayette",
+    "state_code": "LA"
+  },
+  {
+    "city": "Lake Charles",
+    "state_code": "LA"
+  },
+  {
+    "city": "Monroe",
+    "state_code": "LA"
+  },
+  {
+    "city": "Morgan City",
+    "state_code": "LA"
+  },
+  {
+    "city": "Natchitoches",
+    "state_code": "LA"
+  },
+  {
+    "city": "New Iberia",
+    "state_code": "LA"
+  },
+  {
+    "city": "New Orleans",
+    "state_code": "LA"
+  },
+  {
+    "city": "Opelousas",
+    "state_code": "LA"
+  },
+  {
+    "city": "Ruston",
+    "state_code": "LA"
+  },
+  {
+    "city": "Saint Martinville",
+    "state_code": "LA"
+  },
+  {
+    "city": "Shreveport",
+    "state_code": "LA"
+  },
+  {
+    "city": "Thibodaux",
+    "state_code": "LA"
+  },
+  {
+    "city": "Auburn",
+    "state_code": "ME"
+  },
+  {
+    "city": "Augusta",
+    "state_code": "ME"
+  },
+  {
+    "city": "Bangor",
+    "state_code": "ME"
+  },
+  {
+    "city": "Bar Harbor",
+    "state_code": "ME"
+  },
+  {
+    "city": "Bath",
+    "state_code": "ME"
+  },
+  {
+    "city": "Belfast",
+    "state_code": "ME"
+  },
+  {
+    "city": "Biddeford",
+    "state_code": "ME"
+  },
+  {
+    "city": "Boothbay Harbor",
+    "state_code": "ME"
+  },
+  {
+    "city": "Brunswick",
+    "state_code": "ME"
+  },
+  {
+    "city": "Calais",
+    "state_code": "ME"
+  },
+  {
+    "city": "Caribou",
+    "state_code": "ME"
+  },
+  {
+    "city": "Castine",
+    "state_code": "ME"
+  },
+  {
+    "city": "Eastport",
+    "state_code": "ME"
+  },
+  {
+    "city": "Ellsworth",
+    "state_code": "ME"
+  },
+  {
+    "city": "Farmington",
+    "state_code": "ME"
+  },
+  {
+    "city": "Fort Kent",
+    "state_code": "ME"
+  },
+  {
+    "city": "Gardiner",
+    "state_code": "ME"
+  },
+  {
+    "city": "Houlton",
+    "state_code": "ME"
+  },
+  {
+    "city": "Kennebunkport",
+    "state_code": "ME"
+  },
+  {
+    "city": "Kittery",
+    "state_code": "ME"
+  },
+  {
+    "city": "Lewiston",
+    "state_code": "ME"
+  },
+  {
+    "city": "Lubec",
+    "state_code": "ME"
+  },
+  {
+    "city": "Machias",
+    "state_code": "ME"
+  },
+  {
+    "city": "Orono",
+    "state_code": "ME"
+  },
+  {
+    "city": "Portland",
+    "state_code": "ME"
+  },
+  {
+    "city": "Presque Isle",
+    "state_code": "ME"
+  },
+  {
+    "city": "Rockland",
+    "state_code": "ME"
+  },
+  {
+    "city": "Rumford",
+    "state_code": "ME"
+  },
+  {
+    "city": "Saco",
+    "state_code": "ME"
+  },
+  {
+    "city": "Scarborough",
+    "state_code": "ME"
+  },
+  {
+    "city": "Waterville",
+    "state_code": "ME"
+  },
+  {
+    "city": "York",
+    "state_code": "ME"
+  },
+  {
+    "city": "Aberdeen",
+    "state_code": "MD"
+  },
+  {
+    "city": "Annapolis",
+    "state_code": "MD"
+  },
+  {
+    "city": "Baltimore",
+    "state_code": "MD"
+  },
+  {
+    "city": "Bethesda-Chevy Chase",
+    "state_code": "MD"
+  },
+  {
+    "city": "Bowie",
+    "state_code": "MD"
+  },
+  {
+    "city": "Cambridge",
+    "state_code": "MD"
+  },
+  {
+    "city": "Catonsville",
+    "state_code": "MD"
+  },
+  {
+    "city": "College Park",
+    "state_code": "MD"
+  },
+  {
+    "city": "Columbia",
+    "state_code": "MD"
+  },
+  {
+    "city": "Cumberland",
+    "state_code": "MD"
+  },
+  {
+    "city": "Easton",
+    "state_code": "MD"
+  },
+  {
+    "city": "Elkton",
+    "state_code": "MD"
+  },
+  {
+    "city": "Emmitsburg",
+    "state_code": "MD"
+  },
+  {
+    "city": "Frederick",
+    "state_code": "MD"
+  },
+  {
+    "city": "Greenbelt",
+    "state_code": "MD"
+  },
+  {
+    "city": "Hagerstown",
+    "state_code": "MD"
+  },
+  {
+    "city": "Hyattsville",
+    "state_code": "MD"
+  },
+  {
+    "city": "Laurel",
+    "state_code": "MD"
+  },
+  {
+    "city": "Oakland",
+    "state_code": "MD"
+  },
+  {
+    "city": "Ocean City",
+    "state_code": "MD"
+  },
+  {
+    "city": "Rockville",
+    "state_code": "MD"
+  },
+  {
+    "city": "Saint Marys City",
+    "state_code": "MD"
+  },
+  {
+    "city": "Salisbury",
+    "state_code": "MD"
+  },
+  {
+    "city": "Silver Spring",
+    "state_code": "MD"
+  },
+  {
+    "city": "Takoma Park",
+    "state_code": "MD"
+  },
+  {
+    "city": "Towson",
+    "state_code": "MD"
+  },
+  {
+    "city": "Westminster",
+    "state_code": "MD"
+  },
+  {
+    "city": "Abington",
+    "state_code": "MA"
+  },
+  {
+    "city": "Adams",
+    "state_code": "MA"
+  },
+  {
+    "city": "Amesbury",
+    "state_code": "MA"
+  },
+  {
+    "city": "Amherst",
+    "state_code": "MA"
+  },
+  {
+    "city": "Andover",
+    "state_code": "MA"
+  },
+  {
+    "city": "Arlington",
+    "state_code": "MA"
+  },
+  {
+    "city": "Athol",
+    "state_code": "MA"
+  },
+  {
+    "city": "Attleboro",
+    "state_code": "MA"
+  },
+  {
+    "city": "Barnstable",
+    "state_code": "MA"
+  },
+  {
+    "city": "Bedford",
+    "state_code": "MA"
+  },
+  {
+    "city": "Beverly",
+    "state_code": "MA"
+  },
+  {
+    "city": "Boston",
+    "state_code": "MA"
+  },
+  {
+    "city": "Bourne",
+    "state_code": "MA"
+  },
+  {
+    "city": "Braintree",
+    "state_code": "MA"
+  },
+  {
+    "city": "Brockton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Brookline",
+    "state_code": "MA"
+  },
+  {
+    "city": "Cambridge",
+    "state_code": "MA"
+  },
+  {
+    "city": "Canton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Charlestown",
+    "state_code": "MA"
+  },
+  {
+    "city": "Chelmsford",
+    "state_code": "MA"
+  },
+  {
+    "city": "Chelsea",
+    "state_code": "MA"
+  },
+  {
+    "city": "Chicopee",
+    "state_code": "MA"
+  },
+  {
+    "city": "Clinton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Cohasset",
+    "state_code": "MA"
+  },
+  {
+    "city": "Concord",
+    "state_code": "MA"
+  },
+  {
+    "city": "Danvers",
+    "state_code": "MA"
+  },
+  {
+    "city": "Dartmouth",
+    "state_code": "MA"
+  },
+  {
+    "city": "Dedham",
+    "state_code": "MA"
+  },
+  {
+    "city": "Dennis",
+    "state_code": "MA"
+  },
+  {
+    "city": "Duxbury",
+    "state_code": "MA"
+  },
+  {
+    "city": "Eastham",
+    "state_code": "MA"
+  },
+  {
+    "city": "Edgartown",
+    "state_code": "MA"
+  },
+  {
+    "city": "Everett",
+    "state_code": "MA"
+  },
+  {
+    "city": "Fairhaven",
+    "state_code": "MA"
+  },
+  {
+    "city": "Fall River",
+    "state_code": "MA"
+  },
+  {
+    "city": "Falmouth",
+    "state_code": "MA"
+  },
+  {
+    "city": "Fitchburg",
+    "state_code": "MA"
+  },
+  {
+    "city": "Framingham",
+    "state_code": "MA"
+  },
+  {
+    "city": "Gloucester",
+    "state_code": "MA"
+  },
+  {
+    "city": "Great Barrington",
+    "state_code": "MA"
+  },
+  {
+    "city": "Greenfield",
+    "state_code": "MA"
+  },
+  {
+    "city": "Groton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Harwich",
+    "state_code": "MA"
+  },
+  {
+    "city": "Haverhill",
+    "state_code": "MA"
+  },
+  {
+    "city": "Hingham",
+    "state_code": "MA"
+  },
+  {
+    "city": "Holyoke",
+    "state_code": "MA"
+  },
+  {
+    "city": "Hyannis",
+    "state_code": "MA"
+  },
+  {
+    "city": "Ipswich",
+    "state_code": "MA"
+  },
+  {
+    "city": "Lawrence",
+    "state_code": "MA"
+  },
+  {
+    "city": "Lenox",
+    "state_code": "MA"
+  },
+  {
+    "city": "Leominster",
+    "state_code": "MA"
+  },
+  {
+    "city": "Lexington",
+    "state_code": "MA"
+  },
+  {
+    "city": "Lowell",
+    "state_code": "MA"
+  },
+  {
+    "city": "Ludlow",
+    "state_code": "MA"
+  },
+  {
+    "city": "Lynn",
+    "state_code": "MA"
+  },
+  {
+    "city": "Malden",
+    "state_code": "MA"
+  },
+  {
+    "city": "Marblehead",
+    "state_code": "MA"
+  },
+  {
+    "city": "Marlborough",
+    "state_code": "MA"
+  },
+  {
+    "city": "Medford",
+    "state_code": "MA"
+  },
+  {
+    "city": "Milton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Nahant",
+    "state_code": "MA"
+  },
+  {
+    "city": "Natick",
+    "state_code": "MA"
+  },
+  {
+    "city": "New Bedford",
+    "state_code": "MA"
+  },
+  {
+    "city": "Newburyport",
+    "state_code": "MA"
+  },
+  {
+    "city": "Newton",
+    "state_code": "MA"
+  },
+  {
+    "city": "North Adams",
+    "state_code": "MA"
+  },
+  {
+    "city": "Northampton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Norton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Norwood",
+    "state_code": "MA"
+  },
+  {
+    "city": "Peabody",
+    "state_code": "MA"
+  },
+  {
+    "city": "Pittsfield",
+    "state_code": "MA"
+  },
+  {
+    "city": "Plymouth",
+    "state_code": "MA"
+  },
+  {
+    "city": "Provincetown",
+    "state_code": "MA"
+  },
+  {
+    "city": "Quincy",
+    "state_code": "MA"
+  },
+  {
+    "city": "Randolph",
+    "state_code": "MA"
+  },
+  {
+    "city": "Revere",
+    "state_code": "MA"
+  },
+  {
+    "city": "Salem",
+    "state_code": "MA"
+  },
+  {
+    "city": "Sandwich",
+    "state_code": "MA"
+  },
+  {
+    "city": "Saugus",
+    "state_code": "MA"
+  },
+  {
+    "city": "Somerville",
+    "state_code": "MA"
+  },
+  {
+    "city": "South Hadley",
+    "state_code": "MA"
+  },
+  {
+    "city": "Springfield",
+    "state_code": "MA"
+  },
+  {
+    "city": "Stockbridge",
+    "state_code": "MA"
+  },
+  {
+    "city": "Stoughton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Sturbridge",
+    "state_code": "MA"
+  },
+  {
+    "city": "Sudbury",
+    "state_code": "MA"
+  },
+  {
+    "city": "Taunton",
+    "state_code": "MA"
+  },
+  {
+    "city": "Tewksbury",
+    "state_code": "MA"
+  },
+  {
+    "city": "Truro",
+    "state_code": "MA"
+  },
+  {
+    "city": "Watertown",
+    "state_code": "MA"
+  },
+  {
+    "city": "Webster",
+    "state_code": "MA"
+  },
+  {
+    "city": "Wellesley",
+    "state_code": "MA"
+  },
+  {
+    "city": "Wellfleet",
+    "state_code": "MA"
+  },
+  {
+    "city": "West Bridgewater",
+    "state_code": "MA"
+  },
+  {
+    "city": "West Springfield",
+    "state_code": "MA"
+  },
+  {
+    "city": "Westfield",
+    "state_code": "MA"
+  },
+  {
+    "city": "Weymouth",
+    "state_code": "MA"
+  },
+  {
+    "city": "Whitman",
+    "state_code": "MA"
+  },
+  {
+    "city": "Williamstown",
+    "state_code": "MA"
+  },
+  {
+    "city": "Woburn",
+    "state_code": "MA"
+  },
+  {
+    "city": "Woods Hole",
+    "state_code": "MA"
+  },
+  {
+    "city": "Worcester",
+    "state_code": "MA"
+  },
+  {
+    "city": "Adrian",
+    "state_code": "MI"
+  },
+  {
+    "city": "Alma",
+    "state_code": "MI"
+  },
+  {
+    "city": "Ann Arbor",
+    "state_code": "MI"
+  },
+  {
+    "city": "Battle Creek",
+    "state_code": "MI"
+  },
+  {
+    "city": "Bay City",
+    "state_code": "MI"
+  },
+  {
+    "city": "Benton Harbor",
+    "state_code": "MI"
+  },
+  {
+    "city": "Bloomfield Hills",
+    "state_code": "MI"
+  },
+  {
+    "city": "Cadillac",
+    "state_code": "MI"
+  },
+  {
+    "city": "Charlevoix",
+    "state_code": "MI"
+  },
+  {
+    "city": "Cheboygan",
+    "state_code": "MI"
+  },
+  {
+    "city": "Dearborn",
+    "state_code": "MI"
+  },
+  {
+    "city": "Detroit",
+    "state_code": "MI"
+  },
+  {
+    "city": "East Lansing",
+    "state_code": "MI"
+  },
+  {
+    "city": "Eastpointe",
+    "state_code": "MI"
+  },
+  {
+    "city": "Ecorse",
+    "state_code": "MI"
+  },
+  {
+    "city": "Escanaba",
+    "state_code": "MI"
+  },
+  {
+    "city": "Flint",
+    "state_code": "MI"
+  },
+  {
+    "city": "Grand Haven",
+    "state_code": "MI"
+  },
+  {
+    "city": "Grand Rapids",
+    "state_code": "MI"
+  },
+  {
+    "city": "Grayling",
+    "state_code": "MI"
+  },
+  {
+    "city": "Grosse Pointe",
+    "state_code": "MI"
+  },
+  {
+    "city": "Hancock",
+    "state_code": "MI"
+  },
+  {
+    "city": "Highland Park",
+    "state_code": "MI"
+  },
+  {
+    "city": "Holland",
+    "state_code": "MI"
+  },
+  {
+    "city": "Houghton",
+    "state_code": "MI"
+  },
+  {
+    "city": "Interlochen",
+    "state_code": "MI"
+  },
+  {
+    "city": "Iron Mountain",
+    "state_code": "MI"
+  },
+  {
+    "city": "Ironwood",
+    "state_code": "MI"
+  },
+  {
+    "city": "Ishpeming",
+    "state_code": "MI"
+  },
+  {
+    "city": "Jackson",
+    "state_code": "MI"
+  },
+  {
+    "city": "Kalamazoo",
+    "state_code": "MI"
+  },
+  {
+    "city": "Lansing",
+    "state_code": "MI"
+  },
+  {
+    "city": "Livonia",
+    "state_code": "MI"
+  },
+  {
+    "city": "Ludington",
+    "state_code": "MI"
+  },
+  {
+    "city": "Mackinaw City",
+    "state_code": "MI"
+  },
+  {
+    "city": "Manistee",
+    "state_code": "MI"
+  },
+  {
+    "city": "Marquette",
+    "state_code": "MI"
+  },
+  {
+    "city": "Menominee",
+    "state_code": "MI"
+  },
+  {
+    "city": "Midland",
+    "state_code": "MI"
+  },
+  {
+    "city": "Monroe",
+    "state_code": "MI"
+  },
+  {
+    "city": "Mount Clemens",
+    "state_code": "MI"
+  },
+  {
+    "city": "Mount Pleasant",
+    "state_code": "MI"
+  },
+  {
+    "city": "Muskegon",
+    "state_code": "MI"
+  },
+  {
+    "city": "Niles",
+    "state_code": "MI"
+  },
+  {
+    "city": "Petoskey",
+    "state_code": "MI"
+  },
+  {
+    "city": "Pontiac",
+    "state_code": "MI"
+  },
+  {
+    "city": "Port Huron",
+    "state_code": "MI"
+  },
+  {
+    "city": "Royal Oak",
+    "state_code": "MI"
+  },
+  {
+    "city": "Saginaw",
+    "state_code": "MI"
+  },
+  {
+    "city": "Saint Ignace",
+    "state_code": "MI"
+  },
+  {
+    "city": "Saint Joseph",
+    "state_code": "MI"
+  },
+  {
+    "city": "Sault Sainte Marie",
+    "state_code": "MI"
+  },
+  {
+    "city": "Traverse City",
+    "state_code": "MI"
+  },
+  {
+    "city": "Trenton",
+    "state_code": "MI"
+  },
+  {
+    "city": "Warren",
+    "state_code": "MI"
+  },
+  {
+    "city": "Wyandotte",
+    "state_code": "MI"
+  },
+  {
+    "city": "Ypsilanti",
+    "state_code": "MI"
+  },
+  {
+    "city": "Albert Lea",
+    "state_code": "MN"
+  },
+  {
+    "city": "Alexandria",
+    "state_code": "MN"
+  },
+  {
+    "city": "Austin",
+    "state_code": "MN"
+  },
+  {
+    "city": "Bemidji",
+    "state_code": "MN"
+  },
+  {
+    "city": "Bloomington",
+    "state_code": "MN"
+  },
+  {
+    "city": "Brainerd",
+    "state_code": "MN"
+  },
+  {
+    "city": "Crookston",
+    "state_code": "MN"
+  },
+  {
+    "city": "Duluth",
+    "state_code": "MN"
+  },
+  {
+    "city": "Ely",
+    "state_code": "MN"
+  },
+  {
+    "city": "Eveleth",
+    "state_code": "MN"
+  },
+  {
+    "city": "Faribault",
+    "state_code": "MN"
+  },
+  {
+    "city": "Fergus Falls",
+    "state_code": "MN"
+  },
+  {
+    "city": "Hastings",
+    "state_code": "MN"
+  },
+  {
+    "city": "Hibbing",
+    "state_code": "MN"
+  },
+  {
+    "city": "International Falls",
+    "state_code": "MN"
+  },
+  {
+    "city": "Little Falls",
+    "state_code": "MN"
+  },
+  {
+    "city": "Mankato",
+    "state_code": "MN"
+  },
+  {
+    "city": "Minneapolis",
+    "state_code": "MN"
+  },
+  {
+    "city": "Moorhead",
+    "state_code": "MN"
+  },
+  {
+    "city": "New Ulm",
+    "state_code": "MN"
+  },
+  {
+    "city": "Northfield",
+    "state_code": "MN"
+  },
+  {
+    "city": "Owatonna",
+    "state_code": "MN"
+  },
+  {
+    "city": "Pipestone",
+    "state_code": "MN"
+  },
+  {
+    "city": "Red Wing",
+    "state_code": "MN"
+  },
+  {
+    "city": "Rochester",
+    "state_code": "MN"
+  },
+  {
+    "city": "Saint Cloud",
+    "state_code": "MN"
+  },
+  {
+    "city": "Saint Paul",
+    "state_code": "MN"
+  },
+  {
+    "city": "Sauk Centre",
+    "state_code": "MN"
+  },
+  {
+    "city": "South Saint Paul",
+    "state_code": "MN"
+  },
+  {
+    "city": "Stillwater",
+    "state_code": "MN"
+  },
+  {
+    "city": "Virginia",
+    "state_code": "MN"
+  },
+  {
+    "city": "Willmar",
+    "state_code": "MN"
+  },
+  {
+    "city": "Winona",
+    "state_code": "MN"
+  },
+  {
+    "city": "Bay Saint Louis",
+    "state_code": "MS"
+  },
+  {
+    "city": "Biloxi",
+    "state_code": "MS"
+  },
+  {
+    "city": "Canton",
+    "state_code": "MS"
+  },
+  {
+    "city": "Clarksdale",
+    "state_code": "MS"
+  },
+  {
+    "city": "Columbia",
+    "state_code": "MS"
+  },
+  {
+    "city": "Columbus",
+    "state_code": "MS"
+  },
+  {
+    "city": "Corinth",
+    "state_code": "MS"
+  },
+  {
+    "city": "Greenville",
+    "state_code": "MS"
+  },
+  {
+    "city": "Greenwood",
+    "state_code": "MS"
+  },
+  {
+    "city": "Grenada",
+    "state_code": "MS"
+  },
+  {
+    "city": "Gulfport",
+    "state_code": "MS"
+  },
+  {
+    "city": "Hattiesburg",
+    "state_code": "MS"
+  },
+  {
+    "city": "Holly Springs",
+    "state_code": "MS"
+  },
+  {
+    "city": "Jackson",
+    "state_code": "MS"
+  },
+  {
+    "city": "Laurel",
+    "state_code": "MS"
+  },
+  {
+    "city": "Meridian",
+    "state_code": "MS"
+  },
+  {
+    "city": "Natchez",
+    "state_code": "MS"
+  },
+  {
+    "city": "Ocean Springs",
+    "state_code": "MS"
+  },
+  {
+    "city": "Oxford",
+    "state_code": "MS"
+  },
+  {
+    "city": "Pascagoula",
+    "state_code": "MS"
+  },
+  {
+    "city": "Pass Christian",
+    "state_code": "MS"
+  },
+  {
+    "city": "Philadelphia",
+    "state_code": "MS"
+  },
+  {
+    "city": "Port Gibson",
+    "state_code": "MS"
+  },
+  {
+    "city": "Starkville",
+    "state_code": "MS"
+  },
+  {
+    "city": "Tupelo",
+    "state_code": "MS"
+  },
+  {
+    "city": "Vicksburg",
+    "state_code": "MS"
+  },
+  {
+    "city": "West Point",
+    "state_code": "MS"
+  },
+  {
+    "city": "Yazoo City",
+    "state_code": "MS"
+  },
+  {
+    "city": "Boonville",
+    "state_code": "MO"
+  },
+  {
+    "city": "Branson",
+    "state_code": "MO"
+  },
+  {
+    "city": "Cape Girardeau",
+    "state_code": "MO"
+  },
+  {
+    "city": "Carthage",
+    "state_code": "MO"
+  },
+  {
+    "city": "Chillicothe",
+    "state_code": "MO"
+  },
+  {
+    "city": "Clayton",
+    "state_code": "MO"
+  },
+  {
+    "city": "Columbia",
+    "state_code": "MO"
+  },
+  {
+    "city": "Excelsior Springs",
+    "state_code": "MO"
+  },
+  {
+    "city": "Ferguson",
+    "state_code": "MO"
+  },
+  {
+    "city": "Florissant",
+    "state_code": "MO"
+  },
+  {
+    "city": "Fulton",
+    "state_code": "MO"
+  },
+  {
+    "city": "Hannibal",
+    "state_code": "MO"
+  },
+  {
+    "city": "Independence",
+    "state_code": "MO"
+  },
+  {
+    "city": "Jefferson City",
+    "state_code": "MO"
+  },
+  {
+    "city": "Joplin",
+    "state_code": "MO"
+  },
+  {
+    "city": "Kansas City",
+    "state_code": "MO"
+  },
+  {
+    "city": "Kirksville",
+    "state_code": "MO"
+  },
+  {
+    "city": "Lamar",
+    "state_code": "MO"
+  },
+  {
+    "city": "Lebanon",
+    "state_code": "MO"
+  },
+  {
+    "city": "Lexington",
+    "state_code": "MO"
+  },
+  {
+    "city": "Maryville",
+    "state_code": "MO"
+  },
+  {
+    "city": "Mexico",
+    "state_code": "MO"
+  },
+  {
+    "city": "Monett",
+    "state_code": "MO"
+  },
+  {
+    "city": "Neosho",
+    "state_code": "MO"
+  },
+  {
+    "city": "New Madrid",
+    "state_code": "MO"
+  },
+  {
+    "city": "Rolla",
+    "state_code": "MO"
+  },
+  {
+    "city": "Saint Charles",
+    "state_code": "MO"
+  },
+  {
+    "city": "Saint Joseph",
+    "state_code": "MO"
+  },
+  {
+    "city": "Saint Louis",
+    "state_code": "MO"
+  },
+  {
+    "city": "Sainte Genevieve",
+    "state_code": "MO"
+  },
+  {
+    "city": "Salem",
+    "state_code": "MO"
+  },
+  {
+    "city": "Sedalia",
+    "state_code": "MO"
+  },
+  {
+    "city": "Springfield",
+    "state_code": "MO"
+  },
+  {
+    "city": "Warrensburg",
+    "state_code": "MO"
+  },
+  {
+    "city": "West Plains",
+    "state_code": "MO"
+  },
+  {
+    "city": "Anaconda",
+    "state_code": "MT"
+  },
+  {
+    "city": "Billings",
+    "state_code": "MT"
+  },
+  {
+    "city": "Bozeman",
+    "state_code": "MT"
+  },
+  {
+    "city": "Butte",
+    "state_code": "MT"
+  },
+  {
+    "city": "Dillon",
+    "state_code": "MT"
+  },
+  {
+    "city": "Fort Benton",
+    "state_code": "MT"
+  },
+  {
+    "city": "Glendive",
+    "state_code": "MT"
+  },
+  {
+    "city": "Great Falls",
+    "state_code": "MT"
+  },
+  {
+    "city": "Havre",
+    "state_code": "MT"
+  },
+  {
+    "city": "Helena",
+    "state_code": "MT"
+  },
+  {
+    "city": "Kalispell",
+    "state_code": "MT"
+  },
+  {
+    "city": "Lewistown",
+    "state_code": "MT"
+  },
+  {
+    "city": "Livingston",
+    "state_code": "MT"
+  },
+  {
+    "city": "Miles City",
+    "state_code": "MT"
+  },
+  {
+    "city": "Missoula",
+    "state_code": "MT"
+  },
+  {
+    "city": "Virginia City",
+    "state_code": "MT"
+  },
+  {
+    "city": "Beatrice",
+    "state_code": "NE"
+  },
+  {
+    "city": "Bellevue",
+    "state_code": "NE"
+  },
+  {
+    "city": "Boys Town",
+    "state_code": "NE"
+  },
+  {
+    "city": "Chadron",
+    "state_code": "NE"
+  },
+  {
+    "city": "Columbus",
+    "state_code": "NE"
+  },
+  {
+    "city": "Fremont",
+    "state_code": "NE"
+  },
+  {
+    "city": "Grand Island",
+    "state_code": "NE"
+  },
+  {
+    "city": "Hastings",
+    "state_code": "NE"
+  },
+  {
+    "city": "Kearney",
+    "state_code": "NE"
+  },
+  {
+    "city": "Lincoln",
+    "state_code": "NE"
+  },
+  {
+    "city": "McCook",
+    "state_code": "NE"
+  },
+  {
+    "city": "Minden",
+    "state_code": "NE"
+  },
+  {
+    "city": "Nebraska City",
+    "state_code": "NE"
+  },
+  {
+    "city": "Norfolk",
+    "state_code": "NE"
+  },
+  {
+    "city": "North Platte",
+    "state_code": "NE"
+  },
+  {
+    "city": "Omaha",
+    "state_code": "NE"
+  },
+  {
+    "city": "Plattsmouth",
+    "state_code": "NE"
+  },
+  {
+    "city": "Red Cloud",
+    "state_code": "NE"
+  },
+  {
+    "city": "Sidney",
+    "state_code": "NE"
+  },
+  {
+    "city": "Boulder City",
+    "state_code": "NV"
+  },
+  {
+    "city": "Carson City",
+    "state_code": "NV"
+  },
+  {
+    "city": "Elko",
+    "state_code": "NV"
+  },
+  {
+    "city": "Ely",
+    "state_code": "NV"
+  },
+  {
+    "city": "Fallon",
+    "state_code": "NV"
+  },
+  {
+    "city": "Genoa",
+    "state_code": "NV"
+  },
+  {
+    "city": "Goldfield",
+    "state_code": "NV"
+  },
+  {
+    "city": "Henderson",
+    "state_code": "NV"
+  },
+  {
+    "city": "Las Vegas",
+    "state_code": "NV"
+  },
+  {
+    "city": "North Las Vegas",
+    "state_code": "NV"
+  },
+  {
+    "city": "Reno",
+    "state_code": "NV"
+  },
+  {
+    "city": "Sparks",
+    "state_code": "NV"
+  },
+  {
+    "city": "Virginia City",
+    "state_code": "NV"
+  },
+  {
+    "city": "Winnemucca",
+    "state_code": "NV"
+  },
+  {
+    "city": "Berlin",
+    "state_code": "NH"
+  },
+  {
+    "city": "Claremont",
+    "state_code": "NH"
+  },
+  {
+    "city": "Concord",
+    "state_code": "NH"
+  },
+  {
+    "city": "Derry",
+    "state_code": "NH"
+  },
+  {
+    "city": "Dover",
+    "state_code": "NH"
+  },
+  {
+    "city": "Durham",
+    "state_code": "NH"
+  },
+  {
+    "city": "Exeter",
+    "state_code": "NH"
+  },
+  {
+    "city": "Franklin",
+    "state_code": "NH"
+  },
+  {
+    "city": "Hanover",
+    "state_code": "NH"
+  },
+  {
+    "city": "Hillsborough",
+    "state_code": "NH"
+  },
+  {
+    "city": "Keene",
+    "state_code": "NH"
+  },
+  {
+    "city": "Laconia",
+    "state_code": "NH"
+  },
+  {
+    "city": "Lebanon",
+    "state_code": "NH"
+  },
+  {
+    "city": "Manchester",
+    "state_code": "NH"
+  },
+  {
+    "city": "Nashua",
+    "state_code": "NH"
+  },
+  {
+    "city": "Peterborough",
+    "state_code": "NH"
+  },
+  {
+    "city": "Plymouth",
+    "state_code": "NH"
+  },
+  {
+    "city": "Portsmouth",
+    "state_code": "NH"
+  },
+  {
+    "city": "Rochester",
+    "state_code": "NH"
+  },
+  {
+    "city": "Salem",
+    "state_code": "NH"
+  },
+  {
+    "city": "Somersworth",
+    "state_code": "NH"
+  },
+  {
+    "city": "Asbury Park",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Atlantic City",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Bayonne",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Bloomfield",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Bordentown",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Bound Brook",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Bridgeton",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Burlington",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Caldwell",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Camden",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Cape May",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Clifton",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Cranford",
+    "state_code": "NJ"
+  },
+  {
+    "city": "East Orange",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Edison",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Elizabeth",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Englewood",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Fort Lee",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Glassboro",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Hackensack",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Haddonfield",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Hoboken",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Irvington",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Jersey City",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Lakehurst",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Lakewood",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Long Beach",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Long Branch",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Madison",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Menlo Park",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Millburn",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Millville",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Montclair",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Morristown",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Mount Holly",
+    "state_code": "NJ"
+  },
+  {
+    "city": "New Brunswick",
+    "state_code": "NJ"
+  },
+  {
+    "city": "New Milford",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Newark",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Ocean City",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Orange",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Parsippany–Troy Hills",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Passaic",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Paterson",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Perth Amboy",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Plainfield",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Princeton",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Ridgewood",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Roselle",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Rutherford",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Salem",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Somerville",
+    "state_code": "NJ"
+  },
+  {
+    "city": "South Orange Village",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Totowa",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Trenton",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Union",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Union City",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Vineland",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Wayne",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Weehawken",
+    "state_code": "NJ"
+  },
+  {
+    "city": "West New York",
+    "state_code": "NJ"
+  },
+  {
+    "city": "West Orange",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Willingboro",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Woodbridge",
+    "state_code": "NJ"
+  },
+  {
+    "city": "Acoma",
+    "state_code": "NM"
+  },
+  {
+    "city": "Alamogordo",
+    "state_code": "NM"
+  },
+  {
+    "city": "Albuquerque",
+    "state_code": "NM"
+  },
+  {
+    "city": "Artesia",
+    "state_code": "NM"
+  },
+  {
+    "city": "Belen",
+    "state_code": "NM"
+  },
+  {
+    "city": "Carlsbad",
+    "state_code": "NM"
+  },
+  {
+    "city": "Clovis",
+    "state_code": "NM"
+  },
+  {
+    "city": "Deming",
+    "state_code": "NM"
+  },
+  {
+    "city": "Farmington",
+    "state_code": "NM"
+  },
+  {
+    "city": "Gallup",
+    "state_code": "NM"
+  },
+  {
+    "city": "Grants",
+    "state_code": "NM"
+  },
+  {
+    "city": "Hobbs",
+    "state_code": "NM"
+  },
+  {
+    "city": "Las Cruces",
+    "state_code": "NM"
+  },
+  {
+    "city": "Las Vegas",
+    "state_code": "NM"
+  },
+  {
+    "city": "Los Alamos",
+    "state_code": "NM"
+  },
+  {
+    "city": "Lovington",
+    "state_code": "NM"
+  },
+  {
+    "city": "Portales",
+    "state_code": "NM"
+  },
+  {
+    "city": "Raton",
+    "state_code": "NM"
+  },
+  {
+    "city": "Roswell",
+    "state_code": "NM"
+  },
+  {
+    "city": "Santa Fe",
+    "state_code": "NM"
+  },
+  {
+    "city": "Shiprock",
+    "state_code": "NM"
+  },
+  {
+    "city": "Silver City",
+    "state_code": "NM"
+  },
+  {
+    "city": "Socorro",
+    "state_code": "NM"
+  },
+  {
+    "city": "Taos",
+    "state_code": "NM"
+  },
+  {
+    "city": "Truth or Consequences",
+    "state_code": "NM"
+  },
+  {
+    "city": "Tucumcari",
+    "state_code": "NM"
+  },
+  {
+    "city": "Albany",
+    "state_code": "NY"
+  },
+  {
+    "city": "Amsterdam",
+    "state_code": "NY"
+  },
+  {
+    "city": "Auburn",
+    "state_code": "NY"
+  },
+  {
+    "city": "Babylon",
+    "state_code": "NY"
+  },
+  {
+    "city": "Batavia",
+    "state_code": "NY"
+  },
+  {
+    "city": "Beacon",
+    "state_code": "NY"
+  },
+  {
+    "city": "Bedford",
+    "state_code": "NY"
+  },
+  {
+    "city": "Binghamton",
+    "state_code": "NY"
+  },
+  {
+    "city": "Bronx",
+    "state_code": "NY"
+  },
+  {
+    "city": "Brooklyn",
+    "state_code": "NY"
+  },
+  {
+    "city": "Buffalo",
+    "state_code": "NY"
+  },
+  {
+    "city": "Chautauqua",
+    "state_code": "NY"
+  },
+  {
+    "city": "Cheektowaga",
+    "state_code": "NY"
+  },
+  {
+    "city": "Clinton",
+    "state_code": "NY"
+  },
+  {
+    "city": "Cohoes",
+    "state_code": "NY"
+  },
+  {
+    "city": "Coney Island",
+    "state_code": "NY"
+  },
+  {
+    "city": "Cooperstown",
+    "state_code": "NY"
+  },
+  {
+    "city": "Corning",
+    "state_code": "NY"
+  },
+  {
+    "city": "Cortland",
+    "state_code": "NY"
+  },
+  {
+    "city": "Crown Point",
+    "state_code": "NY"
+  },
+  {
+    "city": "Dunkirk",
+    "state_code": "NY"
+  },
+  {
+    "city": "East Aurora",
+    "state_code": "NY"
+  },
+  {
+    "city": "East Hampton",
+    "state_code": "NY"
+  },
+  {
+    "city": "Eastchester",
+    "state_code": "NY"
+  },
+  {
+    "city": "Elmira",
+    "state_code": "NY"
+  },
+  {
+    "city": "Flushing",
+    "state_code": "NY"
+  },
+  {
+    "city": "Forest Hills",
+    "state_code": "NY"
+  },
+  {
+    "city": "Fredonia",
+    "state_code": "NY"
+  },
+  {
+    "city": "Garden City",
+    "state_code": "NY"
+  },
+  {
+    "city": "Geneva",
+    "state_code": "NY"
+  },
+  {
+    "city": "Glens Falls",
+    "state_code": "NY"
+  },
+  {
+    "city": "Gloversville",
+    "state_code": "NY"
+  },
+  {
+    "city": "Great Neck",
+    "state_code": "NY"
+  },
+  {
+    "city": "Hammondsport",
+    "state_code": "NY"
+  },
+  {
+    "city": "Harlem",
+    "state_code": "NY"
+  },
+  {
+    "city": "Hempstead",
+    "state_code": "NY"
+  },
+  {
+    "city": "Herkimer",
+    "state_code": "NY"
+  },
+  {
+    "city": "Hudson",
+    "state_code": "NY"
+  },
+  {
+    "city": "Huntington",
+    "state_code": "NY"
+  },
+  {
+    "city": "Hyde Park",
+    "state_code": "NY"
+  },
+  {
+    "city": "Ilion",
+    "state_code": "NY"
+  },
+  {
+    "city": "Ithaca",
+    "state_code": "NY"
+  },
+  {
+    "city": "Jamestown",
+    "state_code": "NY"
+  },
+  {
+    "city": "Johnstown",
+    "state_code": "NY"
+  },
+  {
+    "city": "Kingston",
+    "state_code": "NY"
+  },
+  {
+    "city": "Lackawanna",
+    "state_code": "NY"
+  },
+  {
+    "city": "Lake Placid",
+    "state_code": "NY"
+  },
+  {
+    "city": "Levittown",
+    "state_code": "NY"
+  },
+  {
+    "city": "Lockport",
+    "state_code": "NY"
+  },
+  {
+    "city": "Mamaroneck",
+    "state_code": "NY"
+  },
+  {
+    "city": "Manhattan",
+    "state_code": "NY"
+  },
+  {
+    "city": "Massena",
+    "state_code": "NY"
+  },
+  {
+    "city": "Middletown",
+    "state_code": "NY"
+  },
+  {
+    "city": "Mineola",
+    "state_code": "NY"
+  },
+  {
+    "city": "Mount Vernon",
+    "state_code": "NY"
+  },
+  {
+    "city": "New Paltz",
+    "state_code": "NY"
+  },
+  {
+    "city": "New Rochelle",
+    "state_code": "NY"
+  },
+  {
+    "city": "New Windsor",
+    "state_code": "NY"
+  },
+  {
+    "city": "New York City",
+    "state_code": "NY"
+  },
+  {
+    "city": "Newburgh",
+    "state_code": "NY"
+  },
+  {
+    "city": "Niagara Falls",
+    "state_code": "NY"
+  },
+  {
+    "city": "North Hempstead",
+    "state_code": "NY"
+  },
+  {
+    "city": "Nyack",
+    "state_code": "NY"
+  },
+  {
+    "city": "Ogdensburg",
+    "state_code": "NY"
+  },
+  {
+    "city": "Olean",
+    "state_code": "NY"
+  },
+  {
+    "city": "Oneida",
+    "state_code": "NY"
+  },
+  {
+    "city": "Oneonta",
+    "state_code": "NY"
+  },
+  {
+    "city": "Ossining",
+    "state_code": "NY"
+  },
+  {
+    "city": "Oswego",
+    "state_code": "NY"
+  },
+  {
+    "city": "Oyster Bay",
+    "state_code": "NY"
+  },
+  {
+    "city": "Palmyra",
+    "state_code": "NY"
+  },
+  {
+    "city": "Peekskill",
+    "state_code": "NY"
+  },
+  {
+    "city": "Plattsburgh",
+    "state_code": "NY"
+  },
+  {
+    "city": "Port Washington",
+    "state_code": "NY"
+  },
+  {
+    "city": "Potsdam",
+    "state_code": "NY"
+  },
+  {
+    "city": "Poughkeepsie",
+    "state_code": "NY"
+  },
+  {
+    "city": "Queens",
+    "state_code": "NY"
+  },
+  {
+    "city": "Rensselaer",
+    "state_code": "NY"
+  },
+  {
+    "city": "Rochester",
+    "state_code": "NY"
+  },
+  {
+    "city": "Rome",
+    "state_code": "NY"
+  },
+  {
+    "city": "Rotterdam",
+    "state_code": "NY"
+  },
+  {
+    "city": "Rye",
+    "state_code": "NY"
+  },
+  {
+    "city": "Sag Harbor",
+    "state_code": "NY"
+  },
+  {
+    "city": "Saranac Lake",
+    "state_code": "NY"
+  },
+  {
+    "city": "Saratoga Springs",
+    "state_code": "NY"
+  },
+  {
+    "city": "Scarsdale",
+    "state_code": "NY"
+  },
+  {
+    "city": "Schenectady",
+    "state_code": "NY"
+  },
+  {
+    "city": "Seneca Falls",
+    "state_code": "NY"
+  },
+  {
+    "city": "Southampton",
+    "state_code": "NY"
+  },
+  {
+    "city": "Staten Island",
+    "state_code": "NY"
+  },
+  {
+    "city": "Stony Brook",
+    "state_code": "NY"
+  },
+  {
+    "city": "Stony Point",
+    "state_code": "NY"
+  },
+  {
+    "city": "Syracuse",
+    "state_code": "NY"
+  },
+  {
+    "city": "Tarrytown",
+    "state_code": "NY"
+  },
+  {
+    "city": "Ticonderoga",
+    "state_code": "NY"
+  },
+  {
+    "city": "Tonawanda",
+    "state_code": "NY"
+  },
+  {
+    "city": "Troy",
+    "state_code": "NY"
+  },
+  {
+    "city": "Utica",
+    "state_code": "NY"
+  },
+  {
+    "city": "Watertown",
+    "state_code": "NY"
+  },
+  {
+    "city": "Watervliet",
+    "state_code": "NY"
+  },
+  {
+    "city": "Watkins Glen",
+    "state_code": "NY"
+  },
+  {
+    "city": "West Seneca",
+    "state_code": "NY"
+  },
+  {
+    "city": "White Plains",
+    "state_code": "NY"
+  },
+  {
+    "city": "Woodstock",
+    "state_code": "NY"
+  },
+  {
+    "city": "Yonkers",
+    "state_code": "NY"
+  },
+  {
+    "city": "Asheboro",
+    "state_code": "NC"
+  },
+  {
+    "city": "Asheville",
+    "state_code": "NC"
+  },
+  {
+    "city": "Bath",
+    "state_code": "NC"
+  },
+  {
+    "city": "Beaufort",
+    "state_code": "NC"
+  },
+  {
+    "city": "Boone",
+    "state_code": "NC"
+  },
+  {
+    "city": "Burlington",
+    "state_code": "NC"
+  },
+  {
+    "city": "Chapel Hill",
+    "state_code": "NC"
+  },
+  {
+    "city": "Charlotte",
+    "state_code": "NC"
+  },
+  {
+    "city": "Concord",
+    "state_code": "NC"
+  },
+  {
+    "city": "Durham",
+    "state_code": "NC"
+  },
+  {
+    "city": "Edenton",
+    "state_code": "NC"
+  },
+  {
+    "city": "Elizabeth City",
+    "state_code": "NC"
+  },
+  {
+    "city": "Fayetteville",
+    "state_code": "NC"
+  },
+  {
+    "city": "Gastonia",
+    "state_code": "NC"
+  },
+  {
+    "city": "Goldsboro",
+    "state_code": "NC"
+  },
+  {
+    "city": "Greensboro",
+    "state_code": "NC"
+  },
+  {
+    "city": "Greenville",
+    "state_code": "NC"
+  },
+  {
+    "city": "Halifax",
+    "state_code": "NC"
+  },
+  {
+    "city": "Henderson",
+    "state_code": "NC"
+  },
+  {
+    "city": "Hickory",
+    "state_code": "NC"
+  },
+  {
+    "city": "High Point",
+    "state_code": "NC"
+  },
+  {
+    "city": "Hillsborough",
+    "state_code": "NC"
+  },
+  {
+    "city": "Jacksonville",
+    "state_code": "NC"
+  },
+  {
+    "city": "Kinston",
+    "state_code": "NC"
+  },
+  {
+    "city": "Kitty Hawk",
+    "state_code": "NC"
+  },
+  {
+    "city": "Lumberton",
+    "state_code": "NC"
+  },
+  {
+    "city": "Morehead City",
+    "state_code": "NC"
+  },
+  {
+    "city": "Morganton",
+    "state_code": "NC"
+  },
+  {
+    "city": "Nags Head",
+    "state_code": "NC"
+  },
+  {
+    "city": "New Bern",
+    "state_code": "NC"
+  },
+  {
+    "city": "Pinehurst",
+    "state_code": "NC"
+  },
+  {
+    "city": "Raleigh",
+    "state_code": "NC"
+  },
+  {
+    "city": "Rocky Mount",
+    "state_code": "NC"
+  },
+  {
+    "city": "Salisbury",
+    "state_code": "NC"
+  },
+  {
+    "city": "Shelby",
+    "state_code": "NC"
+  },
+  {
+    "city": "Washington",
+    "state_code": "NC"
+  },
+  {
+    "city": "Wilmington",
+    "state_code": "NC"
+  },
+  {
+    "city": "Wilson",
+    "state_code": "NC"
+  },
+  {
+    "city": "Winston-Salem",
+    "state_code": "NC"
+  },
+  {
+    "city": "Bismarck",
+    "state_code": "ND"
+  },
+  {
+    "city": "Devils Lake",
+    "state_code": "ND"
+  },
+  {
+    "city": "Dickinson",
+    "state_code": "ND"
+  },
+  {
+    "city": "Fargo",
+    "state_code": "ND"
+  },
+  {
+    "city": "Grand Forks",
+    "state_code": "ND"
+  },
+  {
+    "city": "Jamestown",
+    "state_code": "ND"
+  },
+  {
+    "city": "Mandan",
+    "state_code": "ND"
+  },
+  {
+    "city": "Minot",
+    "state_code": "ND"
+  },
+  {
+    "city": "Rugby",
+    "state_code": "ND"
+  },
+  {
+    "city": "Valley City",
+    "state_code": "ND"
+  },
+  {
+    "city": "Wahpeton",
+    "state_code": "ND"
+  },
+  {
+    "city": "Williston",
+    "state_code": "ND"
+  },
+  {
+    "city": "Akron",
+    "state_code": "OH"
+  },
+  {
+    "city": "Alliance",
+    "state_code": "OH"
+  },
+  {
+    "city": "Ashtabula",
+    "state_code": "OH"
+  },
+  {
+    "city": "Athens",
+    "state_code": "OH"
+  },
+  {
+    "city": "Barberton",
+    "state_code": "OH"
+  },
+  {
+    "city": "Bedford",
+    "state_code": "OH"
+  },
+  {
+    "city": "Bellefontaine",
+    "state_code": "OH"
+  },
+  {
+    "city": "Bowling Green",
+    "state_code": "OH"
+  },
+  {
+    "city": "Canton",
+    "state_code": "OH"
+  },
+  {
+    "city": "Chillicothe",
+    "state_code": "OH"
+  },
+  {
+    "city": "Cincinnati",
+    "state_code": "OH"
+  },
+  {
+    "city": "Cleveland",
+    "state_code": "OH"
+  },
+  {
+    "city": "Cleveland Heights",
+    "state_code": "OH"
+  },
+  {
+    "city": "Columbus",
+    "state_code": "OH"
+  },
+  {
+    "city": "Conneaut",
+    "state_code": "OH"
+  },
+  {
+    "city": "Cuyahoga Falls",
+    "state_code": "OH"
+  },
+  {
+    "city": "Dayton",
+    "state_code": "OH"
+  },
+  {
+    "city": "Defiance",
+    "state_code": "OH"
+  },
+  {
+    "city": "Delaware",
+    "state_code": "OH"
+  },
+  {
+    "city": "East Cleveland",
+    "state_code": "OH"
+  },
+  {
+    "city": "East Liverpool",
+    "state_code": "OH"
+  },
+  {
+    "city": "Elyria",
+    "state_code": "OH"
+  },
+  {
+    "city": "Euclid",
+    "state_code": "OH"
+  },
+  {
+    "city": "Findlay",
+    "state_code": "OH"
+  },
+  {
+    "city": "Gallipolis",
+    "state_code": "OH"
+  },
+  {
+    "city": "Greenville",
+    "state_code": "OH"
+  },
+  {
+    "city": "Hamilton",
+    "state_code": "OH"
+  },
+  {
+    "city": "Kent",
+    "state_code": "OH"
+  },
+  {
+    "city": "Kettering",
+    "state_code": "OH"
+  },
+  {
+    "city": "Lakewood",
+    "state_code": "OH"
+  },
+  {
+    "city": "Lancaster",
+    "state_code": "OH"
+  },
+  {
+    "city": "Lima",
+    "state_code": "OH"
+  },
+  {
+    "city": "Lorain",
+    "state_code": "OH"
+  },
+  {
+    "city": "Mansfield",
+    "state_code": "OH"
+  },
+  {
+    "city": "Marietta",
+    "state_code": "OH"
+  },
+  {
+    "city": "Marion",
+    "state_code": "OH"
+  },
+  {
+    "city": "Martins Ferry",
+    "state_code": "OH"
+  },
+  {
+    "city": "Massillon",
+    "state_code": "OH"
+  },
+  {
+    "city": "Mentor",
+    "state_code": "OH"
+  },
+  {
+    "city": "Middletown",
+    "state_code": "OH"
+  },
+  {
+    "city": "Milan",
+    "state_code": "OH"
+  },
+  {
+    "city": "Mount Vernon",
+    "state_code": "OH"
+  },
+  {
+    "city": "New Philadelphia",
+    "state_code": "OH"
+  },
+  {
+    "city": "Newark",
+    "state_code": "OH"
+  },
+  {
+    "city": "Niles",
+    "state_code": "OH"
+  },
+  {
+    "city": "North College Hill",
+    "state_code": "OH"
+  },
+  {
+    "city": "Norwalk",
+    "state_code": "OH"
+  },
+  {
+    "city": "Oberlin",
+    "state_code": "OH"
+  },
+  {
+    "city": "Painesville",
+    "state_code": "OH"
+  },
+  {
+    "city": "Parma",
+    "state_code": "OH"
+  },
+  {
+    "city": "Piqua",
+    "state_code": "OH"
+  },
+  {
+    "city": "Portsmouth",
+    "state_code": "OH"
+  },
+  {
+    "city": "Put-in-Bay",
+    "state_code": "OH"
+  },
+  {
+    "city": "Salem",
+    "state_code": "OH"
+  },
+  {
+    "city": "Sandusky",
+    "state_code": "OH"
+  },
+  {
+    "city": "Shaker Heights",
+    "state_code": "OH"
+  },
+  {
+    "city": "Springfield",
+    "state_code": "OH"
+  },
+  {
+    "city": "Steubenville",
+    "state_code": "OH"
+  },
+  {
+    "city": "Tiffin",
+    "state_code": "OH"
+  },
+  {
+    "city": "Toledo",
+    "state_code": "OH"
+  },
+  {
+    "city": "Urbana",
+    "state_code": "OH"
+  },
+  {
+    "city": "Warren",
+    "state_code": "OH"
+  },
+  {
+    "city": "Wooster",
+    "state_code": "OH"
+  },
+  {
+    "city": "Worthington",
+    "state_code": "OH"
+  },
+  {
+    "city": "Xenia",
+    "state_code": "OH"
+  },
+  {
+    "city": "Yellow Springs",
+    "state_code": "OH"
+  },
+  {
+    "city": "Youngstown",
+    "state_code": "OH"
+  },
+  {
+    "city": "Zanesville",
+    "state_code": "OH"
+  },
+  {
+    "city": "Ada",
+    "state_code": "OK"
+  },
+  {
+    "city": "Altus",
+    "state_code": "OK"
+  },
+  {
+    "city": "Alva",
+    "state_code": "OK"
+  },
+  {
+    "city": "Anadarko",
+    "state_code": "OK"
+  },
+  {
+    "city": "Ardmore",
+    "state_code": "OK"
+  },
+  {
+    "city": "Bartlesville",
+    "state_code": "OK"
+  },
+  {
+    "city": "Bethany",
+    "state_code": "OK"
+  },
+  {
+    "city": "Chickasha",
+    "state_code": "OK"
+  },
+  {
+    "city": "Claremore",
+    "state_code": "OK"
+  },
+  {
+    "city": "Clinton",
+    "state_code": "OK"
+  },
+  {
+    "city": "Cushing",
+    "state_code": "OK"
+  },
+  {
+    "city": "Duncan",
+    "state_code": "OK"
+  },
+  {
+    "city": "Durant",
+    "state_code": "OK"
+  },
+  {
+    "city": "Edmond",
+    "state_code": "OK"
+  },
+  {
+    "city": "El Reno",
+    "state_code": "OK"
+  },
+  {
+    "city": "Elk City",
+    "state_code": "OK"
+  },
+  {
+    "city": "Enid",
+    "state_code": "OK"
+  },
+  {
+    "city": "Eufaula",
+    "state_code": "OK"
+  },
+  {
+    "city": "Frederick",
+    "state_code": "OK"
+  },
+  {
+    "city": "Guthrie",
+    "state_code": "OK"
+  },
+  {
+    "city": "Guymon",
+    "state_code": "OK"
+  },
+  {
+    "city": "Hobart",
+    "state_code": "OK"
+  },
+  {
+    "city": "Holdenville",
+    "state_code": "OK"
+  },
+  {
+    "city": "Hugo",
+    "state_code": "OK"
+  },
+  {
+    "city": "Lawton",
+    "state_code": "OK"
+  },
+  {
+    "city": "McAlester",
+    "state_code": "OK"
+  },
+  {
+    "city": "Miami",
+    "state_code": "OK"
+  },
+  {
+    "city": "Midwest City",
+    "state_code": "OK"
+  },
+  {
+    "city": "Moore",
+    "state_code": "OK"
+  },
+  {
+    "city": "Muskogee",
+    "state_code": "OK"
+  },
+  {
+    "city": "Norman",
+    "state_code": "OK"
+  },
+  {
+    "city": "Oklahoma City",
+    "state_code": "OK"
+  },
+  {
+    "city": "Okmulgee",
+    "state_code": "OK"
+  },
+  {
+    "city": "Pauls Valley",
+    "state_code": "OK"
+  },
+  {
+    "city": "Pawhuska",
+    "state_code": "OK"
+  },
+  {
+    "city": "Perry",
+    "state_code": "OK"
+  },
+  {
+    "city": "Ponca City",
+    "state_code": "OK"
+  },
+  {
+    "city": "Pryor",
+    "state_code": "OK"
+  },
+  {
+    "city": "Sallisaw",
+    "state_code": "OK"
+  },
+  {
+    "city": "Sand Springs",
+    "state_code": "OK"
+  },
+  {
+    "city": "Sapulpa",
+    "state_code": "OK"
+  },
+  {
+    "city": "Seminole",
+    "state_code": "OK"
+  },
+  {
+    "city": "Shawnee",
+    "state_code": "OK"
+  },
+  {
+    "city": "Stillwater",
+    "state_code": "OK"
+  },
+  {
+    "city": "Tahlequah",
+    "state_code": "OK"
+  },
+  {
+    "city": "The Village",
+    "state_code": "OK"
+  },
+  {
+    "city": "Tulsa",
+    "state_code": "OK"
+  },
+  {
+    "city": "Vinita",
+    "state_code": "OK"
+  },
+  {
+    "city": "Wewoka",
+    "state_code": "OK"
+  },
+  {
+    "city": "Woodward",
+    "state_code": "OK"
+  },
+  {
+    "city": "Albany",
+    "state_code": "OR"
+  },
+  {
+    "city": "Ashland",
+    "state_code": "OR"
+  },
+  {
+    "city": "Astoria",
+    "state_code": "OR"
+  },
+  {
+    "city": "Baker City",
+    "state_code": "OR"
+  },
+  {
+    "city": "Beaverton",
+    "state_code": "OR"
+  },
+  {
+    "city": "Bend",
+    "state_code": "OR"
+  },
+  {
+    "city": "Brookings",
+    "state_code": "OR"
+  },
+  {
+    "city": "Burns",
+    "state_code": "OR"
+  },
+  {
+    "city": "Coos Bay",
+    "state_code": "OR"
+  },
+  {
+    "city": "Corvallis",
+    "state_code": "OR"
+  },
+  {
+    "city": "Eugene",
+    "state_code": "OR"
+  },
+  {
+    "city": "Grants Pass",
+    "state_code": "OR"
+  },
+  {
+    "city": "Hillsboro",
+    "state_code": "OR"
+  },
+  {
+    "city": "Hood River",
+    "state_code": "OR"
+  },
+  {
+    "city": "Jacksonville",
+    "state_code": "OR"
+  },
+  {
+    "city": "John Day",
+    "state_code": "OR"
+  },
+  {
+    "city": "Klamath Falls",
+    "state_code": "OR"
+  },
+  {
+    "city": "La Grande",
+    "state_code": "OR"
+  },
+  {
+    "city": "Lake Oswego",
+    "state_code": "OR"
+  },
+  {
+    "city": "Lakeview",
+    "state_code": "OR"
+  },
+  {
+    "city": "McMinnville",
+    "state_code": "OR"
+  },
+  {
+    "city": "Medford",
+    "state_code": "OR"
+  },
+  {
+    "city": "Newberg",
+    "state_code": "OR"
+  },
+  {
+    "city": "Newport",
+    "state_code": "OR"
+  },
+  {
+    "city": "Ontario",
+    "state_code": "OR"
+  },
+  {
+    "city": "Oregon City",
+    "state_code": "OR"
+  },
+  {
+    "city": "Pendleton",
+    "state_code": "OR"
+  },
+  {
+    "city": "Port Orford",
+    "state_code": "OR"
+  },
+  {
+    "city": "Portland",
+    "state_code": "OR"
+  },
+  {
+    "city": "Prineville",
+    "state_code": "OR"
+  },
+  {
+    "city": "Redmond",
+    "state_code": "OR"
+  },
+  {
+    "city": "Reedsport",
+    "state_code": "OR"
+  },
+  {
+    "city": "Roseburg",
+    "state_code": "OR"
+  },
+  {
+    "city": "Salem",
+    "state_code": "OR"
+  },
+  {
+    "city": "Seaside",
+    "state_code": "OR"
+  },
+  {
+    "city": "Springfield",
+    "state_code": "OR"
+  },
+  {
+    "city": "The Dalles",
+    "state_code": "OR"
+  },
+  {
+    "city": "Tillamook",
+    "state_code": "OR"
+  },
+  {
+    "city": "Abington",
+    "state_code": "PA"
+  },
+  {
+    "city": "Aliquippa",
+    "state_code": "PA"
+  },
+  {
+    "city": "Allentown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Altoona",
+    "state_code": "PA"
+  },
+  {
+    "city": "Ambridge",
+    "state_code": "PA"
+  },
+  {
+    "city": "Bedford",
+    "state_code": "PA"
+  },
+  {
+    "city": "Bethlehem",
+    "state_code": "PA"
+  },
+  {
+    "city": "Bloomsburg",
+    "state_code": "PA"
+  },
+  {
+    "city": "Bradford",
+    "state_code": "PA"
+  },
+  {
+    "city": "Bristol",
+    "state_code": "PA"
+  },
+  {
+    "city": "Carbondale",
+    "state_code": "PA"
+  },
+  {
+    "city": "Carlisle",
+    "state_code": "PA"
+  },
+  {
+    "city": "Chambersburg",
+    "state_code": "PA"
+  },
+  {
+    "city": "Chester",
+    "state_code": "PA"
+  },
+  {
+    "city": "Columbia",
+    "state_code": "PA"
+  },
+  {
+    "city": "Easton",
+    "state_code": "PA"
+  },
+  {
+    "city": "Erie",
+    "state_code": "PA"
+  },
+  {
+    "city": "Franklin",
+    "state_code": "PA"
+  },
+  {
+    "city": "Germantown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Gettysburg",
+    "state_code": "PA"
+  },
+  {
+    "city": "Greensburg",
+    "state_code": "PA"
+  },
+  {
+    "city": "Hanover",
+    "state_code": "PA"
+  },
+  {
+    "city": "Harmony",
+    "state_code": "PA"
+  },
+  {
+    "city": "Harrisburg",
+    "state_code": "PA"
+  },
+  {
+    "city": "Hazleton",
+    "state_code": "PA"
+  },
+  {
+    "city": "Hershey",
+    "state_code": "PA"
+  },
+  {
+    "city": "Homestead",
+    "state_code": "PA"
+  },
+  {
+    "city": "Honesdale",
+    "state_code": "PA"
+  },
+  {
+    "city": "Indiana",
+    "state_code": "PA"
+  },
+  {
+    "city": "Jeannette",
+    "state_code": "PA"
+  },
+  {
+    "city": "Jim Thorpe",
+    "state_code": "PA"
+  },
+  {
+    "city": "Johnstown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Lancaster",
+    "state_code": "PA"
+  },
+  {
+    "city": "Lebanon",
+    "state_code": "PA"
+  },
+  {
+    "city": "Levittown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Lewistown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Lock Haven",
+    "state_code": "PA"
+  },
+  {
+    "city": "Lower Southampton",
+    "state_code": "PA"
+  },
+  {
+    "city": "McKeesport",
+    "state_code": "PA"
+  },
+  {
+    "city": "Meadville",
+    "state_code": "PA"
+  },
+  {
+    "city": "Middletown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Monroeville",
+    "state_code": "PA"
+  },
+  {
+    "city": "Nanticoke",
+    "state_code": "PA"
+  },
+  {
+    "city": "New Castle",
+    "state_code": "PA"
+  },
+  {
+    "city": "New Hope",
+    "state_code": "PA"
+  },
+  {
+    "city": "New Kensington",
+    "state_code": "PA"
+  },
+  {
+    "city": "Norristown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Oil City",
+    "state_code": "PA"
+  },
+  {
+    "city": "Philadelphia",
+    "state_code": "PA"
+  },
+  {
+    "city": "Phoenixville",
+    "state_code": "PA"
+  },
+  {
+    "city": "Pittsburgh",
+    "state_code": "PA"
+  },
+  {
+    "city": "Pottstown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Pottsville",
+    "state_code": "PA"
+  },
+  {
+    "city": "Reading",
+    "state_code": "PA"
+  },
+  {
+    "city": "Scranton",
+    "state_code": "PA"
+  },
+  {
+    "city": "Shamokin",
+    "state_code": "PA"
+  },
+  {
+    "city": "Sharon",
+    "state_code": "PA"
+  },
+  {
+    "city": "State College",
+    "state_code": "PA"
+  },
+  {
+    "city": "Stroudsburg",
+    "state_code": "PA"
+  },
+  {
+    "city": "Sunbury",
+    "state_code": "PA"
+  },
+  {
+    "city": "Swarthmore",
+    "state_code": "PA"
+  },
+  {
+    "city": "Tamaqua",
+    "state_code": "PA"
+  },
+  {
+    "city": "Titusville",
+    "state_code": "PA"
+  },
+  {
+    "city": "Uniontown",
+    "state_code": "PA"
+  },
+  {
+    "city": "Warren",
+    "state_code": "PA"
+  },
+  {
+    "city": "Washington",
+    "state_code": "PA"
+  },
+  {
+    "city": "West Chester",
+    "state_code": "PA"
+  },
+  {
+    "city": "Wilkes-Barre",
+    "state_code": "PA"
+  },
+  {
+    "city": "Williamsport",
+    "state_code": "PA"
+  },
+  {
+    "city": "York",
+    "state_code": "PA"
+  },
+  {
+    "city": "Barrington",
+    "state_code": "RI"
+  },
+  {
+    "city": "Bristol",
+    "state_code": "RI"
+  },
+  {
+    "city": "Central Falls",
+    "state_code": "RI"
+  },
+  {
+    "city": "Cranston",
+    "state_code": "RI"
+  },
+  {
+    "city": "East Greenwich",
+    "state_code": "RI"
+  },
+  {
+    "city": "East Providence",
+    "state_code": "RI"
+  },
+  {
+    "city": "Kingston",
+    "state_code": "RI"
+  },
+  {
+    "city": "Middletown",
+    "state_code": "RI"
+  },
+  {
+    "city": "Narragansett",
+    "state_code": "RI"
+  },
+  {
+    "city": "Newport",
+    "state_code": "RI"
+  },
+  {
+    "city": "North Kingstown",
+    "state_code": "RI"
+  },
+  {
+    "city": "Pawtucket",
+    "state_code": "RI"
+  },
+  {
+    "city": "Portsmouth",
+    "state_code": "RI"
+  },
+  {
+    "city": "Providence",
+    "state_code": "RI"
+  },
+  {
+    "city": "South Kingstown",
+    "state_code": "RI"
+  },
+  {
+    "city": "Tiverton",
+    "state_code": "RI"
+  },
+  {
+    "city": "Warren",
+    "state_code": "RI"
+  },
+  {
+    "city": "Warwick",
+    "state_code": "RI"
+  },
+  {
+    "city": "Westerly",
+    "state_code": "RI"
+  },
+  {
+    "city": "Wickford",
+    "state_code": "RI"
+  },
+  {
+    "city": "Woonsocket",
+    "state_code": "RI"
+  },
+  {
+    "city": "Abbeville",
+    "state_code": "SC"
+  },
+  {
+    "city": "Aiken",
+    "state_code": "SC"
+  },
+  {
+    "city": "Anderson",
+    "state_code": "SC"
+  },
+  {
+    "city": "Beaufort",
+    "state_code": "SC"
+  },
+  {
+    "city": "Camden",
+    "state_code": "SC"
+  },
+  {
+    "city": "Charleston",
+    "state_code": "SC"
+  },
+  {
+    "city": "Columbia",
+    "state_code": "SC"
+  },
+  {
+    "city": "Darlington",
+    "state_code": "SC"
+  },
+  {
+    "city": "Florence",
+    "state_code": "SC"
+  },
+  {
+    "city": "Gaffney",
+    "state_code": "SC"
+  },
+  {
+    "city": "Georgetown",
+    "state_code": "SC"
+  },
+  {
+    "city": "Greenville",
+    "state_code": "SC"
+  },
+  {
+    "city": "Greenwood",
+    "state_code": "SC"
+  },
+  {
+    "city": "Hartsville",
+    "state_code": "SC"
+  },
+  {
+    "city": "Lancaster",
+    "state_code": "SC"
+  },
+  {
+    "city": "Mount Pleasant",
+    "state_code": "SC"
+  },
+  {
+    "city": "Myrtle Beach",
+    "state_code": "SC"
+  },
+  {
+    "city": "Orangeburg",
+    "state_code": "SC"
+  },
+  {
+    "city": "Rock Hill",
+    "state_code": "SC"
+  },
+  {
+    "city": "Spartanburg",
+    "state_code": "SC"
+  },
+  {
+    "city": "Sumter",
+    "state_code": "SC"
+  },
+  {
+    "city": "Union",
+    "state_code": "SC"
+  },
+  {
+    "city": "Aberdeen",
+    "state_code": "SD"
+  },
+  {
+    "city": "Belle Fourche",
+    "state_code": "SD"
+  },
+  {
+    "city": "Brookings",
+    "state_code": "SD"
+  },
+  {
+    "city": "Canton",
+    "state_code": "SD"
+  },
+  {
+    "city": "Custer",
+    "state_code": "SD"
+  },
+  {
+    "city": "De Smet",
+    "state_code": "SD"
+  },
+  {
+    "city": "Deadwood",
+    "state_code": "SD"
+  },
+  {
+    "city": "Hot Springs",
+    "state_code": "SD"
+  },
+  {
+    "city": "Huron",
+    "state_code": "SD"
+  },
+  {
+    "city": "Lead",
+    "state_code": "SD"
+  },
+  {
+    "city": "Madison",
+    "state_code": "SD"
+  },
+  {
+    "city": "Milbank",
+    "state_code": "SD"
+  },
+  {
+    "city": "Mitchell",
+    "state_code": "SD"
+  },
+  {
+    "city": "Mobridge",
+    "state_code": "SD"
+  },
+  {
+    "city": "Pierre",
+    "state_code": "SD"
+  },
+  {
+    "city": "Rapid City",
+    "state_code": "SD"
+  },
+  {
+    "city": "Sioux Falls",
+    "state_code": "SD"
+  },
+  {
+    "city": "Spearfish",
+    "state_code": "SD"
+  },
+  {
+    "city": "Sturgis",
+    "state_code": "SD"
+  },
+  {
+    "city": "Vermillion",
+    "state_code": "SD"
+  },
+  {
+    "city": "Watertown",
+    "state_code": "SD"
+  },
+  {
+    "city": "Yankton",
+    "state_code": "SD"
+  },
+  {
+    "city": "Alcoa",
+    "state_code": "TN"
+  },
+  {
+    "city": "Athens",
+    "state_code": "TN"
+  },
+  {
+    "city": "Chattanooga",
+    "state_code": "TN"
+  },
+  {
+    "city": "Clarksville",
+    "state_code": "TN"
+  },
+  {
+    "city": "Cleveland",
+    "state_code": "TN"
+  },
+  {
+    "city": "Columbia",
+    "state_code": "TN"
+  },
+  {
+    "city": "Cookeville",
+    "state_code": "TN"
+  },
+  {
+    "city": "Dayton",
+    "state_code": "TN"
+  },
+  {
+    "city": "Elizabethton",
+    "state_code": "TN"
+  },
+  {
+    "city": "Franklin",
+    "state_code": "TN"
+  },
+  {
+    "city": "Gallatin",
+    "state_code": "TN"
+  },
+  {
+    "city": "Gatlinburg",
+    "state_code": "TN"
+  },
+  {
+    "city": "Greeneville",
+    "state_code": "TN"
+  },
+  {
+    "city": "Jackson",
+    "state_code": "TN"
+  },
+  {
+    "city": "Johnson City",
+    "state_code": "TN"
+  },
+  {
+    "city": "Jonesborough",
+    "state_code": "TN"
+  },
+  {
+    "city": "Kingsport",
+    "state_code": "TN"
+  },
+  {
+    "city": "Knoxville",
+    "state_code": "TN"
+  },
+  {
+    "city": "Lebanon",
+    "state_code": "TN"
+  },
+  {
+    "city": "Maryville",
+    "state_code": "TN"
+  },
+  {
+    "city": "Memphis",
+    "state_code": "TN"
+  },
+  {
+    "city": "Morristown",
+    "state_code": "TN"
+  },
+  {
+    "city": "Murfreesboro",
+    "state_code": "TN"
+  },
+  {
+    "city": "Nashville",
+    "state_code": "TN"
+  },
+  {
+    "city": "Norris",
+    "state_code": "TN"
+  },
+  {
+    "city": "Oak Ridge",
+    "state_code": "TN"
+  },
+  {
+    "city": "Shelbyville",
+    "state_code": "TN"
+  },
+  {
+    "city": "Tullahoma",
+    "state_code": "TN"
+  },
+  {
+    "city": "Abilene",
+    "state_code": "TX"
+  },
+  {
+    "city": "Alpine",
+    "state_code": "TX"
+  },
+  {
+    "city": "Amarillo",
+    "state_code": "TX"
+  },
+  {
+    "city": "Arlington",
+    "state_code": "TX"
+  },
+  {
+    "city": "Austin",
+    "state_code": "TX"
+  },
+  {
+    "city": "Baytown",
+    "state_code": "TX"
+  },
+  {
+    "city": "Beaumont",
+    "state_code": "TX"
+  },
+  {
+    "city": "Big Spring",
+    "state_code": "TX"
+  },
+  {
+    "city": "Borger",
+    "state_code": "TX"
+  },
+  {
+    "city": "Brownsville",
+    "state_code": "TX"
+  },
+  {
+    "city": "Bryan",
+    "state_code": "TX"
+  },
+  {
+    "city": "Canyon",
+    "state_code": "TX"
+  },
+  {
+    "city": "Cleburne",
+    "state_code": "TX"
+  },
+  {
+    "city": "College Station",
+    "state_code": "TX"
+  },
+  {
+    "city": "Corpus Christi",
+    "state_code": "TX"
+  },
+  {
+    "city": "Crystal City",
+    "state_code": "TX"
+  },
+  {
+    "city": "Dallas",
+    "state_code": "TX"
+  },
+  {
+    "city": "Del Rio",
+    "state_code": "TX"
+  },
+  {
+    "city": "Denison",
+    "state_code": "TX"
+  },
+  {
+    "city": "Denton",
+    "state_code": "TX"
+  },
+  {
+    "city": "Eagle Pass",
+    "state_code": "TX"
+  },
+  {
+    "city": "Edinburg",
+    "state_code": "TX"
+  },
+  {
+    "city": "El Paso",
+    "state_code": "TX"
+  },
+  {
+    "city": "Fort Worth",
+    "state_code": "TX"
+  },
+  {
+    "city": "Freeport",
+    "state_code": "TX"
+  },
+  {
+    "city": "Galveston",
+    "state_code": "TX"
+  },
+  {
+    "city": "Garland",
+    "state_code": "TX"
+  },
+  {
+    "city": "Goliad",
+    "state_code": "TX"
+  },
+  {
+    "city": "Greenville",
+    "state_code": "TX"
+  },
+  {
+    "city": "Harlingen",
+    "state_code": "TX"
+  },
+  {
+    "city": "Houston",
+    "state_code": "TX"
+  },
+  {
+    "city": "Huntsville",
+    "state_code": "TX"
+  },
+  {
+    "city": "Irving",
+    "state_code": "TX"
+  },
+  {
+    "city": "Johnson City",
+    "state_code": "TX"
+  },
+  {
+    "city": "Kilgore",
+    "state_code": "TX"
+  },
+  {
+    "city": "Killeen",
+    "state_code": "TX"
+  },
+  {
+    "city": "Kingsville",
+    "state_code": "TX"
+  },
+  {
+    "city": "Laredo",
+    "state_code": "TX"
+  },
+  {
+    "city": "Longview",
+    "state_code": "TX"
+  },
+  {
+    "city": "Lubbock",
+    "state_code": "TX"
+  },
+  {
+    "city": "Lufkin",
+    "state_code": "TX"
+  },
+  {
+    "city": "Marshall",
+    "state_code": "TX"
+  },
+  {
+    "city": "McAllen",
+    "state_code": "TX"
+  },
+  {
+    "city": "McKinney",
+    "state_code": "TX"
+  },
+  {
+    "city": "Mesquite",
+    "state_code": "TX"
+  },
+  {
+    "city": "Midland",
+    "state_code": "TX"
+  },
+  {
+    "city": "Mission",
+    "state_code": "TX"
+  },
+  {
+    "city": "Nacogdoches",
+    "state_code": "TX"
+  },
+  {
+    "city": "New Braunfels",
+    "state_code": "TX"
+  },
+  {
+    "city": "Odessa",
+    "state_code": "TX"
+  },
+  {
+    "city": "Orange",
+    "state_code": "TX"
+  },
+  {
+    "city": "Pampa",
+    "state_code": "TX"
+  },
+  {
+    "city": "Paris",
+    "state_code": "TX"
+  },
+  {
+    "city": "Pasadena",
+    "state_code": "TX"
+  },
+  {
+    "city": "Pecos",
+    "state_code": "TX"
+  },
+  {
+    "city": "Pharr",
+    "state_code": "TX"
+  },
+  {
+    "city": "Plainview",
+    "state_code": "TX"
+  },
+  {
+    "city": "Plano",
+    "state_code": "TX"
+  },
+  {
+    "city": "Port Arthur",
+    "state_code": "TX"
+  },
+  {
+    "city": "Port Lavaca",
+    "state_code": "TX"
+  },
+  {
+    "city": "Richardson",
+    "state_code": "TX"
+  },
+  {
+    "city": "San Angelo",
+    "state_code": "TX"
+  },
+  {
+    "city": "San Antonio",
+    "state_code": "TX"
+  },
+  {
+    "city": "San Felipe",
+    "state_code": "TX"
+  },
+  {
+    "city": "San Marcos",
+    "state_code": "TX"
+  },
+  {
+    "city": "Sherman",
+    "state_code": "TX"
+  },
+  {
+    "city": "Sweetwater",
+    "state_code": "TX"
+  },
+  {
+    "city": "Temple",
+    "state_code": "TX"
+  },
+  {
+    "city": "Texarkana",
+    "state_code": "TX"
+  },
+  {
+    "city": "Texas City",
+    "state_code": "TX"
+  },
+  {
+    "city": "Tyler",
+    "state_code": "TX"
+  },
+  {
+    "city": "Uvalde",
+    "state_code": "TX"
+  },
+  {
+    "city": "Victoria",
+    "state_code": "TX"
+  },
+  {
+    "city": "Waco",
+    "state_code": "TX"
+  },
+  {
+    "city": "Weatherford",
+    "state_code": "TX"
+  },
+  {
+    "city": "Wichita Falls",
+    "state_code": "TX"
+  },
+  {
+    "city": "Ysleta",
+    "state_code": "TX"
+  },
+  {
+    "city": "Alta",
+    "state_code": "UT"
+  },
+  {
+    "city": "American Fork",
+    "state_code": "UT"
+  },
+  {
+    "city": "Bountiful",
+    "state_code": "UT"
+  },
+  {
+    "city": "Brigham City",
+    "state_code": "UT"
+  },
+  {
+    "city": "Cedar City",
+    "state_code": "UT"
+  },
+  {
+    "city": "Clearfield",
+    "state_code": "UT"
+  },
+  {
+    "city": "Delta",
+    "state_code": "UT"
+  },
+  {
+    "city": "Fillmore",
+    "state_code": "UT"
+  },
+  {
+    "city": "Green River",
+    "state_code": "UT"
+  },
+  {
+    "city": "Heber City",
+    "state_code": "UT"
+  },
+  {
+    "city": "Kanab",
+    "state_code": "UT"
+  },
+  {
+    "city": "Layton",
+    "state_code": "UT"
+  },
+  {
+    "city": "Lehi",
+    "state_code": "UT"
+  },
+  {
+    "city": "Logan",
+    "state_code": "UT"
+  },
+  {
+    "city": "Manti",
+    "state_code": "UT"
+  },
+  {
+    "city": "Moab",
+    "state_code": "UT"
+  },
+  {
+    "city": "Monticello",
+    "state_code": "UT"
+  },
+  {
+    "city": "Murray",
+    "state_code": "UT"
+  },
+  {
+    "city": "Nephi",
+    "state_code": "UT"
+  },
+  {
+    "city": "Ogden",
+    "state_code": "UT"
+  },
+  {
+    "city": "Orderville",
+    "state_code": "UT"
+  },
+  {
+    "city": "Orem",
+    "state_code": "UT"
+  },
+  {
+    "city": "Panguitch",
+    "state_code": "UT"
+  },
+  {
+    "city": "Park City",
+    "state_code": "UT"
+  },
+  {
+    "city": "Payson",
+    "state_code": "UT"
+  },
+  {
+    "city": "Price",
+    "state_code": "UT"
+  },
+  {
+    "city": "Provo",
+    "state_code": "UT"
+  },
+  {
+    "city": "Saint George",
+    "state_code": "UT"
+  },
+  {
+    "city": "Salt Lake City",
+    "state_code": "UT"
+  },
+  {
+    "city": "Spanish Fork",
+    "state_code": "UT"
+  },
+  {
+    "city": "Springville",
+    "state_code": "UT"
+  },
+  {
+    "city": "Tooele",
+    "state_code": "UT"
+  },
+  {
+    "city": "Vernal",
+    "state_code": "UT"
+  },
+  {
+    "city": "Barre",
+    "state_code": "VT"
+  },
+  {
+    "city": "Bellows Falls",
+    "state_code": "VT"
+  },
+  {
+    "city": "Bennington",
+    "state_code": "VT"
+  },
+  {
+    "city": "Brattleboro",
+    "state_code": "VT"
+  },
+  {
+    "city": "Burlington",
+    "state_code": "VT"
+  },
+  {
+    "city": "Essex",
+    "state_code": "VT"
+  },
+  {
+    "city": "Manchester",
+    "state_code": "VT"
+  },
+  {
+    "city": "Middlebury",
+    "state_code": "VT"
+  },
+  {
+    "city": "Montpelier",
+    "state_code": "VT"
+  },
+  {
+    "city": "Newport",
+    "state_code": "VT"
+  },
+  {
+    "city": "Plymouth",
+    "state_code": "VT"
+  },
+  {
+    "city": "Rutland",
+    "state_code": "VT"
+  },
+  {
+    "city": "Saint Albans",
+    "state_code": "VT"
+  },
+  {
+    "city": "Saint Johnsbury",
+    "state_code": "VT"
+  },
+  {
+    "city": "Sharon",
+    "state_code": "VT"
+  },
+  {
+    "city": "Winooski",
+    "state_code": "VT"
+  },
+  {
+    "city": "Abingdon",
+    "state_code": "VA"
+  },
+  {
+    "city": "Alexandria",
+    "state_code": "VA"
+  },
+  {
+    "city": "Bristol",
+    "state_code": "VA"
+  },
+  {
+    "city": "Charlottesville",
+    "state_code": "VA"
+  },
+  {
+    "city": "Chesapeake",
+    "state_code": "VA"
+  },
+  {
+    "city": "Danville",
+    "state_code": "VA"
+  },
+  {
+    "city": "Fairfax",
+    "state_code": "VA"
+  },
+  {
+    "city": "Falls Church",
+    "state_code": "VA"
+  },
+  {
+    "city": "Fredericksburg",
+    "state_code": "VA"
+  },
+  {
+    "city": "Hampton",
+    "state_code": "VA"
+  },
+  {
+    "city": "Hanover",
+    "state_code": "VA"
+  },
+  {
+    "city": "Hopewell",
+    "state_code": "VA"
+  },
+  {
+    "city": "Lexington",
+    "state_code": "VA"
+  },
+  {
+    "city": "Lynchburg",
+    "state_code": "VA"
+  },
+  {
+    "city": "Manassas",
+    "state_code": "VA"
+  },
+  {
+    "city": "Martinsville",
+    "state_code": "VA"
+  },
+  {
+    "city": "New Market",
+    "state_code": "VA"
+  },
+  {
+    "city": "Newport News",
+    "state_code": "VA"
+  },
+  {
+    "city": "Norfolk",
+    "state_code": "VA"
+  },
+  {
+    "city": "Petersburg",
+    "state_code": "VA"
+  },
+  {
+    "city": "Portsmouth",
+    "state_code": "VA"
+  },
+  {
+    "city": "Reston",
+    "state_code": "VA"
+  },
+  {
+    "city": "Richmond",
+    "state_code": "VA"
+  },
+  {
+    "city": "Roanoke",
+    "state_code": "VA"
+  },
+  {
+    "city": "Staunton",
+    "state_code": "VA"
+  },
+  {
+    "city": "Suffolk",
+    "state_code": "VA"
+  },
+  {
+    "city": "Virginia Beach",
+    "state_code": "VA"
+  },
+  {
+    "city": "Waynesboro",
+    "state_code": "VA"
+  },
+  {
+    "city": "Williamsburg",
+    "state_code": "VA"
+  },
+  {
+    "city": "Winchester",
+    "state_code": "VA"
+  },
+  {
+    "city": "Aberdeen",
+    "state_code": "WA"
+  },
+  {
+    "city": "Anacortes",
+    "state_code": "WA"
+  },
+  {
+    "city": "Auburn",
+    "state_code": "WA"
+  },
+  {
+    "city": "Bellevue",
+    "state_code": "WA"
+  },
+  {
+    "city": "Bellingham",
+    "state_code": "WA"
+  },
+  {
+    "city": "Bremerton",
+    "state_code": "WA"
+  },
+  {
+    "city": "Centralia",
+    "state_code": "WA"
+  },
+  {
+    "city": "Coulee Dam",
+    "state_code": "WA"
+  },
+  {
+    "city": "Coupeville",
+    "state_code": "WA"
+  },
+  {
+    "city": "Ellensburg",
+    "state_code": "WA"
+  },
+  {
+    "city": "Ephrata",
+    "state_code": "WA"
+  },
+  {
+    "city": "Everett",
+    "state_code": "WA"
+  },
+  {
+    "city": "Hoquiam",
+    "state_code": "WA"
+  },
+  {
+    "city": "Kelso",
+    "state_code": "WA"
+  },
+  {
+    "city": "Kennewick",
+    "state_code": "WA"
+  },
+  {
+    "city": "Longview",
+    "state_code": "WA"
+  },
+  {
+    "city": "Moses Lake",
+    "state_code": "WA"
+  },
+  {
+    "city": "Oak Harbor",
+    "state_code": "WA"
+  },
+  {
+    "city": "Olympia",
+    "state_code": "WA"
+  },
+  {
+    "city": "Pasco",
+    "state_code": "WA"
+  },
+  {
+    "city": "Point Roberts",
+    "state_code": "WA"
+  },
+  {
+    "city": "Port Angeles",
+    "state_code": "WA"
+  },
+  {
+    "city": "Pullman",
+    "state_code": "WA"
+  },
+  {
+    "city": "Puyallup",
+    "state_code": "WA"
+  },
+  {
+    "city": "Redmond",
+    "state_code": "WA"
+  },
+  {
+    "city": "Renton",
+    "state_code": "WA"
+  },
+  {
+    "city": "Richland",
+    "state_code": "WA"
+  },
+  {
+    "city": "Seattle",
+    "state_code": "WA"
+  },
+  {
+    "city": "Spokane",
+    "state_code": "WA"
+  },
+  {
+    "city": "Tacoma",
+    "state_code": "WA"
+  },
+  {
+    "city": "Vancouver",
+    "state_code": "WA"
+  },
+  {
+    "city": "Walla Walla",
+    "state_code": "WA"
+  },
+  {
+    "city": "Wenatchee",
+    "state_code": "WA"
+  },
+  {
+    "city": "Yakima",
+    "state_code": "WA"
+  },
+  {
+    "city": "Bath",
+    "state_code": "WV"
+  },
+  {
+    "city": "Beckley",
+    "state_code": "WV"
+  },
+  {
+    "city": "Bluefield",
+    "state_code": "WV"
+  },
+  {
+    "city": "Buckhannon",
+    "state_code": "WV"
+  },
+  {
+    "city": "Charles Town",
+    "state_code": "WV"
+  },
+  {
+    "city": "Charleston",
+    "state_code": "WV"
+  },
+  {
+    "city": "Clarksburg",
+    "state_code": "WV"
+  },
+  {
+    "city": "Elkins",
+    "state_code": "WV"
+  },
+  {
+    "city": "Fairmont",
+    "state_code": "WV"
+  },
+  {
+    "city": "Grafton",
+    "state_code": "WV"
+  },
+  {
+    "city": "Harpers Ferry",
+    "state_code": "WV"
+  },
+  {
+    "city": "Hillsboro",
+    "state_code": "WV"
+  },
+  {
+    "city": "Hinton",
+    "state_code": "WV"
+  },
+  {
+    "city": "Huntington",
+    "state_code": "WV"
+  },
+  {
+    "city": "Keyser",
+    "state_code": "WV"
+  },
+  {
+    "city": "Lewisburg",
+    "state_code": "WV"
+  },
+  {
+    "city": "Logan",
+    "state_code": "WV"
+  },
+  {
+    "city": "Martinsburg",
+    "state_code": "WV"
+  },
+  {
+    "city": "Morgantown",
+    "state_code": "WV"
+  },
+  {
+    "city": "Moundsville",
+    "state_code": "WV"
+  },
+  {
+    "city": "New Martinsville",
+    "state_code": "WV"
+  },
+  {
+    "city": "Parkersburg",
+    "state_code": "WV"
+  },
+  {
+    "city": "Philippi",
+    "state_code": "WV"
+  },
+  {
+    "city": "Point Pleasant",
+    "state_code": "WV"
+  },
+  {
+    "city": "Princeton",
+    "state_code": "WV"
+  },
+  {
+    "city": "Romney",
+    "state_code": "WV"
+  },
+  {
+    "city": "Shepherdstown",
+    "state_code": "WV"
+  },
+  {
+    "city": "South Charleston",
+    "state_code": "WV"
+  },
+  {
+    "city": "Summersville",
+    "state_code": "WV"
+  },
+  {
+    "city": "Weirton",
+    "state_code": "WV"
+  },
+  {
+    "city": "Welch",
+    "state_code": "WV"
+  },
+  {
+    "city": "Wellsburg",
+    "state_code": "WV"
+  },
+  {
+    "city": "Weston",
+    "state_code": "WV"
+  },
+  {
+    "city": "Wheeling",
+    "state_code": "WV"
+  },
+  {
+    "city": "White Sulphur Springs",
+    "state_code": "WV"
+  },
+  {
+    "city": "Williamson",
+    "state_code": "WV"
+  },
+  {
+    "city": "Appleton",
+    "state_code": "WI"
+  },
+  {
+    "city": "Ashland",
+    "state_code": "WI"
+  },
+  {
+    "city": "Baraboo",
+    "state_code": "WI"
+  },
+  {
+    "city": "Belmont",
+    "state_code": "WI"
+  },
+  {
+    "city": "Beloit",
+    "state_code": "WI"
+  },
+  {
+    "city": "Eau Claire",
+    "state_code": "WI"
+  },
+  {
+    "city": "Fond du Lac",
+    "state_code": "WI"
+  },
+  {
+    "city": "Green Bay",
+    "state_code": "WI"
+  },
+  {
+    "city": "Hayward",
+    "state_code": "WI"
+  },
+  {
+    "city": "Janesville",
+    "state_code": "WI"
+  },
+  {
+    "city": "Kenosha",
+    "state_code": "WI"
+  },
+  {
+    "city": "La Crosse",
+    "state_code": "WI"
+  },
+  {
+    "city": "Lake Geneva",
+    "state_code": "WI"
+  },
+  {
+    "city": "Madison",
+    "state_code": "WI"
+  },
+  {
+    "city": "Manitowoc",
+    "state_code": "WI"
+  },
+  {
+    "city": "Marinette",
+    "state_code": "WI"
+  },
+  {
+    "city": "Menasha",
+    "state_code": "WI"
+  },
+  {
+    "city": "Milwaukee",
+    "state_code": "WI"
+  },
+  {
+    "city": "Neenah",
+    "state_code": "WI"
+  },
+  {
+    "city": "New Glarus",
+    "state_code": "WI"
+  },
+  {
+    "city": "Oconto",
+    "state_code": "WI"
+  },
+  {
+    "city": "Oshkosh",
+    "state_code": "WI"
+  },
+  {
+    "city": "Peshtigo",
+    "state_code": "WI"
+  },
+  {
+    "city": "Portage",
+    "state_code": "WI"
+  },
+  {
+    "city": "Prairie du Chien",
+    "state_code": "WI"
+  },
+  {
+    "city": "Racine",
+    "state_code": "WI"
+  },
+  {
+    "city": "Rhinelander",
+    "state_code": "WI"
+  },
+  {
+    "city": "Ripon",
+    "state_code": "WI"
+  },
+  {
+    "city": "Sheboygan",
+    "state_code": "WI"
+  },
+  {
+    "city": "Spring Green",
+    "state_code": "WI"
+  },
+  {
+    "city": "Stevens Point",
+    "state_code": "WI"
+  },
+  {
+    "city": "Sturgeon Bay",
+    "state_code": "WI"
+  },
+  {
+    "city": "Superior",
+    "state_code": "WI"
+  },
+  {
+    "city": "Waukesha",
+    "state_code": "WI"
+  },
+  {
+    "city": "Wausau",
+    "state_code": "WI"
+  },
+  {
+    "city": "Wauwatosa",
+    "state_code": "WI"
+  },
+  {
+    "city": "West Allis",
+    "state_code": "WI"
+  },
+  {
+    "city": "West Bend",
+    "state_code": "WI"
+  },
+  {
+    "city": "Wisconsin Dells",
+    "state_code": "WI"
+  },
+  {
+    "city": "Buffalo",
+    "state_code": "WY"
+  },
+  {
+    "city": "Casper",
+    "state_code": "WY"
+  },
+  {
+    "city": "Cheyenne",
+    "state_code": "WY"
+  },
+  {
+    "city": "Cody",
+    "state_code": "WY"
+  },
+  {
+    "city": "Douglas",
+    "state_code": "WY"
+  },
+  {
+    "city": "Evanston",
+    "state_code": "WY"
+  },
+  {
+    "city": "Gillette",
+    "state_code": "WY"
+  },
+  {
+    "city": "Green River",
+    "state_code": "WY"
+  },
+  {
+    "city": "Jackson",
+    "state_code": "WY"
+  },
+  {
+    "city": "Lander",
+    "state_code": "WY"
+  },
+  {
+    "city": "Laramie",
+    "state_code": "WY"
+  },
+  {
+    "city": "Newcastle",
+    "state_code": "WY"
+  },
+  {
+    "city": "Powell",
+    "state_code": "WY"
+  },
+  {
+    "city": "Rawlins",
+    "state_code": "WY"
+  },
+  {
+    "city": "Riverton",
+    "state_code": "WY"
+  },
+  {
+    "city": "Rock Springs",
+    "state_code": "WY"
+  },
+  {
+    "city": "Sheridan",
+    "state_code": "WY"
+  },
+  {
+    "city": "Ten Sleep",
+    "state_code": "WY"
+  },
+  {
+    "city": "Thermopolis",
+    "state_code": "WY"
+  },
+  {
+    "city": "Torrington",
+    "state_code": "WY"
+  },
+  {
+    "city": "Worland",
+    "state_code": "WY"
+  }
+]
