@@ -21,7 +21,6 @@ from langchain_core.prompts import PromptTemplate
 from fastapi.middleware.cors import CORSMiddleware
 from langchain_cohere import CohereEmbeddings, ChatCohere
 from langchain_chroma import Chroma
-from langchain import hub
 from langchain.chat_models import init_chat_model
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_google_genai import ChatGoogleGenerativeAI
